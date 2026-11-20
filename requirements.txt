@@ -1,0 +1,26 @@
+# MemLens 运行依赖（第一版：Windows 内存镜像分析）
+#
+# 说明：本文件是"最小可用集"。MemLens 的架构允许按需增加取证域适配器，
+# 后续每加一个域（事件日志/注册表/流量包/PE…）再追加对应依赖即可。
+#
+# 安装（务必装进项目自己的虚拟环境，不要污染其它 Python 环境）：
+#     python -m venv .venv
+#     .venv\Scripts\python.exe -m pip install -r requirements.txt
+#
+# 国内网络较慢时可用镜像：
+#     .venv\Scripts\python.exe -m pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+
+# ---- 核心引擎：内存取证 ----
+volatility3>=2.7
+
+# ---- GUI ----
+PySide6>=6.6
+
+# ---- 配置与工具 ----
+PyYAML>=6.0
+
+# ---- 加速：VeraCrypt 批量 XTS 解密（numpy 向量化；无 numpy 时回退逐扇区，慢约 10 倍）----
+numpy>=1.26
+
+# ---- 可选：更快的类型/文件识别（镜像容器探测的补充手段）----
+# magika>=0.5

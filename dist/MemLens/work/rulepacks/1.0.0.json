@@ -1,0 +1,482 @@
+{
+  "pack_id": "1.0.0",
+  "version": "1.0.0",
+  "published_at": "2026-11-12",
+  "thresholds": {
+    "hidden_process.w_pool_only": 0.55,
+    "hidden_process.w_not_in_list": 0.1,
+    "hidden_process.w_has_network": 0.12,
+    "hidden_process.w_non_whitelist_name": 0.08,
+    "hidden_process.w_psxview_flag": 0.1,
+    "hidden_process.w_empty_cmdline": 0.05,
+    "hidden_process.w_orphan_ppid": 0.05,
+    "hidden_process.w_whitelist_penalty": -0.2,
+    "hidden_process.conf_max": 0.98,
+    "hidden_process.orphan_threshold": 5,
+    "injection.w_malfind": 0.5,
+    "injection.w_rwx": 0.15,
+    "injection.w_no_module": 0.12,
+    "injection.w_has_network": 0.08,
+    "injection.w_non_whitelist_name": 0.05,
+    "injection.w_mz_header": 0.1,
+    "injection.w_whitelist_penalty": -0.15,
+    "injection.conf_max": 0.98,
+    "scoring.confirmed_total": 0.75,
+    "scoring.risk_total": 0.4,
+    "scoring.egress_floor": 0.5,
+    "scoring.magnitude_match": 0.6,
+    "scoring.magnitude_suspect": 0.3,
+    "scoring.level_a_sources": 2,
+    "scoring.level_b_sources": 1,
+    "scoring.trace_intersect_hours": 24
+  },
+  "whitelist": {
+    "system_process": [
+      "system",
+      "system idle process",
+      "registry",
+      "smss.exe",
+      "csrss.exe",
+      "wininit.exe",
+      "winlogon.exe",
+      "services.exe",
+      "lsass.exe",
+      "svchost.exe",
+      "explorer.exe",
+      "taskhostw.exe",
+      "sihost.exe",
+      "ctfmon.exe",
+      "fontdrvhost.exe",
+      "spoolsv.exe",
+      "wmiprvse.exe",
+      "searchindexer.exe",
+      "memcompression.exe",
+      "runtimebroker.exe",
+      "dashost.exe",
+      "securityhealthservice.exe",
+      "msmpeng.exe",
+      "audiodg.exe",
+      "conhost.exe",
+      "dllhost.exe",
+      "backgroundtaskhost.exe",
+      "wudfhost.exe"
+    ]
+  },
+  "wordlist": {
+    "domain_category": {
+      "academic": [
+        "scholar.google.com",
+        "arxiv.org",
+        "ieeexplore.ieee.org",
+        "acm.org",
+        "doi.org",
+        "springer.com",
+        "sciencedirect.com"
+      ],
+      "technical": [
+        "stackoverflow.com",
+        "github.com",
+        "developer.mozilla.org",
+        "docs.microsoft.com",
+        "learn.microsoft.com",
+        "kernel.org",
+        "python.org",
+        "docs.python.org"
+      ],
+      "news": [
+        "bbc.com",
+        "reuters.com",
+        "xinhuanet.com",
+        "thepaper.cn",
+        "36kr.com",
+        "cnbeta.com"
+      ],
+      "social": [
+        "weibo.com",
+        "twitter.com",
+        "x.com",
+        "zhihu.com",
+        "douban.com",
+        "reddit.com"
+      ],
+      "streaming": [
+        "youtube.com",
+        "netflix.com",
+        "bilibili.com",
+        "iqiyi.com",
+        "youku.com",
+        "twitch.tv"
+      ]
+    },
+    "compliant_channel": [],
+    "anti_forensics": [
+      "vssadmin delete shadows",
+      "wmic shadowcopy delete",
+      "wevtutil cl",
+      "clear-eventlog",
+      "bcdedit /set",
+      "recoveryenabled no"
+    ]
+  },
+  "dimension_weights": {
+    "tool_presence": 0.2,
+    "channel_config": 0.2,
+    "execution_trace": 0.25,
+    "data_egress": 0.25,
+    "access_direction": 0.1
+  },
+  "proxy_tools": [
+    {
+      "id": "v2ray",
+      "display": "V2Ray",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "v2ray.exe",
+          "v2ray"
+        ],
+        "path_keyword": [
+          "\\v2ray\\",
+          "\\v2rayn\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "v2ray"
+        ],
+        "path_keyword": [
+          "v2ray"
+        ]
+      },
+      "exclude_paths": [
+        "\\v2rayn\\speedtest\\"
+      ]
+    },
+    {
+      "id": "xray",
+      "display": "Xray",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "xray.exe",
+          "xray"
+        ],
+        "path_keyword": [
+          "\\xray\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "xray"
+        ],
+        "path_keyword": [
+          "xray"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "singbox",
+      "display": "sing-box",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "sing-box.exe"
+        ],
+        "path_keyword": [
+          "\\sing-box\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "sing-box"
+        ],
+        "path_keyword": [
+          "sing-box"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "clash",
+      "display": "Clash / Mihomo",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "clash.exe",
+          "clash-verge.exe",
+          "mihomo.exe",
+          "clash.meta"
+        ],
+        "path_keyword": [
+          "\\clash\\",
+          "\\mihomo\\",
+          "\\clash-verge\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "clash",
+          "mihomo"
+        ],
+        "path_keyword": [
+          "clash",
+          "mihomo"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "shadowsocks",
+      "display": "Shadowsocks",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "ss-local.exe",
+          "ss-server.exe",
+          "shadowsocks.exe"
+        ],
+        "path_keyword": [
+          "\\shadowsocks\\",
+          "\\shadowsocks-rust\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "ss-local",
+          "ss-server"
+        ],
+        "path_keyword": [
+          "shadowsocks"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "trojan",
+      "display": "Trojan",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "trojan.exe",
+          "trojan-go.exe"
+        ],
+        "path_keyword": [
+          "\\trojan\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "trojan"
+        ],
+        "path_keyword": [
+          "trojan"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "frp",
+      "display": "FRP（内网穿透）",
+      "category": "tunnel",
+      "strong": {
+        "process": [
+          "frpc.exe",
+          "frps.exe"
+        ],
+        "path_keyword": [
+          "\\frp\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "frpc",
+          "frps"
+        ],
+        "path_keyword": [
+          "frp"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "ngrok",
+      "display": "ngrok",
+      "category": "tunnel",
+      "strong": {
+        "process": [
+          "ngrok.exe"
+        ],
+        "path_keyword": [
+          "\\ngrok\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "ngrok"
+        ],
+        "path_keyword": [
+          "ngrok"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "chisel",
+      "display": "Chisel",
+      "category": "tunnel",
+      "strong": {
+        "process": [
+          "chisel.exe"
+        ],
+        "path_keyword": [
+          "\\chisel\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "chisel"
+        ],
+        "path_keyword": [
+          "chisel"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "wireguard",
+      "display": "WireGuard",
+      "category": "vpn",
+      "strong": {
+        "process": [
+          "wireguard.exe"
+        ],
+        "path_keyword": [
+          "\\wireguard\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "wireguard"
+        ],
+        "path_keyword": [
+          "wireguard"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "openvpn",
+      "display": "OpenVPN",
+      "category": "vpn",
+      "strong": {
+        "process": [
+          "openvpn.exe"
+        ],
+        "path_keyword": [
+          "\\openvpn\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "openvpn"
+        ],
+        "path_keyword": [
+          "openvpn"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "gost",
+      "display": "GOST",
+      "category": "tunnel",
+      "strong": {
+        "process": [
+          "gost.exe"
+        ],
+        "path_keyword": [
+          "\\gost\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "gost"
+        ],
+        "path_keyword": [
+          "gost"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "privoxy",
+      "display": "Privoxy",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "privoxy.exe"
+        ],
+        "path_keyword": [
+          "\\privoxy\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "privoxy"
+        ],
+        "path_keyword": [
+          "privoxy"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "squid",
+      "display": "Squid",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "squid.exe"
+        ],
+        "path_keyword": [
+          "\\squid\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "squid"
+        ],
+        "path_keyword": [
+          "squid"
+        ]
+      },
+      "exclude_paths": []
+    },
+    {
+      "id": "proxychains",
+      "display": "ProxyChains",
+      "category": "proxy",
+      "strong": {
+        "process": [
+          "proxychains.exe"
+        ],
+        "path_keyword": [
+          "\\proxychains\\"
+        ]
+      },
+      "weak": {
+        "process": [
+          "proxychains"
+        ],
+        "path_keyword": [
+          "proxychains"
+        ]
+      },
+      "exclude_paths": []
+    }
+  ],
+  "change_log": "基线版本：将代码内硬编码的判定阈值、白名单与词表正式外置为规则包。",
+  "source_path": "(builtin)",
+  "sha256": "3bb0f3183543fff2e1bdc4daed918970e02265698a281044539d7df2a1583c74"
+}

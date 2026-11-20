@@ -1,0 +1,13 @@
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\2025平航杯\平航杯题目' as RAW Memory Dump.
+[CORE]     Initialization Failed. Unable to locate valid DTB. #2
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (000001C327A60040).
+[CORE]       TIME: 2026-11-19 13:53:01 UTC.
+[CORE]       RUNTIME: 0s.
+

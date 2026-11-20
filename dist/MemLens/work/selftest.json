@@ -1,0 +1,63 @@
+{
+  "frozen": true,
+  "exe_dir": "D:\\DSH\\工作区\\MemLens\\dist\\MemLens",
+  "checks": {
+    "engine.container": {
+      "ok": true,
+      "detail": "内置格式层可用（VeraCrypt/exFAT/EWF/VMDK/pcapng/BLE/HID/APK）"
+    },
+    "plugins.container": {
+      "ok": true,
+      "detail": "11 个"
+    },
+    "engine.memprocfs": {
+      "ok": true,
+      "detail": "D:\\DSH\\工作区\\MemLens\\dist\\MemLens\\tools\\MemProcFS\\memprocfs.exe；符号文件 2435 个（10723 MB）；挂载盘符自动选择（不占用 M:）"
+    },
+    "plugins.memprocfs": {
+      "ok": true,
+      "detail": "38 个"
+    },
+    "engine.memstrings": {
+      "ok": true,
+      "detail": "内置引擎，无需外部依赖"
+    },
+    "plugins.memstrings": {
+      "ok": true,
+      "detail": "4 个"
+    },
+    "engine.static": {
+      "ok": true,
+      "detail": "内置标准库解析器（PE / ELF / 内容识别）"
+    },
+    "plugins.static": {
+      "ok": true,
+      "detail": "9 个"
+    },
+    "engine.vol3": {
+      "ok": true,
+      "detail": "可用，版本 2.28.2（解释器：D:\\MemLens\\dist\\MemLens\\MemLens.exe）"
+    },
+    "plugins.vol3": {
+      "ok": true,
+      "detail": "180 个"
+    },
+    "detectors": {
+      "ok": true,
+      "detail": "hidden_process, code_injection, memprocfs_triage, static_sample_suspicious"
+    },
+    "database": {
+      "ok": true,
+      "detail": "D:\\DSH\\工作区\\MemLens\\dist\\MemLens\\work\\memlens.db"
+    },
+    "memprocfs_runtime": {
+      "ok": true,
+      "detail": "D:\\DSH\\工作区\\MemLens\\dist\\MemLens\\tools\\MemProcFS\\memprocfs.exe"
+    },
+    "vol3_symbols": {
+      "ok": true,
+      "detail": "符号环境未初始化（首次分析会自动建立）"
+    }
+  },
+  "ok": true
+}

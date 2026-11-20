@@ -1,0 +1,21 @@
+[MemLens] 无控制台模式，输出写入 D:\DSH\工作区\MemLens\dist\MemLens\work\memlens.log
+[MemLens] 数据库后端：sqlite（D:\DSH\工作区\MemLens\dist\MemLens\work\memlens.db）
+[MemLens] 取证控制台：http://127.0.0.1:8810/
+[MemLens] 数据库后端：sqlite
+[MemLens] 就绪耗时 0.63s
+[MemLens] 请手动访问：http://127.0.0.1:8810/
+[MemLens] 无控制台模式，输出写入 D:\DSH\工作区\MemLens\dist\MemLens\work\memlens.log
+[MemLens] 数据库后端：sqlite（D:\DSH\工作区\MemLens\dist\MemLens\work\memlens.db）
+[MemLens] 取证控制台：http://127.0.0.1:8765/
+[MemLens] 数据库后端：sqlite
+[MemLens] 就绪耗时 0.71s
+[MemLens] 已在浏览器中打开
+[MemLens] 无控制台模式，输出写入 D:\DSH\工作区\MemLens\dist\MemLens\work\memlens.log
+[MemLens] 数据库后端：sqlite（D:\DSH\工作区\MemLens\dist\MemLens\work\memlens.db）
+[MemLens] 取证控制台：http://127.0.0.1:8765/
+[MemLens] 数据库后端：sqlite
+[MemLens] 就绪耗时 0.65s
+[MemLens] 已在浏览器中打开
+[MemLens] 无控制台模式，输出写入 D:\DSH\工作区\MemLens\dist\MemLens\work\memlens.log
+[MemLens] 数据库后端：sqlite（D:\DSH\工作区\MemLens\dist\MemLens\work\memlens.db）
+[MemLens] MemLens 已经在运行：http://127.0.0.1:8765/

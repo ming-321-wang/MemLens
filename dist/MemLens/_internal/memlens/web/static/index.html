@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MemLens · 内存取证控制台</title>
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/style_v2.css">
+<link rel="stylesheet" href="/static/style_nav.css">
+</head>
+<body>
+
+<!-- ══════════════════════ 顶栏 ══════════════════════ -->
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">◈</span>
+    <div>
+      <div class="brand-name">MemLens</div>
+      <div class="brand-sub">内存取证工作台</div>
+    </div>
+  </div>
+
+  <div class="case-chip" id="caseChip" title="当前案件">
+    <span class="chip-label">案件</span>
+    <span class="chip-value" id="caseName">未打开</span>
+  </div>
+
+  <div class="topbar-spacer"></div>
+
+  <div class="status-cluster">
+    <div class="stat-badge" id="dbBadge" title="数据库后端">
+      <span class="dot"></span><span id="dbText">DB</span>
+    </div>
+    <div class="engine-dots" id="engineDots" title="引擎状态"></div>
+  </div>
+
+  <div class="topbar-actions">
+    <button class="btn" id="btnOpen">打开证据</button>
+    <button class="btn btn-primary" id="btnAnalyze" disabled>深度分析</button>
+    <button class="btn btn-danger" id="btnCancel" disabled>停止</button>
+    <button class="btn" id="btnReport" disabled>报告</button>
+  </div>
+</header>
+
+<!-- ══════════════════════ 主体 ══════════════════════ -->
+<div class="shell">
+  <!-- ══ 导航栏（分组可折叠 + 搜索）══ -->
+  <nav class="navrail" id="navRail">
+    <div class="nav-search">
+      <span class="ns-icon">🔍</span>
+      <input class="ns-input" id="navSearch" placeholder="搜索功能或插件，如 filescan"
+             autocomplete="off" spellcheck="false">
+      <kbd class="ns-kbd">/</kbd>
+    </div>
+    <div class="nav-tree" id="navTree"></div>
+    <div class="nav-foot">
+      <button class="btn btn-sm" id="navCollapseAll">全部收起</button>
+      <span class="muted" id="navMeta"></span>
+    </div>
+  </nav>
+
+  <!-- ── 侧栏 ── -->
+  <aside class="sidebar">
+    <div class="side-section">
+      <div class="side-title">案件库 <span class="count" id="caseCount">0</span></div>
+      <div class="case-list" id="caseList"></div>
+    </div>
+    <div class="side-section grow">
+      <div class="side-title">分析流水线</div>
+      <div class="phase-list" id="phaseList">
+        <div class="phase-item" data-phase="probe"><i></i><span>探测</span><em></em></div>
+        <div class="phase-item" data-phase="plan"><i></i><span>计划</span><em></em></div>
+        <div class="phase-item" data-phase="engine"><i></i><span>引擎执行</span><em></em></div>
+        <div class="phase-item" data-phase="detect"><i></i><span>检测器</span><em></em></div>
+        <div class="phase-item" data-phase="intel"><i></i><span>情报</span><em></em></div>
+        <div class="phase-item" data-phase="timeline"><i></i><span>时间线</span><em></em></div>
+        <div class="phase-item" data-phase="flags"><i></i><span>旗标</span><em></em></div>
+        <div class="phase-item" data-phase="profile"><i></i><span>系统画像</span><em></em></div>
+        <div class="phase-item" data-phase="report"><i></i><span>报告</span><em></em></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-text" id="progressText">空闲</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── 主区 ── -->
+  <main class="main">
+    <nav class="tabs tabs-hidden" id="tabs">
+      <button class="tab active" data-tab="overview">概览</button>
+      <button class="tab" data-tab="tools">工具 <b class="pill">新</b></button>
+      <button class="tab" data-tab="browser">浏览器 <b class="pill">新</b></button>
+      <button class="tab" data-tab="artifacts">产物</button>
+      <button class="tab" data-tab="timeline">时间线</button>
+      <button class="tab" data-tab="findings">发现项 <b class="pill" id="pillFindings">0</b></button>
+      <button class="tab" data-tab="intel">情报</button>
+      <button class="tab" data-tab="flags">旗标 <b class="pill warn" id="pillFlags">0</b></button>
+      <button class="tab" data-tab="compliance">合规 <b class="pill" id="pillGaps">0</b></button>
+      <button class="tab" data-tab="mount">挂载 <b class="pill">新</b></button>
+      <button class="tab" data-tab="users">用户</button>
+      <button class="tab" data-tab="log">日志</button>
+    </nav>
+
+    <!-- 面包屑（替代顶部页签的位置指示） -->
+    <div class="crumbbar">
+      <span class="cb-root">MemLens</span>
+      <span class="cb-sep">›</span>
+      <span class="cb-group" id="crumbGroup">概览</span>
+      <span class="cb-sep">›</span>
+      <span class="cb-item" id="crumbItem">结论速览</span>
+    </div>
+
+    <!-- 概览 -->
+    <section class="panel active" id="panel-overview">
+      <div id="flagBanner"></div>
+      <div class="kpi-row" id="kpiRow"></div>
+
+      <!-- 兼容性 / 降级分析提示（引擎失败或数据源缺失时自动出现） -->
+      <div id="degradeHost"></div>
+
+      <div class="card" id="verdictCard">
+        <div class="card-head">
+          <h3>📌 结论速览（一页纸）</h3>
+          <span class="muted" id="verdictMeta">—</span>
+        </div>
+        <div class="card-body" id="verdictBody">
+          <div class="empty">分析完成后，这里会给出「一句话结论 + 旗标候选 + 关键事实 + 下一步建议」。</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>系统画像</h3>
+          <span class="muted" id="profileMeta">—</span>
+        </div>
+        <div class="card-body" id="profileBody">
+          <div class="empty">打开证据后点击「深度分析」，这里会显示版本 / 内存大小 / CPU / 开机时间等系统信息。</div>
+        </div>
+      </div>
+
+      <div class="card" id="dimCard">
+        <div class="card-head">
+          <h3>🧭 五维判定（违规跨境访问检测）</h3>
+          <span class="muted" id="dimMeta">—</span>
+        </div>
+        <div class="card-body">
+          <!-- ★ 控件必须放在 #dimBody **外面**：
+               renderDimensions() 每次渲染都会清空 #dimBody，
+               控件若在里面，第二次点「运行五维判定」就会因为
+               $('dimUsage') 已被销毁而抛
+               "Cannot read properties of null (reading 'value')"（浏览器实测踩到）。 -->
+          <div class="toolbar" id="dimControls">
+            <select class="input sm" id="dimUsage">
+              <option value="check">检查用法（三档）</option>
+              <option value="forensic">取证用法（A/B/C 级）</option>
+            </select>
+            <label class="check"><input type="checkbox" id="dimAllowDirection"> 启用访问方向维度（需单独授权）</label>
+            <button class="btn btn-primary sm" id="btnDimRun">运行五维判定</button>
+          </div>
+          <div id="dimBody">
+            <div class="empty">点击「运行五维判定」后，这里会给出工具存在 / 通道配置 / 实际执行 /
+              数据外联 / 访问方向五个维度的得分、依据证据与降级说明。</div>
+            <div id="dimResult"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="gapCard">
+        <div class="card-head">
+          <h3>⚠ 缺口清单</h3>
+          <span class="muted" id="gapMeta">—</span>
+        </div>
+        <div class="card-body" id="gapBody">
+          <div class="empty">分析完成后，这里会列出「缺了什么 / 为什么缺 / 怎么补」——
+            缺口不是「已排除」，每一项都意味着相应结论缺乏证据支撑。</div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head"><h3>案件信息</h3></div>
+          <div class="card-body"><table class="kv" id="caseInfo"><tbody></tbody></table></div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h3>Top 发现项</h3><span class="muted" id="findMeta">—</span></div>
+          <div class="card-body" id="topFindings"><div class="empty">暂无</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h3>本机用户</h3><span class="muted" id="userMeta">—</span></div>
+        <div class="card-body" id="userTable"><div class="empty">暂无</div></div>
+      </div>
+    </section>
+
+    <!-- 浏览器历史 / 境外 IP 风险报告 -->
+    <section class="panel" id="panel-browser">
+      <div class="card">
+        <div class="card-head">
+          <h3>🌐 浏览器历史 / 境外 IP 风险报告</h3>
+          <span class="muted">检测本机或镜像里的所有浏览器 + 境外 IP 访问识别 + 风险等级</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <input class="input grow" id="brAppdata"
+                   placeholder="AppData 根目录（可选，留空=本机；镜像提取的 Users\<user>\AppData）">
+            <label class="check"><input type="checkbox" id="brAllDrives"> 全盘扫描（C–Z）</label>
+            <label class="check"><input type="checkbox" id="brResolve"> DNS 解析域名</label>
+            <button class="btn btn-primary" id="brScan">扫描 + 境外IP风险</button>
+          </div>
+          <div id="brResult" style="margin-top:10px">
+            <div class="empty">点「扫描 + 境外IP风险」：检测所有浏览器历史，标注境外（疑似）地址访问与风险等级，并给出报告摘要。</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <div class="card-head">
+          <h3>🖥️ 网站日志 / 扫描器（WP 0x05 服务器取证）</h3>
+          <span class="muted">access.log → 攻击者IP / 一句话木马 SHA-256；result.txt → URL / 端口 / title / 指纹</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <input class="input grow" id="wlPath"
+                   placeholder="日志 / result.txt 路径（可选，留空=用下方粘贴的文本；可用「工具→取证容器」提取后填路径）">
+            <button class="btn" id="wlLogBtn">日志分析</button>
+            <button class="btn" id="wlScanBtn">扫描器解析</button>
+          </div>
+          <textarea class="input" id="wlText" rows="5" style="margin-top:8px"
+                    placeholder="粘贴 access.log 或扫描器 result.txt 内容（也可只填路径）"></textarea>
+          <div id="wlResult" style="margin-top:10px">
+            <div class="empty">粘贴日志或填路径 → 点「日志分析」（攻击者IP/木马）或「扫描器解析」（URL/端口/title）。</div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <div class="card-head">
+          <h3>🖥️ 服务器文件级取证（WP 0x05，不挂载系统）</h3>
+          <span class="muted">wtmp 开机时间 / passwd 用户数 / trojan 配置 / config.php 加密 / sql 订单（容器通道提取文件后喂入）</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <select class="input" id="svKind">
+              <option value="wtmp">wtmp 开机时间</option>
+              <option value="passwd">passwd 用户数</option>
+              <option value="trojan">trojan 配置</option>
+              <option value="php">config.php 加密</option>
+              <option value="sql">sql 订单数</option>
+            </select>
+            <input class="input grow" id="svPath" placeholder="文件路径（wtmp 二进制 / passwd / config.json / config.php / dump.sql）">
+            <input class="input" id="svPassword" placeholder="明文(php 用，如 sbwyz1)" style="width:110px">
+            <button class="btn btn-primary" id="svRun">分析</button>
+          </div>
+          <div id="svResult" style="margin-top:10px">
+            <div class="empty">选类型 + 填路径 → 点「分析」：开机时间 / 用户数 / Trojan 域名模式 / 密码 md5 / 订单数。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 工具（按需功能：点按钮才执行） -->
+    <section class="panel" id="panel-tools">
+            <!-- 取证容器通道：加密卷 / EWF / VMDK / 抓包 / APK -->
+      <div class="card" id="ctCard">
+        <div class="card-head">
+          <h3>🧰 取证容器（非内存镜像检材）</h3>
+          <span class="muted" id="ctMeta">加密卷 / EWF / VMDK / pcapng / APK</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <input class="input grow" id="ctPath" placeholder="目标文件绝对路径，例如 E:\cases\平航杯题目 或 D:\cap\BLE">
+            <button class="btn" id="ctIdentify">识别类型</button>
+            <input class="input" id="ctPw" placeholder="加密卷口令（可选）" style="width:180px">
+            <select class="input sm" id="ctKind">
+              <option value="identify">类型识别</option>
+              <option value="files">列出卷内文件</option>
+              <option value="crypto">卷头详情（VeraCrypt）</option>
+              <option value="extract">提取卷内文件</option>
+              <option value="traffic">抓包分析</option>
+              <option value="apk">APK 属性分析</option>
+              <option value="xfs">磁盘·XFS 分析（VeraCrypt→exFAT→VMDK→LVM）</option>
+              <option value="xfs_read">XFS 读文件（按 inode）</option>
+            </select>
+            <select class="input sm" id="ctTraffic" style="display:none">
+              <option value="interfaces">接口信息</option>
+              <option value="bluetooth">蓝牙设备表</option>
+              <option value="rename">蓝牙改名事件</option>
+              <option value="hid">USB 键盘还原</option>
+            </select>
+            <input class="input" id="ctInner" placeholder="卷内路径（提取时填）" style="display:none">
+            <input class="input" id="ctLv" placeholder="LVM 逻辑卷名 root" style="display:none;width:110px">
+            <input class="input" id="ctScan" placeholder="扫描GiB 1" style="display:none;width:80px">
+            <input class="input" id="ctIno" placeholder="inode号 72" style="display:none;width:90px">
+            <input class="input" id="ctMode" placeholder="mode:save/text/hex 或 list:top" style="display:none;width:170px">
+            <input class="input" id="ctLimit" placeholder="limit 200" style="display:none;width:80px">
+            <button class="btn btn-primary" id="ctRun">执行</button>
+          </div>
+          <div id="ctResult" style="margin-top:10px">
+            <div class="empty">选择目标文件后点「识别类型」或「执行」。
+              支持：VeraCrypt 加密卷（无需管理员/驱动）、EWF(E01)、VMDK、pcapng 抓包、APK。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 分析分组导航：多类分析一眼可见 -->
+      <div class="card">
+        <div class="card-head">
+          <h3>🔎 分析分组</h3>
+          <span class="muted">按取证对象分类，点开直达对应分析</span>
+        </div>
+        <div class="card-body">
+          <div class="anav" id="analysisNav"></div>
+        </div>
+      </div>
+
+<div class="card">
+        <div class="card-head">
+          <h3>🌐 浏览器浏览记录（本机）</h3>
+          <span class="muted">只读副本 · 不联网 · 点击按钮才开始读取</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <select class="input sm" id="bhBrowser">
+              <option value="all">全部浏览器</option>
+              <option value="edge">Edge</option>
+              <option value="chrome">Chrome</option>
+              <option value="firefox">Firefox</option>
+            </select>
+            <input class="input sm" id="bhSince" placeholder="起始 2026-01-01">
+            <input class="input sm" id="bhUntil" placeholder="截止 2026-12-31">
+            <input class="input sm" id="bhKeyword" placeholder="URL/标题关键字">
+            <label class="check"><input type="checkbox" id="bhAllDrives"> 全盘扫描（C–Z 所有驱动器）</label>
+            <button class="btn btn-primary sm" id="btnBhCollect">📥 采集浏览记录</button>
+            <button class="btn sm" id="btnBhCsv" disabled>导出 CSV</button>
+            <span class="muted" id="bhMeta"></span>
+          </div>
+          <div class="bh-summary" id="bhSummary"></div>
+          <div class="bh-sources" id="bhSources"></div>
+          <div class="table-wrap"><table class="data" id="bhTable">
+            <thead><tr>
+              <th>访问时间</th><th>浏览器</th><th>Profile</th><th>标题</th><th>URL</th><th>类型</th><th class="num">次数</th><th>来源盘</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>💻 机器信息（按需重取）</h3>
+          <span class="muted" id="sysMeta">—</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <button class="btn sm" id="btnSysRefresh" disabled>🔄 重新提取机器信息</button>
+            <button class="btn sm" id="btnVmscan" disabled>🖥 虚拟机扫描</button>
+          </div>
+          <div id="sysBody"><div class="empty">打开证据并深度分析后，这里会展示可重取的机器信息（版本 / 内存 / CPU / 开机时间）。</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>⚙ 按需取证操作</h3>
+          <span class="muted">针对当前案件执行单项操作（结果进「产物」页）</span>
+        </div>
+        <div class="card-body">
+          <div class="tool-grid" id="toolGrid">
+            <button class="tool-btn" data-tool="sysinfo" disabled>💻 <b>机器信息</b><span>系统版本 / 物理内存 / CPU / 开机时间</span></button>
+            <button class="tool-btn" data-tool="users" disabled>👤 <b>用户与 SID</b><span>本机账户、安全标识符</span></button>
+            <button class="tool-btn" data-tool="envs" disabled>📝 <b>环境变量</b><span>全进程环境变量（flag 常见藏身处）</span></button>
+            <button class="tool-btn" data-tool="files" disabled>🗑 <b>未释放文件</b><span>已删除但仍被进程持有的文件</span></button>
+            <button class="tool-btn" data-tool="flag" disabled>🚩 <b>字节快扫 flag</b><span>多编码 flag / 高价值 IOC（无需符号表）</span></button>
+            <button class="tool-btn" data-tool="process_dump" disabled>🧪 <b>导出可疑进程内存</b><span>自动挑选 findevil 命中的进程并 dump</span></button>
+          </div>
+          <div class="muted" id="toolBusy" style="margin-top:8px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 产物 -->
+    <section class="panel" id="panel-artifacts">
+      <div class="toolbar">
+        <input class="input" id="artifactFilter" placeholder="按插件 / 引擎 / 分组过滤…">
+        <select class="input" id="artifactStatus">
+          <option value="">全部状态</option>
+          <option value="ok">成功</option>
+          <option value="partial">部分成功</option>
+          <option value="failed">失败</option>
+          <option value="running">运行中</option>
+        </select>
+        <button class="btn sm" id="btnExportAll">导出全部 CSV</button>
+        <span class="muted" id="artifactMeta"></span>
+      </div>
+      <div class="table-wrap"><table class="data" id="artifactTable">
+        <thead><tr>
+          <th>引擎</th><th>产物 / 插件</th><th>分组</th><th>状态</th>
+          <th class="num">行数</th><th class="num">耗时</th><th>说明 / 错误</th><th></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </section>
+
+    <!-- 时间线 -->
+    <section class="panel" id="panel-timeline">
+      <div class="toolbar">
+        <input class="input" id="timelineKeyword" placeholder="搜索时间线…">
+        <select class="input" id="timelineCategory"><option value="">全部分类</option></select>
+        <select class="input" id="timelineOrder">
+          <option value="asc">时间正序</option>
+          <option value="desc">时间倒序</option>
+        </select>
+        <span class="muted" id="timelineMeta"></span>
+      </div>
+      <div class="table-wrap"><table class="data" id="timelineTable">
+        <thead><tr><th>时间</th><th>分类</th><th>来源</th><th>事件</th><th>详情</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </section>
+
+    <!-- 发现项 -->
+    <section class="panel" id="panel-findings">
+      <div class="toolbar">
+        <select class="input" id="findingSeverity">
+          <option value="">全部严重度</option>
+          <option value="critical">critical</option>
+          <option value="high">high</option>
+          <option value="medium">medium</option>
+          <option value="low">low</option>
+          <option value="info">info</option>
+        </select>
+        <span class="muted" id="findingMeta"></span>
+      </div>
+      <div class="finding-list" id="findingList"></div>
+    </section>
+
+    <!-- 情报 -->
+    <section class="panel" id="panel-intel">
+      <div class="toolbar">
+        <button class="btn sm active" id="tabIoc">IOC</button>
+        <button class="btn sm" id="tabDict">词典命中</button>
+        <span class="muted" id="intelMeta"></span>
+      </div>
+      <div class="table-wrap"><table class="data" id="iocTable">
+        <thead><tr><th>类型</th><th>值</th><th>严重度</th><th>来源</th><th>上下文</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+      <div class="table-wrap hidden" id="dictTableWrap"><table class="data" id="dictTable">
+        <thead><tr><th>词典</th><th>条目</th><th>分类</th><th>严重度</th><th>命中值</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </section>
+
+    <!-- 旗标 -->
+    <section class="panel" id="panel-flags">
+      <div class="tool-wrap"><div class="table-wrap"><table class="data" id="flagTable">
+        <thead><tr><th>旗标</th><th>类型</th><th>出现次数</th><th>来源</th><th>上下文</th></tr></thead>
+        <tbody></tbody>
+      </table></div></div>
+    </section>
+
+    <!-- 合规（审计链 / 规则包 / 缺口清单） -->
+    <section class="panel" id="panel-compliance">
+      <div class="card">
+        <div class="card-head">
+          <h3>📦 规则包（判定依据的版本）</h3>
+          <span class="muted" id="rpMeta">—</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <input class="input" id="rpPath" placeholder="离线规则包 JSON 的绝对路径">
+            <button class="btn btn-primary sm" id="btnRpImport">📥 导入并激活</button>
+            <button class="btn sm" id="btnRpReload">刷新列表</button>
+          </div>
+          <div id="rpBody"><div class="empty">加载中…</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>🔐 操作留痕与保管链</h3>
+          <span class="muted" id="auditMeta">—</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <label class="check"><input type="checkbox" id="auditCriticalOnly"> 只看四类重点操作</label>
+            <button class="btn sm" id="btnAuditVerify">校验哈希链</button>
+          </div>
+          <div class="table-wrap"><table class="data" id="auditTable">
+            <thead><tr><th>时间(UTC)</th><th>操作人</th><th>动作</th><th>对象</th><th>说明</th><th>哈希</th></tr></thead>
+            <tbody></tbody>
+          </table></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>⚠ 缺口清单（结构化）</h3>
+          <span class="muted" id="gapMeta2">—</span>
+        </div>
+        <div class="card-body">
+          <div class="table-wrap"><table class="data" id="gapTable">
+            <thead><tr><th>范围</th><th>维度/数据源</th><th>缺失原因</th><th>影响</th><th>结论上限</th><th>建议补证</th></tr></thead>
+            <tbody></tbody>
+          </table></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 检索 -->
+    <section class="panel" id="panel-search">
+      <div class="card" id="srCard">
+        <div class="card-head">
+          <h3>🔍 跨产物检索</h3>
+          <span class="muted" id="srMeta">在证据表 / 检测器结论 / 时间线里查</span>
+        </div>
+        <div class="card-body">
+          <div class="toolbar">
+            <input class="input grow" id="srQuery" placeholder='检索式：cmd.exe  key:value  "精确短语"  -排除  /正则/'>
+            <label class="check"><input type="checkbox" id="srAll"> 不限案件</label>
+            <label class="check"><input type="checkbox" id="srRegex"> 正则</label>
+            <select class="input sm" id="srScope">
+              <option value="records,findings,timeline">全部</option>
+              <option value="records">仅证据表</option>
+              <option value="findings">仅检测器结论</option>
+              <option value="timeline">仅时间线</option>
+            </select>
+            <button class="btn btn-primary" id="srRun">检索</button>
+          </div>
+          <div class="muted" style="margin-top:6px">
+            语法：<code>cmd.exe</code> 单词全文匹配　<code>"net user"</code> 精确短语　
+            <code>pid:1234</code> 字段过滤　<code>-flag</code> 排除　<code>/regex/i</code> 正则
+          </div>
+          <details style="margin-top:10px">
+            <summary class="muted" style="cursor:pointer">🔐 在加密容器 / 镜像内部检索（不落盘）</summary>
+            <div class="toolbar" style="margin-top:8px">
+              <input class="input grow" id="srCtPath" placeholder="容器文件路径，例如 E:\cases\平航杯题目">
+              <input class="input" id="srCtPw" placeholder="容器口令" style="width:170px">
+              <button class="btn" id="srCtRun">容器内检索</button>
+            </div>
+            <div class="muted" style="margin-top:5px">
+              直接在加密卷内按内容检索（VeraCrypt 卷 → exFAT → 逐文件扫），不需要先解包落盘。
+            </div>
+          </details>
+          <div id="srResult" style="margin-top:10px">
+            <div class="empty">输入检索式后点「检索」。结果可直接定位到具体证据行。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 用户 -->
+    <section class="panel" id="panel-users">
+      <div class="table-wrap"><table class="data" id="usersTable">
+        <thead><tr><th>用户名</th><th>SID</th><th>用户目录</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </section>
+
+    <!-- 镜像挂载（新增） -->
+    <section class="panel" id="panel-mount">
+      <div class="toolbar">
+        <input type="text" id="mountPath" placeholder="镜像/容器路径（RAW / E01 / VMDK / VeraCrypt）" style="flex:1;min-width:280px">
+        <input type="password" id="mountPw" placeholder="VeraCrypt 口令（可选）" style="width:150px">
+        <button class="btn" id="btnMountOpen">打开</button>
+        <button class="btn sm" id="btnMountHash">哈希</button>
+        <span class="muted" id="mountMeta"></span>
+      </div>
+      <div class="toolbar" id="mountToolbar" style="display:none">
+        <select id="mountVolSel"></select>
+        <button class="btn sm" id="btnMountTree">列文件</button>
+        <button class="btn sm" id="btnMountCarve">雕刻</button>
+        <input type="text" id="mountCarveRules" placeholder="规则（空=全部20条）" style="width:180px">
+        <input type="text" id="mountPathFilter" placeholder="路径过滤" style="width:140px">
+        <button class="btn sm" id="btnMountReg">登记证据</button>
+        <span class="muted" id="mountVolMeta"></span>
+      </div>
+      <div class="toolbar" id="mountSearchBar" style="display:none">
+        <input type="text" id="mountSearchKw" placeholder="跨编码检索关键词（UTF-8/16/GBK/ASCII）" style="flex:1;min-width:240px">
+        <button class="btn sm" id="btnMountSearch">搜索</button>
+        <span class="muted" id="mountSearchMeta"></span>
+      </div>
+      <div class="table-wrap" id="mountSearchWrap" style="display:none;max-height:26vh">
+        <table class="data" id="mountSearchTable">
+          <thead><tr><th>偏移</th><th>编码</th><th>上下文</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="table-wrap" style="max-height:46vh">
+        <table class="data" id="mountTable">
+          <thead><tr><th>路径</th><th>类型</th><th>大小</th><th>标记</th><th></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="table-wrap" id="mountCarveWrap" style="display:none">
+        <table class="data" id="mountCarveTable">
+          <thead><tr><th>规则</th><th>起点</th><th>终点</th><th>大小</th><th>定界</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <pre class="console" id="mountLog" style="height:120px"></pre>
+    </section>
+
+    <!-- 日志 -->
+    <section class="panel" id="panel-log">
+      <div class="toolbar">
+        <label class="check"><input type="checkbox" id="logAutoScroll" checked> 自动滚动</label>
+        <button class="btn sm" id="btnClearLog">清空</button>
+        <span class="muted" id="logMeta"></span>
+      </div>
+      <div class="log" id="logBox"></div>
+    </section>
+
+    <!-- ── 内联控制台（可折叠；时间戳 + 级别着色） ── -->
+    <section class="console collapsed" id="consoleDock">
+      <div class="console-head" id="consoleHead">
+        <span class="console-caret">▼</span>
+        <span class="console-title">控制台输出</span>
+        <span class="console-badge" id="consoleBadge">MemLens</span>
+        <span class="console-spacer"></span>
+        <span class="muted" id="consoleMeta">就绪</span>
+        <button class="btn sm" id="btnConsoleClear">清空</button>
+      </div>
+      <div class="console-body" id="consoleBody"></div>
+    </section>
+  </main>
+</div>
+
+<!-- ══════════════════════ 底部状态栏 ══════════════════════ -->
+<div class="statusbar">
+  <div class="sb-item"><span class="sb-dot idle" id="sbStateDot"></span><span id="sbState">空闲</span></div>
+  <div class="sb-sep"></div>
+  <div class="sb-item">CPU <span class="sb-bar"><i id="sbCpu"></i></span><span id="sbCpuText">—</span></div>
+  <div class="sb-item">内存 <span class="sb-bar"><i id="sbMem"></i></span><span id="sbMemText">—</span></div>
+  <div class="sb-spacer"></div>
+  <div class="sb-item" id="sbPhase">阶段 —</div>
+  <div class="sb-sep"></div>
+  <div class="sb-item" id="sbEngine">引擎 —</div>
+  <div class="sb-sep"></div>
+  <div class="sb-item">MemLens <b id="sbVer">v1.4</b></div>
+</div>
+
+<!-- ══════════════════════ 记录抽屉 ══════════════════════ -->
+<div class="drawer hidden" id="drawer">
+  <div class="drawer-head">
+    <div>
+      <div class="drawer-title" id="drawerTitle">产物记录</div>
+      <div class="muted" id="drawerMeta"></div>
+    </div>
+    <div class="drawer-actions">
+      <input class="input sm" id="drawerSearch" placeholder="在结果中搜索…">
+      <button class="btn sm" id="drawerExport">导出 CSV</button>
+      <button class="btn sm" id="drawerClose">关闭</button>
+    </div>
+  </div>
+  <div class="table-wrap grow"><table class="data" id="recordTable">
+    <thead><tr></tr></thead><tbody></tbody>
+  </table></div>
+  <div class="drawer-foot">
+    <button class="btn sm" id="pagePrev">上一页</button>
+    <span class="muted" id="pageInfo">—</span>
+    <button class="btn sm" id="pageNext">下一页</button>
+  </div>
+</div>
+
+<!-- ══════════════════════ 本机浏览器历史（按需采集） ══════════════════════ -->
+<div class="modal hidden" id="bhModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3>🌐 本机浏览器历史</h3>
+      <button class="btn sm" id="bhClose">关闭</button>
+    </div>
+    <div class="modal-path">
+      <select class="input" id="bhBrowser">
+        <option value="all">全部浏览器</option>
+        <option value="edge">Edge</option>
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Firefox</option>
+        <option value="brave">Brave</option>
+      </select>
+      <input class="input grow" id="bhKeyword" placeholder="关键字过滤（URL / 标题，可空）">
+      <input class="input" id="bhSince" placeholder="起始 YYYY-MM-DD" size="12">
+      <button class="btn btn-primary" id="bhRun">采集</button>
+    </div>
+    <div class="fs-list" id="bhBody">
+      <div class="empty">点「采集」后才会读取本机浏览器历史库（只读副本，不联网、不上传）。</div>
+    </div>
+    <div class="modal-foot">
+      <span class="muted" id="bhMeta">—</span>
+      <a class="btn" id="bhDownload" href="/api/browser-history.csv">下载全量 CSV</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ 文件浏览器 ══════════════════════ -->
+<div class="modal hidden" id="fsModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3>打开证据文件</h3>
+      <button class="btn sm" id="fsClose">关闭</button>
+    </div>
+    <div class="modal-path">
+      <input class="input grow" id="fsPath" placeholder="输入绝对路径，例如 E:\cases\mem.raw">
+      <button class="btn" id="fsGo">前往</button>
+    </div>
+    <div class="fs-drives" id="fsDrives"></div>
+    <div class="fs-list" id="fsList"></div>
+    <div class="modal-foot">
+      <input class="input grow" id="fsPick" placeholder="选中文件的完整路径">
+      <button class="btn btn-primary" id="fsPickBtn">打开</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ 文件详情（未知/失败产物可点进来查） ══════════════════════ -->
+<div class="filemodal hidden" id="fileModal">
+  <div class="filemodal-box">
+    <div class="fm-head">
+      <h3 id="fmTitle">文件详情</h3>
+      <button class="btn sm" id="fmClose">关闭</button>
+    </div>
+    <div class="fm-body" id="fmBody"></div>
+    <div class="fm-foot">
+      <button class="btn sm" id="fmRunStatic">🔍 用 static 引擎再分析一次</button>
+      <button class="btn sm" id="fmCopyPath">复制文件路径</button>
+      <button class="btn sm" id="fmExportRaw">导出原始输出</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ 载入向导（三步） ══════════════════════ -->
+<div class="wizard hidden" id="wizard">
+  <div class="wizard-box">
+    <div class="wz-head">
+      <div class="wz-head-main">
+        <span class="wz-kicker" id="wzKicker">MemLens</span>
+        <div class="wz-title" id="wzTitle">准备载入证据</div>
+        <div class="wz-sub" id="wzSub">正在准备…</div>
+      </div>
+      <button class="wz-close" id="wzClose" title="关闭">×</button>
+    </div>
+
+    <div class="stepper" id="wzStepper">
+      <div class="step active" data-step="1"><span class="step-dot">1</span><span class="step-label">选择镜像</span></div>
+      <div class="step-line" data-line="1"><i></i></div>
+      <div class="step" data-step="2"><span class="step-dot">2</span><span class="step-label">选择兼容引擎</span></div>
+      <div class="step-line" data-line="2"><i></i></div>
+      <div class="step" data-step="3"><span class="step-dot">3</span><span class="step-label">生成基础证据</span></div>
+    </div>
+
+    <div class="wz-body" id="wzBody"></div>
+    <div class="wz-foot" id="wzFoot"></div>
+  </div>
+</div>
+
+<div class="toast hidden" id="toast"></div>
+
+<script src="/static/app.js"></script>
+<script src="/static/app_v2.js"></script>
+<script src="/static/nav.js"></script>
+</body>
+</html>

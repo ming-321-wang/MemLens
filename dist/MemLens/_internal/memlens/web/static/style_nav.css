@@ -1,0 +1,123 @@
+
+/* ═══════════════════════════════════════════════════════════════════════
+   v3 导航栏（对标 LovelyMem V3 的分组导航）
+     · 搜索框 + `/` 快捷键
+     · 可折叠分组（组图标 + 名称 + 子项数 + 角标）
+     · 子项点击 → 切页签 / 开产物 / 触发工具
+   顶部页签保留在 DOM 里（showTab 逻辑依赖），仅视觉隐藏。
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* 隐藏原页签（逻辑仍在，showTab 照常读写） */
+.tabs-hidden{display:none}
+
+.navrail{
+  width:206px;flex:none;display:flex;flex-direction:column;min-height:0;
+  background:linear-gradient(180deg,#101825,#0c121c);
+  border-right:1px solid var(--line);
+}
+
+/* ── 顶部搜索 ── */
+.nav-search{
+  display:flex;align-items:center;gap:7px;margin:10px 10px 8px;padding:0 9px;
+  height:32px;border-radius:var(--radius-sm);
+  background:var(--bg-2);border:1px solid var(--line-2);
+  transition:border-color .15s, box-shadow .15s;
+}
+.nav-search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+.ns-icon{font-size:11px;opacity:.65;flex:none}
+.ns-input{
+  flex:1;min-width:0;background:none;border:none;outline:none;color:var(--fg);
+  font:12px var(--sans);
+}
+.ns-input::placeholder{color:var(--fg-3)}
+.ns-kbd{
+  flex:none;font-family:var(--mono);font-size:10px;color:var(--fg-3);
+  border:1px solid var(--line-2);border-radius:4px;padding:0 4px;line-height:15px;
+}
+
+/* ── 分组树 ── */
+.nav-tree{flex:1;overflow:auto;padding:0 8px 8px}
+.nav-tree::-webkit-scrollbar{width:7px}
+
+.ngroup{margin-bottom:2px}
+.ngroup-head{
+  display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:var(--radius-sm);
+  cursor:pointer;user-select:none;color:var(--fg-1);transition:.13s;
+}
+.ngroup-head:hover{background:var(--bg-2);color:var(--fg)}
+.ngroup.open > .ngroup-head{color:var(--fg)}
+.ng-icon{
+  width:17px;flex:none;text-align:center;font-size:12.5px;opacity:.9;
+  font-family:var(--mono);
+}
+.ng-name{flex:1;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ng-badge{
+  flex:none;font-size:9.5px;font-family:var(--mono);padding:1px 6px;
+  border-radius:var(--radius-pill);background:var(--bg-3);color:var(--fg-2);
+}
+.ng-badge.hot{background:#3a1f24;color:#ff9c9c}
+.ng-badge.warn{background:#33290f;color:#e9d9a6}
+.ng-caret{
+  flex:none;font-size:8px;color:var(--fg-3);transition:transform .18s;
+}
+.ngroup.open .ng-caret{transform:rotate(90deg)}
+
+.nav-kids{display:none;padding:2px 0 4px 12px}
+.ngroup.open .nav-kids{display:block}
+.nleaf{
+  display:flex;align-items:center;gap:8px;padding:5px 9px;margin:1px 0;
+  border-radius:var(--radius-xs);cursor:pointer;font-size:12px;color:var(--fg-2);
+  transition:.12s;
+}
+.nleaf:hover{background:var(--bg-2);color:var(--fg)}
+.nleaf.active{
+  background:#12283f;color:var(--accent);font-weight:600;
+  box-shadow:inset 0 0 0 1px rgba(77,163,255,.35);
+}
+.nl-dot{
+  width:4px;height:4px;border-radius:50%;background:var(--fg-3);flex:none;
+}
+.nleaf.active .nl-dot{background:var(--accent);box-shadow:0 0 6px var(--accent)}
+.nleaf-label{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nl-badge{
+  font-size:9.5px;font-family:var(--mono);padding:0 5px;border-radius:var(--radius-pill);
+  background:var(--bg-3);color:var(--fg-2);flex:none;
+}
+.nl-badge.hot{background:#3a1f24;color:#ff9c9c}
+
+/* 搜索过滤：命中的组自动展开，未命中的整组隐藏 */
+.nav-tree.filtered .ngroup{display:none}
+.nav-tree.filtered .ngroup.hit{display:block}
+.nav-tree.filtered .ngroup.hit .nav-kids{display:block}
+
+.nav-empty{color:var(--fg-3);font-size:11.5px;text-align:center;padding:18px 8px}
+.nav-foot{
+  flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:8px 11px;border-top:1px solid var(--line);font-size:11px;
+}
+.btn-sm{padding:3px 9px;font-size:11px;border-radius:var(--radius-xs)}
+
+/* ── 面包屑 ── */
+.crumbbar{
+  flex:none;display:flex;align-items:center;gap:8px;padding:9px 16px 0;
+  font-size:11.5px;color:var(--fg-2);
+}
+.cb-root{font-weight:600;color:var(--fg-1);letter-spacing:.3px}
+.cb-sep{color:var(--fg-3)}
+.cb-group{color:var(--fg-1)}
+.cb-item{color:var(--accent);font-weight:600}
+
+/* 窄屏：导航栏收成图标条 */
+@media(max-width:1280px){
+  .navrail{width:52px}
+  .ns-input,.ns-kbd,.ng-name,.ng-caret,.ng-badge,.nav-foot{display:none}
+  .nav-search{justify-content:center;padding:0}
+  .ngroup-head{justify-content:center;padding:9px 0}
+  .nav-kids{display:none !important}
+  .ngroup.open .nav-kids{
+    display:block !important;position:absolute;left:52px;z-index:50;
+    background:var(--bg-1);border:1px solid var(--line-2);border-radius:var(--radius-sm);
+    box-shadow:var(--shadow-2);padding:5px;min-width:170px;
+  }
+  .nav-tree{position:relative}
+}

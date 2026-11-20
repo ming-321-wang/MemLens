@@ -1,0 +1,313 @@
+
+/* ═══════════════════════════════════════════════════════════════════════
+   v2 组件层
+   参考同类取证工作台（StarMem 等）的交互语言，改造点：
+     · 卡片浮层化（阴影 + 半透明 + hover 抬升）
+     · 底部状态栏（CPU / 内存 / 版本 / 后端）
+     · 内联控制台面板（时间戳 + 级别着色，可折叠）
+     · 三步向导（选择镜像 → 选择引擎 → 生成基础证据）
+     · 兼容性 / 降级分析入口（引擎失败时给可执行的下一步，不是甩报错）
+     · 分析分组导航（多类分析一眼可见）
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ───────────── 布局：为状态栏让出空间 ───────────── */
+.shell{height:calc(100vh - 52px - 28px)}
+
+/* ───────────── 卡片：浮层化 ───────────── */
+.card{
+  background:var(--panel-flat);backdrop-filter:blur(6px);
+  box-shadow:var(--shadow-1);
+  transition:border-color .16s, box-shadow .16s;
+}
+.card:hover{border-color:var(--line-2);box-shadow:var(--shadow-2)}
+.card-head{background:linear-gradient(180deg,rgba(38,49,63,.58),rgba(23,31,45,.26));padding:10px 14px}
+.card-head h3{letter-spacing:.2px}
+
+/* ───────────── 控件 ───────────── */
+.btn{border-radius:var(--radius-sm)}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn-lg{padding:9px 18px;font-size:13px}
+.btn-ghost{background:transparent;border-color:var(--line-2);color:var(--fg-1)}
+.btn-ghost:hover:not(:disabled){background:var(--bg-3);color:var(--fg)}
+.tab{border-radius:var(--radius-sm) var(--radius-sm) 0 0}
+.input{background:var(--bg-2);border:1px solid var(--line-2);border-radius:var(--radius-sm);
+  color:var(--fg);padding:6px 10px;font-size:12px;font-family:inherit}
+.input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+
+/* ───────────── 底部状态栏 ───────────── */
+.statusbar{
+  height:28px;flex:none;display:flex;align-items:center;gap:18px;padding:0 15px;
+  background:linear-gradient(180deg,rgba(16,23,34,.96),rgba(9,13,19,.99));
+  border-top:1px solid var(--line);font-size:11px;color:var(--fg-2);
+  font-family:var(--mono);position:relative;z-index:20;
+}
+.sb-item{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.sb-spacer{flex:1}
+.sb-dot{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 6px var(--ok)}
+.sb-dot.bad{background:var(--err);box-shadow:0 0 6px var(--err)}
+.sb-dot.idle{background:var(--fg-3);box-shadow:none}
+.sb-bar{width:54px;height:5px;border-radius:3px;background:var(--bg-3);overflow:hidden}
+.sb-bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .5s}
+.sb-bar i.warn{background:var(--warn)}
+.sb-bar i.err{background:var(--err)}
+.sb-sep{width:1px;height:13px;background:var(--line-2)}
+
+/* ───────────── 内联控制台 ───────────── */
+.console{
+  flex:none;display:flex;flex-direction:column;background:rgba(7,11,16,.94);
+  border-top:1px solid var(--line);max-height:260px;
+  transition:max-height .22s ease;
+}
+.console.collapsed{max-height:31px}
+.console-head{
+  height:31px;flex:none;display:flex;align-items:center;gap:9px;padding:0 12px;
+  background:linear-gradient(180deg,rgba(38,49,63,.5),rgba(23,31,45,.28));
+  cursor:pointer;user-select:none;
+}
+.console-head:hover{background:linear-gradient(180deg,rgba(45,58,74,.6),rgba(26,35,50,.34))}
+.console-caret{font-size:9px;color:var(--fg-2);transition:transform .2s;display:inline-block}
+.console.collapsed .console-caret{transform:rotate(-90deg)}
+.console-title{font-size:11.5px;font-weight:600;color:var(--fg-1)}
+.console-badge{
+  font-size:10px;padding:1px 8px;border-radius:var(--radius-pill);
+  background:var(--bg-3);color:var(--fg-2);font-family:var(--mono);
+}
+.console-badge.live{background:#12291d;color:#8fe0b0}
+.console-spacer{flex:1}
+.console-body{
+  flex:1;overflow:auto;padding:7px 12px 10px;
+  font-family:var(--mono);font-size:11.5px;line-height:1.62;
+}
+.console.collapsed .console-body{display:none}
+.c-line{display:flex;gap:9px;word-break:break-word}
+.c-time{color:var(--fg-3);flex:none}
+.c-line.l-ok{color:#8fe0b0}
+.c-line.l-err{color:#ff9c9c}
+.c-line.l-warn{color:#e8c76a}
+.c-line.l-step{color:var(--accent)}
+.c-line.l-info{color:var(--fg-1)}
+
+/* ───────────── 向导弹层 ───────────── */
+.wizard{
+  position:fixed;inset:0;z-index:70;display:grid;place-items:center;
+  background:rgba(4,8,14,.80);backdrop-filter:blur(7px);
+}
+/* ★ 文件浏览/选择模态框必须高于向导弹层（wizard z-index:70），
+      否则「打开证据文件」被「选择证据文件」向导挡住（用户实测踩到）。 */
+#fsModal,#fileModal{z-index:80;}
+.wizard-box{
+  width:min(700px,94vw);max-height:92vh;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,#161f2c,#111825);
+  border:1px solid var(--line-2);border-radius:16px;
+  box-shadow:var(--shadow-3);overflow:hidden;
+}
+.wz-head{padding:18px 22px 0;display:flex;align-items:flex-start;gap:12px}
+.wz-head-main{flex:1;min-width:0}
+.wz-kicker{
+  display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.6px;
+  padding:2px 9px;border-radius:var(--radius-pill);
+  background:var(--bg-3);color:var(--fg-1);
+}
+.wz-title{font-size:19px;font-weight:700;letter-spacing:.3px;margin:11px 0 6px}
+.wz-sub{font-size:12.5px;color:var(--fg-1);line-height:1.65}
+.wz-close{
+  background:none;border:none;color:var(--fg-2);cursor:pointer;
+  font-size:20px;line-height:1;padding:0 3px;flex:none;
+}
+.wz-close:hover{color:var(--err)}
+.wz-body{padding:16px 22px 6px;overflow:auto;flex:1}
+.wz-foot{
+  padding:15px 22px 19px;display:flex;gap:9px;justify-content:center;
+  border-top:1px solid var(--line);background:rgba(8,12,18,.42);
+}
+
+/* 三步步进器 */
+.stepper{display:flex;align-items:center;padding:4px 22px 14px}
+.step{display:flex;align-items:center;gap:8px;flex:none}
+.step-dot{
+  width:22px;height:22px;border-radius:50%;display:grid;place-items:center;
+  font-size:11px;font-weight:700;border:2px solid var(--line-2);
+  color:var(--fg-2);background:var(--bg-2);transition:.26s;
+}
+.step.done .step-dot{background:var(--ok);border-color:var(--ok);color:#06170e}
+.step.active .step-dot{
+  background:var(--accent);border-color:var(--accent);color:#04121f;
+  box-shadow:0 0 0 4px var(--accent-glow);
+}
+.step-label{font-size:12.5px;color:var(--fg-2);white-space:nowrap;transition:.2s}
+.step.done .step-label{color:var(--fg-1)}
+.step.active .step-label{color:var(--accent);font-weight:600}
+.step-line{flex:1;height:2px;background:var(--line-2);margin:0 11px;border-radius:2px;overflow:hidden}
+.step-line i{display:block;height:100%;width:0;background:var(--ok);transition:width .4s}
+.step-line.done i{width:100%}
+
+/* 文件卡 */
+.wz-file{
+  display:flex;align-items:center;gap:13px;padding:13px 15px;margin:6px 0 14px;
+  border:1px solid var(--line-2);border-radius:12px;background:var(--bg-2);
+}
+.wz-badge{
+  width:46px;height:46px;flex:none;border-radius:11px;display:grid;place-items:center;
+  font-size:10px;font-weight:700;letter-spacing:.5px;
+  background:linear-gradient(135deg,#1d6fd1,#4da3ff);color:#04121f;
+}
+.wz-badge.enc{background:linear-gradient(135deg,#7a5716,#e8b339);color:#1a1206}
+.wz-badge.raw{background:linear-gradient(135deg,#1d6fd1,#4da3ff);color:#04121f}
+.wz-file-main{flex:1;min-width:0}
+.wz-file-name{font-size:13.5px;font-weight:600;margin-bottom:4px}
+.wz-file-path{font-size:11px;color:var(--fg-2);font-family:var(--mono);word-break:break-all}
+.wz-file-meta{font-size:10.5px;color:var(--fg-3);font-family:var(--mono);margin-top:4px}
+
+/* 进度 */
+.wz-bar{height:6px;border-radius:4px;background:var(--bg-3);overflow:hidden;margin:4px 0 0}
+.wz-bar i{
+  display:block;height:100%;width:0;border-radius:4px;
+  background:linear-gradient(90deg,var(--accent),var(--purple));
+  box-shadow:0 0 12px var(--accent-glow);transition:width .45s;
+}
+.wz-elapsed{text-align:center;font-size:12.5px;color:var(--fg-1);margin:15px 0 9px;font-family:var(--mono)}
+.wz-note{text-align:center;font-size:11.5px;color:var(--fg-2);line-height:1.75;margin-bottom:15px}
+.wz-stage{
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:11.5px;color:var(--fg-1);margin-top:11px;
+}
+.wz-stage em{font-style:normal;color:var(--accent);font-family:var(--mono)}
+
+/* 引擎选择 */
+.wz-engines{display:flex;flex-direction:column;gap:9px;margin:6px 0 12px}
+.eng{
+  display:flex;align-items:center;gap:12px;padding:12px 14px;
+  border:1px solid var(--line);border-radius:11px;background:var(--bg-2);
+  cursor:pointer;transition:.15s;
+}
+.eng:hover{border-color:var(--line-3);background:var(--bg-3)}
+.eng.sel{border-color:var(--accent);background:#12283f;box-shadow:inset 0 0 0 1px var(--accent)}
+.eng-radio{
+  width:16px;height:16px;border-radius:50%;border:2px solid var(--line-3);flex:none;
+  transition:.15s;
+}
+.eng.sel .eng-radio{border-color:var(--accent);background:radial-gradient(circle,var(--accent) 0 4.5px,transparent 5.5px)}
+.eng-main{flex:1;min-width:0}
+.eng-name{font-size:13px;font-weight:600}
+.eng-desc{font-size:11px;color:var(--fg-2);margin-top:3px;line-height:1.55}
+.eng-tag{
+  font-size:10px;padding:2px 8px;border-radius:var(--radius-pill);
+  background:var(--bg-3);color:var(--fg-1);flex:none;white-space:nowrap;
+}
+.eng-tag.ok{background:#12291d;color:#8fe0b0}
+.eng-tag.bad{background:#2c1619;color:#ff9c9c}
+.eng-tag.warn{background:#33290f;color:#e9d9a6}
+
+/* ───────────── 兼容性 / 降级分析 ───────────── */
+.degrade{
+  background:var(--err-bg);border:1px solid var(--err-line);
+  border-radius:12px;padding:14px 16px;margin:12px 0;
+}
+.degrade h4{
+  margin:0 0 8px;font-size:13.5px;color:#ffb3b3;
+  display:flex;align-items:center;gap:8px;
+}
+.degrade p{margin:0 0 6px;font-size:12px;color:#e8c8c8;line-height:1.7}
+.degrade pre{
+  margin:10px 0 0;font-family:var(--mono);font-size:10.5px;line-height:1.62;
+  color:#e0bdbd;background:rgba(0,0,0,.34);border:1px solid var(--err-line);
+  border-radius:8px;padding:9px 11px;max-height:180px;overflow:auto;
+  white-space:pre-wrap;word-break:break-word;
+}
+.degrade.warn{background:var(--degrade-bg);border-color:var(--degrade-line)}
+.degrade.warn h4{color:var(--degrade-fg)}
+.degrade.warn p{color:#e0d3a8}
+.degrade.warn pre{color:#e9d9a6;border-color:var(--degrade-line)}
+.degrade.ok{background:var(--ok-bg);border-color:var(--ok-line)}
+.degrade.ok h4{color:#8fe0b0}
+.degrade.ok p{color:#b8e0c8}
+.degrade-actions{display:flex;gap:9px;margin-top:13px;flex-wrap:wrap}
+
+/* ───────────── 分析分组导航（多类分析） ───────────── */
+.anav{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:10px;margin-bottom:14px}
+.agroup{
+  padding:12px 14px;border:1px solid var(--line);border-radius:11px;
+  background:var(--bg-2);cursor:pointer;transition:.16s;
+}
+.agroup:hover{border-color:var(--line-3);transform:translateY(-1px);box-shadow:var(--shadow-2)}
+.agroup.active{border-color:var(--accent);background:#12283f;box-shadow:inset 0 0 0 1px var(--accent)}
+.ag-icon{font-size:18px;line-height:1;margin-bottom:6px}
+.ag-name{font-size:12.5px;font-weight:600}
+.ag-desc{font-size:10.5px;color:var(--fg-2);margin-top:4px;line-height:1.55}
+.ag-foot{display:flex;justify-content:space-between;align-items:center;margin-top:7px}
+.ag-count{font-size:10px;color:var(--fg-3);font-family:var(--mono)}
+.ag-state{font-size:9.5px;padding:1px 7px;border-radius:var(--radius-pill);background:var(--bg-3);color:var(--fg-2)}
+.ag-state.ok{background:#12291d;color:#8fe0b0}
+.ag-state.bad{background:#2c1619;color:#ff9c9c}
+.ag-state.warn{background:#33290f;color:#e9d9a6}
+.asec{display:none}
+.asec.active{display:block}
+
+
+/* ───────────── 收尾打磨（v2.1） ───────────── */
+
+/* 侧栏略加宽：案件「完整分析信息」里的长路径不再被挤成竖排单字 */
+.sidebar{width:262px}
+.case-list{max-height:230px}
+
+/* 案件详情表：标签列定宽、值列吃满剩余宽度并按任意字符断行 */
+.case-detail table.data{table-layout:fixed;width:100%}
+.case-detail table.data th,
+.case-detail table.data td{padding:4px 7px;font-size:10.5px;vertical-align:top}
+.case-detail table.data td:first-child{
+  width:52px;color:var(--fg-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.case-detail table.data td:last-child{
+  word-break:break-all;font-family:var(--mono);line-height:1.5;color:var(--fg-1);
+}
+
+/* 控制台展开高度收敛一些，别把主区挤没 */
+.console{max-height:200px}
+
+/* 长路径通用截断（带 title 提示） */
+.clip{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+
+/* KPI 卡片 hover 微抬，跟卡片语言统一 */
+.kpi{transition:border-color .16s,box-shadow .16s,transform .16s}
+.kpi:hover{border-color:var(--line-2);box-shadow:var(--shadow-1);transform:translateY(-1px)}
+
+/* 页签滚动条：页签多时横向滚动不出现突兀的条 */
+.tabs{scrollbar-width:none}
+.tabs::-webkit-scrollbar{height:0}
+
+/* 顶栏按钮组在窄屏下换行而不溢出 */
+.topbar-actions{flex-wrap:nowrap}
+
+/* 空状态更克制 */
+.empty{font-style:normal}
+
+
+/* ───────────── 案件「完整分析信息」改为浮层面板 ─────────────
+   原来挤在 262px 侧栏里，90 字符的镜像路径被折断成竖排单字，没法读。
+   改成固定宽度浮层：脱离侧栏宽度约束，路径按 2 行内可读。 */
+.case-detail{
+  /* ★ left 必须让开左侧导航栏（206px），否则浮层会把导航整个盖住（实测踩过）。
+     导航栏在窄屏（<1280px）会收成 52px，这里用 CSS 变量跟随。 */
+  position:fixed; left:calc(var(--nav-w, 206px) + 12px); top:64px; width:452px; z-index:45;
+  margin:0; max-height:72vh; overflow:auto;
+  background:linear-gradient(180deg,#141d2a,#101722);
+  border:1px solid var(--line-2); border-radius:var(--radius);
+  box-shadow:var(--shadow-3); padding:13px 15px;
+}
+.case-detail .cd-title{font-size:12px;letter-spacing:.3px}
+.case-detail table.data{table-layout:fixed;width:100%}
+.case-detail table.data td:first-child{width:62px}
+.case-detail table.data td:last-child{word-break:break-all;font-size:11px}
+/* 浮层出现时给侧栏一个暗化提示，点别处即可收起 */
+.case-detail::before{
+  content:""; position:fixed; inset:52px 0 28px 0; background:rgba(4,8,14,.42);
+  z-index:-1; backdrop-filter:blur(1px);
+  /* ★ 必须吃掉指针事件：这层遮罩铺满整个视口，
+     否则会把左侧导航栏和顶栏的点击全部拦下（实测踩过）。 */
+  pointer-events:none;
+}
+
+
+/* 导航栏宽度暴露成变量，供浮层等元素定位时避让 */
+.navrail{width:var(--nav-w, 206px)}
+@media(max-width:1280px){ :root{--nav-w:52px} }
