@@ -1,0 +1,336 @@
+PID,Ordinal,ServiceName,DisplayName,User,StartType,State,Type1,Type2,ObjectAddress,ImagePath,DriverpathOrCmdline
+0,1,1394ohci,"1394 OHCI Compliant Host Controller","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb12f0,"",""
+0,2,ACPI,"Microsoft ACPI Driver","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdb13e0,"",\Driver\ACPI
+0,3,AcpiPmi,"ACPI Power Meter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb14d0,"",""
+0,4,adp94xx,adp94xx,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb15c0,"",""
+0,5,adpahci,adpahci,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb16b0,"",""
+0,6,adpu320,adpu320,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb17a0,"",""
+0,7,AeLookupSvc,"Application Experience","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdb1890,"",""
+0,8,AFD,"Ancillary Function Driver for Winsock","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdb1980,"",\Driver\AFD
+0,9,agp440,"Intel AGP Bus Filter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb1a60,"",""
+0,10,ALG,"Application Layer Gateway Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdb1b50,"",""
+0,11,aliide,aliide,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb1c30,"",""
+0,12,amdide,amdide,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb1d20,"",""
+0,13,AmdK8,"AMD K8 Processor Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb1e10,"",""
+0,14,AmdPPM,"AMD Processor Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb1f00,"",""
+0,15,amdsata,amdsata,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb1ff0,"",""
+0,16,amdsbs,amdsbs,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb20e0,"",""
+0,17,amdxata,amdxata,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdb21d0,"",\Driver\amdxata
+0,18,AppID,"AppID 驱动程序","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdb22c0,"",""
+0,19,AppIDSvc,"Application Identity","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdb23b0,"",""
+780,20,Appinfo,"Application Information",SYSTEM,SERVICE_DEMAND_START,SERVICE_RUNNING,Process,SHR,0xdc21b0,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,21,AppMgmt,"Application Management","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc22d0,"",""
+0,22,arc,arc,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc46a0,"",""
+0,23,arcsas,arcsas,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc23c0,"",""
+0,24,AsyncMac,"RAS 异步媒体驱动程序","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc24b0,"",""
+0,25,atapi,"IDE 通道","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc25a0,"",\Driver\atapi
+0,26,AudioEndpointBuilder,"Windows Audio Endpoint Builder","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc4780,"",""
+0,27,AudioSrv,"Windows Audio","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc2690,"",""
+0,28,b06bdrv,"Broadcom NetXtreme II VBD","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc2780,"",""
+0,29,b57nd60a,"Broadcom NetXtreme Gigabit Ethernet - NDIS 6.0","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc2870,"",""
+0,30,Beep,Beep,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc2960,"",""
+232,31,BFE,"Base Filtering Engine","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc4890,"","C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork"
+0,32,BITS,"Background Intelligent Transfer Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc2a50,"",""
+0,33,blbdrive,blbdrive,"",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc2b40,"",\Driver\blbdrive
+0,34,bowser,"","",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdc2c30,"",\FileSystem\bowser
+0,35,BrFiltLo,"Brother USB Mass-Storage Lower Filter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc2d20,"",""
+0,36,BrFiltUp,"Brother USB Mass-Storage Upper Filter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc2e10,"",""
+0,37,Browser,"Computer Browser","",SERVICE_DISABLED,SERVICE_STOPPED,Process,SHR,0xdc2f00,"",""
+0,38,Brserid,"Brother MFC Serial Port Interface Driver (WDM)","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc2ff0,"",""
+0,39,BrSerWdm,"Brother WDM Serial driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc30e0,"",""
+0,40,BrUsbMdm,"Brother MFC USB Fax Only Modem","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc31d0,"",""
+0,41,BrUsbSer,"Brother MFC USB Serial WDM Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc32c0,"",""
+0,42,cdfs,"CD/DVD File System Reader","",SERVICE_DISABLED,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdc33b0,"",""
+0,43,cdrom,"CD-ROM Driver","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc34a0,"",\Driver\cdrom
+0,44,CertPropSvc,"Certificate Propagation","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc3590,"",""
+0,45,CLFS,"","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc3680,"",\Driver\CLFS
+0,46,clr_optimization_v2.0.50727_32,"Microsoft .NET Framework NGEN v2.0.50727_X86","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdc4970,"",""
+0,47,clr_optimization_v2.0.50727_64,"Microsoft .NET Framework NGEN v2.0.50727_X64","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdc4a90,"",""
+0,48,CmBatt,"Microsoft AC Adapter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc3770,"",""
+0,49,cmdide,cmdide,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc3860,"",""
+0,50,CNG,CNG,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc4bb0,"",\Driver\CNG
+0,51,Compbatt,"Microsoft Composite Battery 驱动程序","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc3950,"",\Driver\Compbatt
+0,52,CompositeBus,"","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc4c90,"",""
+0,53,COMSysApp,"COM+ System Application","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdc3a40,"",""
+0,54,crcdisk,"Crcdisk Filter Driver","",SERVICE_DISABLED,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc3b30,"",""
+944,55,CryptSvc,"Cryptographic Services","NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc3c20,"","C:\Windows\system32\svchost.exe -k NetworkService"
+568,56,DcomLaunch,"DCOM Server Process Launcher",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc3d10,"","C:\Windows\system32\svchost.exe -k DcomLaunch"
+0,57,defragsvc,"Disk Defragmenter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdc3e00,"",""
+0,58,DfsC,"DFS Namespace Client Driver","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdc3ef0,"",\FileSystem\DfsC
+684,59,Dhcp,"DHCP Client","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc3fe0,"","C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted"
+0,60,discache,"System Attribute Cache","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc40d0,"",\Driver\discache
+0,61,Disk,"","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc4dc0,"",\Driver\Disk
+0,62,dmvsc,dmvsc,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc4eb0,"",""
+944,63,Dnscache,"DNS Client","NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc4fa0,"","C:\Windows\system32\svchost.exe -k NetworkService"
+0,64,dot3svc,"Wired AutoConfig","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc5090,"",""
+232,65,DPS,"Diagnostic Policy Service","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc6d90,"","C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork"
+0,66,drmkaud,"Microsoft Trusted Audio Drivers","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc5180,"",""
+0,67,DXGKrnl,"LDDM Graphics Subsystem","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc5270,"",""
+0,68,E1G60,"Intel(R) PRO/1000 NDIS 6 Adapter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc5360,"",""
+0,69,EapHost,"Extensible Authentication Protocol","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc5450,"",""
+0,70,ebdrv,"Broadcom NetXtreme II 10 GigE VBD","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc5540,"",""
+0,71,EFS,"Encrypting File System (EFS)","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc6e70,"",""
+0,72,elxstor,elxstor,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc5630,"",""
+0,73,ErrDev,"Microsoft Hardware Error Device Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc5720,"",""
+684,74,eventlog,"Windows Event Log","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc5810,"","C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted"
+864,75,EventSystem,"COM+ Event System","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc5900,"","C:\Windows\system32\svchost.exe -k LocalService"
+0,76,exfat,"exFAT File System Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdc59f0,"",""
+0,77,fastfat,"FAT12/16/32 File System Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdc5ae0,"",""
+0,78,FCRegSvc,"Microsoft Fibre Channel Platform Registration Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc5bd0,"",""
+0,79,fdc,"Floppy Disk Controller Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc6f50,"",""
+0,80,fdPHost,"Function Discovery Provider Host","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc5cc0,"",""
+0,81,FDResPub,"Function Discovery Resource Publication","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc5db0,"",""
+0,82,FileInfo,"File Information FS MiniFilter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdc5ea0,"",""
+0,83,Filetrace,Filetrace,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdc5f90,"",""
+0,84,flpydisk,"Floppy Disk Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc6080,"",""
+0,85,FltMgr,FltMgr,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdc6170,"",\FileSystem\FltMgr
+1404,86,FontCache,"Windows Font Cache Service","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc6260,"","C:\Windows\system32\svchost.exe -k LocalServiceAndNoImpersonation"
+0,87,FsDepends,"File System Dependency Minifilter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdc6350,"",""
+0,88,gagp30kx,"Microsoft Generic AGPv3.0 Filter for K8 Processor Platforms","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc6440,"",""
+780,89,gpsvc,"Group Policy Client",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc6530,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,90,HdAudAddService,"","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7030,"",""
+0,91,HDAudBus,"","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc6620,"",""
+0,92,HidBatt,"HID UPS Battery Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc6710,"",""
+0,93,hidserv,"Human Interface Device Access","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc6800,"",""
+0,94,HidUsb,"Microsoft HID Class Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc68f0,"",""
+0,95,hkmsvc,"Health Key and Certificate Management","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc69e0,"",""
+0,96,HpSAMD,HpSAMD,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc6ad0,"",""
+0,97,HTTP,HTTP,"",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc6bc0,"",\Driver\HTTP
+0,98,hwpolicy,"Hardware Policy Driver","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc7160,"",\Driver\hwpolicy
+0,99,i8042prt,"i8042 键盘和 PS/2 鼠标端口驱动程序","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7250,"",""
+0,100,iaStorV,iaStorV,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7340,"",""
+0,101,iirsp,iirsp,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7430,"",""
+780,102,IKEEXT,"IKE and AuthIP IPsec Keying Modules",SYSTEM,SERVICE_DEMAND_START,SERVICE_RUNNING,Process,SHR,0xdc7520,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,103,intelide,intelide,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc7610,"",\Driver\intelide
+0,104,intelppm,"Intel Processor Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7700,"",""
+0,105,ioatdma,"Intel(R) QuickData Technology Device","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc77f0,"",""
+0,106,IPBusEnum,"PnP-X IP Bus Enumerator","",SERVICE_DISABLED,SERVICE_STOPPED,Process,SHR,0xdc78e0,"",""
+0,107,IpFilterDriver,"IP 流量筛选器驱动程序","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc9130,"",""
+780,108,iphlpsvc,"IP Helper",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc79d0,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,109,IPMIDRV,IPMIDRV,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7ac0,"",""
+0,110,IPNAT,"IP Network Address Translator","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7bb0,"",""
+0,111,isapnp,isapnp,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7ca0,"",""
+0,112,iScsiPrt,"iScsiPort Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7d90,"",""
+0,113,kbdclass,"Keyboard Class Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7e80,"",""
+0,114,kbdhid,"Keyboard HID Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc7f70,"",""
+0,115,KeyIso,"CNG Key Isolation","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc8060,"",""
+0,116,KSecDD,KSecDD,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc8150,"",\Driver\KSecDD
+0,117,KSecPkg,KSecPkg,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc8240,"",\Driver\KSecPkg
+0,118,ksthunk,"Kernel Streaming Thunks","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc8330,"",""
+0,119,KtmRm,"KtmRm for Distributed Transaction Coordinator","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc8420,"",""
+780,120,LanmanServer,Server,SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc9230,"","C:\Windows\system32\svchost.exe -k netsvcs"
+944,121,LanmanWorkstation,Workstation,"NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc9330,"","C:\Windows\system32\svchost.exe -k NetworkService"
+0,122,lltdio,"Link-Layer Topology Discovery Mapper I/O Driver","",SERVICE_AUTO_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc8510,"",\Driver\lltdio
+0,123,lltdsvc,"Link-Layer Topology Discovery Mapper","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc8600,"",""
+684,124,lmhosts,"TCP/IP NetBIOS Helper","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc86f0,"","C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted"
+0,125,LSI_FC,LSI_FC,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc87e0,"",""
+0,126,LSI_SAS,LSI_SAS,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc88d0,"",\Driver\LSI_SAS
+0,127,LSI_SAS2,LSI_SAS2,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc89c0,"",""
+0,128,LSI_SCSI,LSI_SCSI,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc8ab0,"",""
+0,129,luafv,"UAC 文件虚拟化","",SERVICE_AUTO_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdc8ba0,"",\FileSystem\luafv
+0,130,megasas,megasas,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc8c90,"",""
+0,131,MegaSR,MegaSR,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc8d80,"",""
+0,132,MMCSS,"Multimedia Class Scheduler","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdc8e70,"",""
+0,133,Modem,Modem,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc8f60,"",""
+0,134,monitor,"Microsoft Monitor Class Function Driver Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc9460,"",""
+0,135,mouclass,"Mouse Class Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc9550,"",""
+0,136,mouhid,"Mouse HID Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc9640,"",""
+0,137,mountmgr,"","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc9730,"",\Driver\mountmgr
+0,138,mpio,mpio,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc9820,"",""
+0,139,mpsdrv,"Windows Firewall Authorization Driver","",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc9910,"",\Driver\mpsdrv
+232,140,MpsSvc,"Windows Firewall","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdc9a00,"","C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork"
+0,141,mrxsmb,"SMB 微型重定向程序包装和引擎","",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdc9af0,"",\FileSystem\mrxsmb
+0,142,mrxsmb10,"SMB 1.x 微型重定向程序","",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdc9be0,"",\FileSystem\mrxsmb10
+0,143,mrxsmb20,"SMB 2.0 微型重定向程序","",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdc9cd0,"",\FileSystem\mrxsmb20
+0,144,msahci,msahci,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdc9dc0,"",\Driver\msahci
+0,145,msdsm,msdsm,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdc9eb0,"",""
+496,146,MSDTC,"Distributed Transaction Coordinator","NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,OWN,0xdc9fa0,"",C:\Windows\System32\msdtc.exe
+0,147,Msfs,Msfs,"",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdca090,"",\FileSystem\Msfs
+0,148,mshidkmdf,"Pass-through HID to KMDF Filter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdca180,"",""
+0,149,msisadrv,msisadrv,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdca270,"",\Driver\msisadrv
+0,150,MSiSCSI,"Microsoft iSCSI Initiator Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdca360,"",""
+0,151,msiserver,"Windows Installer","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdca450,"",""
+0,152,MSKSSRV,"Microsoft Streaming Service Proxy","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdca540,"",""
+0,153,MSPCLOCK,"Microsoft Streaming Clock Proxy","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdca630,"",""
+0,154,MSPQM,"Microsoft Streaming Quality Manager Proxy","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdca720,"",""
+0,155,MsRPC,MsRPC,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdca810,"",""
+0,156,mssmbios,"Microsoft System Management BIOS Driver","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdca900,"",\Driver\mssmbios
+0,157,MSTEE,"Microsoft Streaming Tee/Sink-to-Sink Converter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdca9f0,"",""
+0,158,MTConfig,"Microsoft Input Configuration Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcaae0,"",""
+0,159,Mup,Mup,"",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdcb430,"",\FileSystem\Mup
+0,160,napagent,"Network Access Protection Agent","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcabd0,"",""
+0,161,NDIS,"NDIS System Driver","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcacc0,"",\Driver\NDIS
+0,162,NdisCap,"NDIS Capture LightWeight Filter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcadb0,"",""
+0,163,NdisTapi,"Remote Access NDIS TAPI Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcaea0,"",""
+0,164,Ndisuio,"NDIS Usermode I/O Protocol","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcaf90,"",""
+0,165,NdisWan,"Remote Access NDIS WAN Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcb080,"",""
+0,166,NDProxy,"NDIS Proxy","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcb170,"",""
+0,167,NetBIOS,"NetBIOS Interface","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdcb260,"",\FileSystem\NetBIOS
+0,168,NetBT,NetBT,"",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcb540,"",\Driver\NetBT
+0,169,Netlogon,Netlogon,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcb630,"",""
+904,170,Netman,"Network Connections",SYSTEM,SERVICE_DEMAND_START,SERVICE_RUNNING,Process,SHR,0xdcb720,"","C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted"
+864,171,netprofm,"Network List Service","LOCAL SERVICE",SERVICE_DEMAND_START,SERVICE_RUNNING,Process,SHR,0xdcb810,"","C:\Windows\system32\svchost.exe -k LocalService"
+0,172,nfrd960,nfrd960,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcb900,"",""
+944,173,NlaSvc,"Network Location Awareness","NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdcb9f0,"","C:\Windows\system32\svchost.exe -k NetworkService"
+0,174,Npfs,Npfs,"",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdcbae0,"",\FileSystem\Npfs
+864,175,nsi,"Network Store Interface Service","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdcd510,"","C:\Windows\system32\svchost.exe -k LocalService"
+0,176,nsiproxy,"NSI proxy service driver.","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcbbd0,"",\Driver\nsiproxy
+0,177,Ntfs,Ntfs,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdcbcc0,"",""
+0,178,Null,Null,"",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcbdb0,"",\Driver\Null
+0,179,nvraid,nvraid,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcbea0,"",""
+0,180,nvstor,nvstor,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcbf90,"",""
+0,181,nv_agp,"NVIDIA nForce AGP Bus Filter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcc080,"",""
+0,182,ohci1394,"1394 OHCI Compliant Host Controller (Legacy)","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcc170,"",""
+0,183,Parport,"Parallel port driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcc260,"",""
+0,184,partmgr,"","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcc350,"",\Driver\partmgr
+0,185,pci,"PCI Bus Driver","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcd5f0,"",\Driver\pci
+0,186,pciide,pciide,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcc440,"",""
+0,187,pcmcia,pcmcia,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcc530,"",""
+0,188,pcw,"Performance Counters for Windows Driver","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcd6d0,"",\Driver\pcw
+0,189,PEAUTH,PEAUTH,"",SERVICE_AUTO_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcc620,"",\Driver\PEAUTH
+0,190,PerfHost,"Performance Counter DLL Host","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdcc710,"",""
+0,191,pla,"Performance Logs & Alerts","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcd7b0,"",""
+568,192,PlugPlay,"Plug and Play",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdcc800,"","C:\Windows\system32\svchost.exe -k DcomLaunch"
+0,193,PolicyAgent,"IPsec Policy Agent","",SERVICE_DEMAND_START,SERVICE_RUNNING,Process,SHR,0xdcc8f0,"",""
+568,194,Power,Power,SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdcc9e0,"","C:\Windows\system32\svchost.exe -k DcomLaunch"
+0,195,PptpMiniport,"WAN 微型端口(PPTP)","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcd890,"",""
+0,196,Processor,"Processor Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdccad0,"",""
+780,197,ProfSvc,"User Profile Service",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdccbc0,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,198,ProtectedStorage,"Protected Storage","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcd990,"",""
+0,199,Psched,"QoS 数据包计划程序","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcccb0,"",\Driver\Psched
+0,200,ql2300,ql2300,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdccda0,"",""
+0,201,ql40xx,ql40xx,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcce90,"",""
+0,202,RasAcd,"Remote Access Auto Connection Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdccf80,"",""
+0,203,RasAgileVpn,"WAN Miniport (IKEv2)","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcd070,"",""
+0,204,RasAuto,"Remote Access Auto Connection Manager","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcd160,"",""
+0,205,Rasl2tp,"WAN 微型端口(L2TP)","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcd250,"",""
+0,206,RasMan,"Remote Access Connection Manager","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcd340,"",""
+0,207,RasPppoe,"","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcdac0,"",""
+0,208,RasSstp,"WAN 微型端口(SSTP)","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcdbb0,"",""
+0,209,rdbss,"","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdcdca0,"",\FileSystem\rdbss
+0,210,rdpbus,"Remote Desktop Device Redirector Bus Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcdd90,"",""
+0,211,RDPCDD,RDPCDD,"",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcde80,"",\Driver\RDPCDD
+0,212,RDPDR,"Terminal Server Device Redirector Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcdf70,"",""
+0,213,RDPENCDD,"RDP Encoder Mirror Driver","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdce060,"",\Driver\RDPENCDD
+0,214,RDPREFMP,"Reflector Display Driver used to gain access to graphics data","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdce150,"",\Driver\RDPREFMP
+0,215,RDPWD,"RDP Winstation Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdce240,"",""
+0,216,RemoteAccess,"Routing and Remote Access","",SERVICE_DISABLED,SERVICE_STOPPED,Process,SHR,0xdcfa90,"",""
+844,217,RemoteRegistry,"Remote Registry","LOCAL SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdcfb90,"","C:\Windows\system32\svchost.exe -k regsvc"
+632,218,RpcEptMapper,"RPC Endpoint Mapper","NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdcfc90,"","C:\Windows\system32\svchost.exe -k RPCSS"
+0,219,RpcLocator,"Remote Procedure Call (RPC) Locator","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdce330,"",""
+632,220,RpcSs,"Remote Procedure Call (RPC)","NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdce420,"","C:\Windows\system32\svchost.exe -k RPCSS"
+0,221,RSoPProv,"Resultant Set of Policy Provider","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdce510,"",""
+0,222,rspndr,"Link-Layer Topology Discovery Responder","",SERVICE_AUTO_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdce600,"",\Driver\rspndr
+0,223,s3cap,s3cap,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdce6f0,"",""
+0,224,sacdrv,sacdrv,"",SERVICE_BOOT_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdce7e0,"",""
+0,225,sacsvr,"Special Administration Console Helper","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdce8d0,"",""
+452,226,SamSs,"Security Accounts Manager",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdce9c0,"",C:\Windows\system32\lsass.exe
+0,227,sbp2port,sbp2port,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdceab0,"",""
+0,228,SCardSvr,"Smart Card","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdceba0,"",""
+0,229,scfilter,"","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcec90,"",""
+780,230,Schedule,"Task Scheduler",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdced80,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,231,SCPolicySvc,"Smart Card Removal Policy","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcee70,"",""
+0,232,secdrv,"Security Driver","",SERVICE_AUTO_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdcef60,"",\Driver\secdrv
+0,233,seclogon,"Secondary Logon","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcf050,"",""
+780,234,SENS,"System Event Notification Service",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdcf140,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,235,Serenum,"Serenum Filter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcf230,"",""
+0,236,Serial,Serial,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcf320,"",""
+0,237,sermouse,"Serial Mouse Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcf410,"",""
+0,238,SessionEnv,"Remote Desktop Configuration","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdcf500,"",""
+0,239,sffdisk,"SFF Storage Class Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcf5f0,"",""
+0,240,sffp_mmc,"SFF Storage Protocol Driver for MMC","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcf6e0,"",""
+0,241,sffp_sd,"SFF Storage Protocol Driver for SDBus","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcf7d0,"",""
+0,242,sfloppy,"High-Capacity Floppy Disk Drive","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcf8c0,"",""
+0,243,SharedAccess,"Internet Connection Sharing (ICS)","",SERVICE_DISABLED,SERVICE_STOPPED,Process,SHR,0xdcfd90,"",""
+780,244,ShellHWDetection,"Shell Hardware Detection",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdcfe90,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,245,SiSRaid2,SiSRaid2,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdcffc0,"",""
+0,246,SiSRaid4,SiSRaid4,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd00b0,"",""
+0,247,Smb,"","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1f90,"",""
+0,248,SNMPTRAP,"SNMP Trap","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdd01a0,"",""
+0,249,spldr,"Security Processor Loader Driver","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd0290,"",\Driver\spldr
+840,250,Spooler,"Print Spooler",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,OWN,0xdd0380,"",C:\Windows\System32\spoolsv.exe
+2000,251,sppsvc,"Software Protection","NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,OWN,0xdd0470,"",C:\Windows\system32\sppsvc.exe
+864,252,sppuinotify,"SPP Notification Service","LOCAL SERVICE",SERVICE_DEMAND_START,SERVICE_RUNNING,Process,SHR,0xdd0560,"","C:\Windows\system32\svchost.exe -k LocalService"
+0,253,srv,"","",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdd2070,"",\FileSystem\srv
+0,254,srv2,"","",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdd0650,"",\FileSystem\srv2
+0,255,srvnet,srvnet,"",SERVICE_DEMAND_START,SERVICE_RUNNING,Driver,FILE_SYSTEM_DRIVER,0xdd0740,"",\FileSystem\srvnet
+0,256,SSDPSRV,"SSDP Discovery","",SERVICE_DISABLED,SERVICE_STOPPED,Process,SHR,0xdd0830,"",""
+0,257,SstpSvc,"Secure Socket Tunneling Protocol Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd0920,"",""
+0,258,stexstor,stexstor,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd0a10,"",""
+0,259,storflt,"","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd0b00,"",\Driver\storflt
+0,260,storvsc,storvsc,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd0bf0,"",""
+0,261,storvsp,storvsp,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd0ce0,"",""
+0,262,swenum,"Software Bus Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd0dd0,"",""
+0,263,swprv,"Microsoft Software Shadow Copy Provider","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdd0ec0,"",""
+0,264,TapiSrv,Telephony,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdd0fb0,"",""
+0,265,TBS,"TPM Base Services","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd2150,"",""
+0,266,Tcpip,"TCP/IP 协议驱动程序","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd10a0,"",\Driver\Tcpip
+0,267,TCPIP6,"Microsoft IPv6 Protocol Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1190,"",""
+0,268,tcpipreg,"TCP/IP Registry Compatibility","",SERVICE_AUTO_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd1280,"",\Driver\tcpipreg
+0,269,TDPIPE,TDPIPE,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1370,"",""
+0,270,TDTCP,TDTCP,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1460,"",""
+0,271,tdx,"NetIO 旧 TDI 支持驱动程序","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd2230,"",\Driver\tdx
+0,272,TermDD,"Terminal Device Driver","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd1550,"",\Driver\TermDD
+0,273,TermService,"Remote Desktop Services","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd1640,"",""
+0,274,THREADORDER,"Thread Ordering Server","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd1730,"",""
+904,275,TrkWks,"Distributed Link Tracking Client",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdd1820,"","C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted"
+0,276,TrustedInstaller,"Windows Modules Installer","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdd2310,"",""
+0,277,tssecsrv,"Remote Desktop Services Security Filter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1910,"",""
+0,278,TsUsbFlt,TsUsbFlt,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1a00,"",""
+0,279,TsUsbGD,"Remote Desktop Generic USB Device","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1af0,"",""
+0,280,tunnel,"Microsoft Tunnel Miniport Adapter Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1be0,"",""
+0,281,uagp35,"Microsoft AGPv3.5 Filter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd1cd0,"",""
+0,282,udfs,udfs,"",SERVICE_DISABLED,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdd1dc0,"",""
+0,283,UI0Detect,"Interactive Services Detection","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdd2440,"",""
+0,284,uliagpkx,"Uli AGP Bus Filter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd2530,"",""
+0,285,umbus,"UMBus Enumerator Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd2620,"",""
+0,286,UmPass,"Microsoft UMPass Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd2710,"",""
+0,287,UmRdpService,"Remote Desktop Services UserMode Port Redirector","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd4410,"",""
+0,288,upnphost,"UPnP Device Host","",SERVICE_DISABLED,SERVICE_STOPPED,Process,SHR,0xdd2800,"",""
+0,289,usbccgp,"Microsoft USB 通用父驱动程序","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd28f0,"",""
+0,290,usbehci,"Microsoft USB 2.0 Enhanced Host Controller Miniport Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd29e0,"",""
+0,291,usbhub,"Microsoft USB Standard Hub Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd2ad0,"",""
+0,292,usbohci,"Microsoft USB Open Host Controller Miniport Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd2bc0,"",""
+0,293,usbprint,"Microsoft USB PRINTER Class","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd2cb0,"",""
+0,294,USBSTOR,"USB Mass Storage Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd2da0,"",""
+0,295,usbuhci,"Microsoft USB Universal Host Controller Miniport Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd2e90,"",""
+904,296,UxSms,"Desktop Window Manager Session Manager",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdd2f80,"","C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted"
+0,297,VaultSvc,"Credential Manager","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd3070,"",""
+0,298,vdrvroot,"Microsoft 虚拟驱动器枚举器驱动程序","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd3160,"",\Driver\vdrvroot
+0,299,vds,"Virtual Disk","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdd4540,"",""
+0,300,vga,vga,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd4620,"",""
+0,301,VgaSave,VgaSave,"",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd3250,"",\Driver\VgaSave
+0,302,vhdmp,vhdmp,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd3340,"",""
+0,303,viaide,viaide,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd3430,"",""
+0,304,Vid,Vid,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd4700,"",""
+0,305,vmbus,vmbus,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd3520,"",""
+0,306,VMBusHID,VMBusHID,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd3610,"",""
+0,307,volmgr,"Volume Manager Driver","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd3700,"",\Driver\volmgr
+0,308,volmgrx,"","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd37f0,"",\Driver\volmgrx
+0,309,volsnap,"","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd38e0,"",\Driver\volsnap
+0,310,vsmraid,vsmraid,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd39d0,"",""
+0,311,VSS,"Volume Shadow Copy","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xdd47e0,"",""
+0,312,W32Time,"Windows Time","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd3ac0,"",""
+0,313,WacomPen,"Wacom Serial Pen HID Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd3bb0,"",""
+0,314,WANARP,"Remote Access IP ARP Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd3ca0,"",""
+0,315,Wanarpv6,"Remote Access IPv6 ARP Driver","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd3d90,"",\Driver\Wanarpv6
+0,316,WcsPlugInService,"Windows Color System","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd6510,"",""
+0,317,Wd,Wd,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xdd48c0,"",""
+0,318,Wdf01000,"Kernel Mode Driver Frameworks service","",SERVICE_BOOT_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd3e80,"",\Driver\Wdf01000
+0,319,WdiServiceHost,"Diagnostic Service Host","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd6610,"",""
+0,320,WdiSystemHost,"Diagnostic System Host","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd6710,"",""
+0,321,Wecsvc,"Windows Event Collector","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd3f70,"",""
+0,322,wercplsupport,"Problem Reports and Solutions Control Panel Support","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd6840,"",""
+0,323,WerSvc,"Windows Error Reporting Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd4060,"",""
+0,324,WfpLwf,"WFP Lightweight Filter","",SERVICE_SYSTEM_START,SERVICE_RUNNING,Driver,KERNEL_DRIVER,0xdd4150,"",\Driver\WfpLwf
+0,325,WIMMount,WIMMount,"",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,FILE_SYSTEM_DRIVER,0xdd4240,"",""
+0,326,WinHttpAutoProxySvc,"WinHTTP Web Proxy Auto-Discovery Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xdd6940,"",""
+780,327,Winmgmt,"Windows Management Instrumentation",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdda840,"","C:\Windows\system32\svchost.exe -k netsvcs"
+944,328,WinRM,"Windows Remote Management (WS-Management)","NETWORK SERVICE",SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xdda930,"","C:\Windows\system32\svchost.exe -k NetworkService"
+0,329,WmiAcpi,"Microsoft Windows Management Interface for ACPI","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xddaa20,"",""
+0,330,wmiApSrv,"WMI Performance Adapter","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,OWN,0xddab10,"",""
+0,331,WPDBusEnum,"Portable Device Enumerator Service","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xddac00,"",""
+0,332,ws2ifsl,"Winsock IFS 驱动程序","",SERVICE_DISABLED,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xddacf0,"",""
+780,333,wuauserv,"Windows Update",SYSTEM,SERVICE_AUTO_START,SERVICE_RUNNING,Process,SHR,0xddade0,"","C:\Windows\system32\svchost.exe -k netsvcs"
+0,334,WudfPf,"User Mode Driver Frameworks Platform Driver","",SERVICE_DEMAND_START,SERVICE_STOPPED,Driver,KERNEL_DRIVER,0xddaed0,"",""
+0,335,wudfsvc,"Windows Driver Foundation - User-mode Driver Framework","",SERVICE_DEMAND_START,SERVICE_STOPPED,Process,SHR,0xddafc0,"",""

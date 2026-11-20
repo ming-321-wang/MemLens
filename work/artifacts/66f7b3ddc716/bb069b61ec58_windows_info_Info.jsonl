@@ -1,0 +1,24 @@
+
+{"Value": "0x804d8000", "Variable": "Kernel Base", "__children": []}
+{"Value": "0xb37000", "Variable": "DTB", "__children": []}
+{"Value": "file:///D:/DSH/%E5%B7%A5%E4%BD%9C%E5%8C%BA/MemLens/work/vol3/symbols/windows/ntkrnlpa.pdb/30B5FB31AE7E4ACAABA750AA241FF331-1.json.xz", "Variable": "Symbols", "__children": []}
+{"Value": "False", "Variable": "Is64Bit", "__children": []}
+{"Value": "True", "Variable": "IsPAE", "__children": []}
+{"Value": "0 WindowsIntelPAE", "Variable": "layer_name", "__children": []}
+{"Value": "1 FileLayer", "Variable": "memory_layer", "__children": []}
+{"Value": "0x80546ae0", "Variable": "KdDebuggerDataBlock", "__children": []}
+{"Value": "2600.xpsp.080413-2111", "Variable": "NTBuildLab", "__children": []}
+{"Value": "3", "Variable": "CSDVersion", "__children": []}
+{"Value": "0x80546ab8", "Variable": "KdVersionBlock", "__children": []}
+{"Value": "15.2600", "Variable": "Major/Minor", "__children": []}
+{"Value": "332", "Variable": "MachineType", "__children": []}
+{"Value": "1", "Variable": "KeNumberProcessors", "__children": []}
+{"Value": "2022-06-20 13:00:12+00:00", "Variable": "SystemTime", "__children": []}
+{"Value": "C:\\WINDOWS", "Variable": "NtSystemRoot", "__children": []}
+{"Value": "NtProductWinNt", "Variable": "NtProductType", "__children": []}
+{"Value": "5", "Variable": "NtMajorVersion", "__children": []}
+{"Value": "1", "Variable": "NtMinorVersion", "__children": []}
+{"Value": "5", "Variable": "PE MajorOperatingSystemVersion", "__children": []}
+{"Value": "1", "Variable": "PE MinorOperatingSystemVersion", "__children": []}
+{"Value": "332", "Variable": "PE Machine", "__children": []}
+{"Value": "Sun Apr 13 18:31:06 2008", "Variable": "PE TimeDateStamp", "__children": []}

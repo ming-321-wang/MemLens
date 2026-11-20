@@ -1,0 +1,246 @@
+[
+ {
+  "名称": "0xffff8e858e2c7000-unknown-unknown.reghive",
+  "大小": 163840
+ },
+ {
+  "名称": "0xffff8e858e6f6000-SOFTWARE-unknown.reghive",
+  "大小": 78512128
+ },
+ {
+  "名称": "0xffff8e858eb08000-BCD-unknown.reghive",
+  "大小": 36864
+ },
+ {
+  "名称": "0xffff8e858eecb000-NTUSERDAT-unknown.reghive",
+  "大小": 180224
+ },
+ {
+  "名称": "0xffff8e859010a000-unknown-unknown.reghive",
+  "大小": 16384
+ },
+ {
+  "名称": "0xffff8e8590132000-SYSTEM-unknown.reghive",
+  "大小": 12922880
+ },
+ {
+  "名称": "0xffff8e859049d000-SAM-unknown.reghive",
+  "大小": 45056
+ },
+ {
+  "名称": "0xffff8e85904a8000-SECURITY-unknown.reghive",
+  "大小": 40960
+ },
+ {
+  "名称": "0xffff8e85904aa000-DEFAULT-unknown.reghive",
+  "大小": 610304
+ },
+ {
+  "名称": "0xffff8e85904be000-ActivationStoredat-unknown.reghive",
+  "大小": 86016
+ },
+ {
+  "名称": "0xffff8e8594352000-BBI-unknown.reghive",
+  "大小": 233472
+ },
+ {
+  "名称": "0xffff8e8594693000-ntuserdat-unknown.reghive",
+  "大小": 2244608
+ },
+ {
+  "名称": "0xffff8e8594c54000-ActivationStoredat-unknown.reghive",
+  "大小": 36864
+ },
+ {
+  "名称": "0xffff8e8594c5b000-ActivationStoredat-unknown.reghive",
+  "大小": 36864
+ },
+ {
+  "名称": "0xffff8e8594c5f000-ActivationStoredat-unknown.reghive",
+  "大小": 36864
+ },
+ {
+  "名称": "0xffff8e8594c62000-ActivationStoredat-unknown.reghive",
+  "大小": 237568
+ },
+ {
+  "名称": "0xffff8e8594cdc000-ActivationStoredat-unknown.reghive",
+  "大小": 602112
+ },
+ {
+  "名称": "0xffff8e8594ce1000-ActivationStoredat-unknown.reghive",
+  "大小": 393216
+ },
+ {
+  "名称": "0xffff8e8594ea5000-ActivationStoredat-unknown.reghive",
+  "大小": 40960
+ },
+ {
+  "名称": "0xffff8e8594f7e000-6b87ed64cdffbeb5dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8594f80000-Userdat-unknown.reghive",
+  "大小": 28672
+ },
+ {
+  "名称": "0xffff8e8594fed000-6b87ed64cdffbeb5COM15dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8594fef000-6b87ed64cdffbeb5dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e859611c000-NTUSERDAT-unknown.reghive",
+  "大小": 184320
+ },
+ {
+  "名称": "0xffff8e85965e1000-DRIVERS-unknown.reghive",
+  "大小": 4636672
+ },
+ {
+  "名称": "0xffff8e85968a7000-UsrClassdat-unknown.reghive",
+  "大小": 1814528
+ },
+ {
+  "名称": "0xffff8e85974df000-Amcachehve-unknown.reghive",
+  "大小": 2322432
+ },
+ {
+  "名称": "0xffff8e8597618000-ActivationStoredat-unknown.reghive",
+  "大小": 184320
+ },
+ {
+  "名称": "0xffff8e85976e6000-46f83413ee64154dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e85976f5000-46f83413ee64154COM15dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e85976f8000-ActivationStoredat-unknown.reghive",
+  "大小": 73728
+ },
+ {
+  "名称": "0xffff8e8597730000-46f83413ee64154dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8597816000-dosvcStatedat-unknown.reghive",
+  "大小": 249856
+ },
+ {
+  "名称": "0xffff8e859782b000-ActivationStoredat-unknown.reghive",
+  "大小": 28672
+ },
+ {
+  "名称": "0xffff8e859782e000-ActivationStoredat-unknown.reghive",
+  "大小": 69632
+ },
+ {
+  "名称": "0xffff8e8597830000-ActivationStoredat-unknown.reghive",
+  "大小": 57344
+ },
+ {
+  "名称": "0xffff8e8597c2f000-settingsdat-unknown.reghive",
+  "大小": 45056
+ },
+ {
+  "名称": "0xffff8e8597dc4000-ActivationStoredat-unknown.reghive",
+  "大小": 118784
+ },
+ {
+  "名称": "0xffff8e8597dd8000-UserClassesdat-unknown.reghive",
+  "大小": 12288
+ },
+ {
+  "名称": "0xffff8e8598f84000-ActivationStoredat-unknown.reghive",
+  "大小": 389120
+ },
+ {
+  "名称": "0xffff8e8598f97000-settingsdat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599215000-89bc9879cd777c28dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599218000-Userdat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e859921b000-UserClassesdat-unknown.reghive",
+  "大小": 12288
+ },
+ {
+  "名称": "0xffff8e859921f000-89bc9879cd777c28COM15dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599256000-ActivationStoredat-unknown.reghive",
+  "大小": 32768
+ },
+ {
+  "名称": "0xffff8e85992e2000-89bc9879cd777c28dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e85994ac000-settingsdat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599d96000-cdb62c5d8f4fcab0dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599d9a000-cdb62c5d8f4fcab0COM15dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599d9c000-cdb62c5d8f4fcab0dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599e26000-ActivationStoredat-unknown.reghive",
+  "大小": 73728
+ },
+ {
+  "名称": "0xffff8e8599e47000-e59fd33af7a9be35dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599e49000-Userdat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599e4b000-UserClassesdat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599e4d000-e59fd33af7a9be35COM15dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599e4f000-e59fd33af7a9be35dat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e8599e63000-settingsdat-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xffff8e859b14b000-ActivationStoredat-unknown.reghive",
+  "大小": 16384
+ },
+ {
+  "名称": "0xffff8e859d072000-ActivationStoredat-unknown.reghive",
+  "大小": 53248
+ },
+ {
+  "名称": "0xffff8e859d074000-ActivationStoredat-unknown.reghive",
+  "大小": 61440
+ }
+]

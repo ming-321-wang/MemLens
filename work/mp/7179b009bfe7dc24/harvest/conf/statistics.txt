@@ -1,0 +1,34 @@
+VMM STATISTICS   (4kB PAGES / COUNTS - HEXADECIMAL)
+===================================================
+PHYSICAL MEMORY:                      
+  READ CACHE HIT:                          e087f
+  READ RETRIEVED:                          de59a
+  READ FAIL:                               2c95a
+  WRITE:                                       0
+PAGED VIRTUAL MEMORY:                 
+  READ SUCCESS:                            c53b1
+    Prototype:                             47999
+    Transition:                            1db8c
+    DemandZero:                             c0f8
+    VAD:                                   53d94
+    Cache:                                     0
+    PageFile:                                  0
+    Compressed:                                0
+  READ FAIL:                               5c039
+    Cache:                                 328b8
+    VAD:                                   270b5
+    FileMapped:                                0
+    PageFile:                               26cc
+    Compressed:                                0
+TLB (PAGE TABLES):                    
+  CACHE HIT:                              765d28
+  RETRIEVED:                                  26
+  FAILED:                                      0
+GUEST-PHYSICAL MEMORY:                
+  READ SUCESS:                                 0
+  READ FAIL:                                   0
+  WRITE:                                       0
+PHYSICAL MEMORY REFRESH:                       0
+TLB MEMORY REFRESH:                            0
+PROCESS PARTIAL REFRESH:                       0
+PROCESS FULL REFRESH:                          0

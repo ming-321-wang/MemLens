@@ -1,0 +1,116 @@
+{
+  "pack_id": "1.0.0",
+  "version": "1.0.0",
+  "published_at": "2026-11-12",
+  "thresholds": {
+    "hidden_process.w_pool_only": 0.55,
+    "hidden_process.w_not_in_list": 0.1,
+    "hidden_process.w_has_network": 0.12,
+    "hidden_process.w_non_whitelist_name": 0.08,
+    "hidden_process.w_psxview_flag": 0.1,
+    "hidden_process.w_empty_cmdline": 0.05,
+    "hidden_process.w_orphan_ppid": 0.05,
+    "hidden_process.w_whitelist_penalty": -0.2,
+    "hidden_process.conf_max": 0.98,
+    "hidden_process.orphan_threshold": 5,
+    "injection.w_malfind": 0.5,
+    "injection.w_rwx": 0.15,
+    "injection.w_no_module": 0.12,
+    "injection.w_has_network": 0.08,
+    "injection.w_non_whitelist_name": 0.05,
+    "injection.w_mz_header": 0.1,
+    "injection.w_whitelist_penalty": -0.15,
+    "injection.conf_max": 0.98
+  },
+  "whitelist": {
+    "system_process": [
+      "system",
+      "system idle process",
+      "registry",
+      "smss.exe",
+      "csrss.exe",
+      "wininit.exe",
+      "winlogon.exe",
+      "services.exe",
+      "lsass.exe",
+      "svchost.exe",
+      "explorer.exe",
+      "taskhostw.exe",
+      "sihost.exe",
+      "ctfmon.exe",
+      "fontdrvhost.exe",
+      "spoolsv.exe",
+      "wmiprvse.exe",
+      "searchindexer.exe",
+      "memcompression.exe",
+      "runtimebroker.exe",
+      "dashost.exe",
+      "securityhealthservice.exe",
+      "msmpeng.exe",
+      "audiodg.exe",
+      "conhost.exe",
+      "dllhost.exe",
+      "backgroundtaskhost.exe",
+      "wudfhost.exe"
+    ]
+  },
+  "wordlist": {
+    "domain_category": {
+      "academic": [
+        "scholar.google.com",
+        "arxiv.org",
+        "ieeexplore.ieee.org",
+        "acm.org",
+        "doi.org",
+        "springer.com",
+        "sciencedirect.com"
+      ],
+      "technical": [
+        "stackoverflow.com",
+        "github.com",
+        "developer.mozilla.org",
+        "docs.microsoft.com",
+        "learn.microsoft.com",
+        "kernel.org",
+        "python.org",
+        "docs.python.org"
+      ],
+      "news": [
+        "bbc.com",
+        "reuters.com",
+        "xinhuanet.com",
+        "thepaper.cn",
+        "36kr.com",
+        "cnbeta.com"
+      ],
+      "social": [
+        "weibo.com",
+        "twitter.com",
+        "x.com",
+        "zhihu.com",
+        "douban.com",
+        "reddit.com"
+      ],
+      "streaming": [
+        "youtube.com",
+        "netflix.com",
+        "bilibili.com",
+        "iqiyi.com",
+        "youku.com",
+        "twitch.tv"
+      ]
+    },
+    "compliant_channel": [],
+    "anti_forensics": [
+      "vssadmin delete shadows",
+      "wmic shadowcopy delete",
+      "wevtutil cl",
+      "clear-eventlog",
+      "bcdedit /set",
+      "recoveryenabled no"
+    ]
+  },
+  "change_log": "基线版本：将代码内硬编码的判定阈值、白名单与词表正式外置为规则包。",
+  "source_path": "(builtin)",
+  "sha256": "d7c030741280b65bc4b8adc80646164ca846da8fda026b7bcf82b1fdba34934b"
+}

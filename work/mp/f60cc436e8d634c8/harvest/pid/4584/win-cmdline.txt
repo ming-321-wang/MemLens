@@ -1,0 +1,1 @@
+C:\WINDOWS\system32\svchost.exe -k osprivacy -p -s camsvc

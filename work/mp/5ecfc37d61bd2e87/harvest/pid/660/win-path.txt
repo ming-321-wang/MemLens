@@ -1,0 +1,1 @@
+\Device\HarddiskVolume2\Windows\System32\wininit.exe

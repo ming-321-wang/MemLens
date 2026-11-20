@@ -1,0 +1,9 @@
+COMPONENT_INSTALLER_DIR=C:\Users\Administrator\AppData\Local\Microsoft\Edge\User Data
+EDGE_BROWSER_PID=6212
+EDGE_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_6212_JJQUZRFXRBIVZGGX
+LOCALAPPDATA=C:\Users\Administrator\AppData\Local
+Path=C:\Program Files (x86)\Microsoft\Edge\Application;D:\Global\apps\metasploit-framework\current\bin;D:\Global\apps\oraclejdk\current\bin;D:\Global\shims;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Base\apps\ruby\current\bin;D:\Base\apps\ruby\current\gems\bin;D:\Base\apps\tdm-gcc\current\bin;D:\Base\apps\python310\current\Scripts;D:\Base\apps\python310\current;D:\Base\apps\python27\current\Scripts;D:\Base\apps\python27\current;D:\Base\apps\dotnet3-sdk\current;D:\Base\apps\oraclejre8\current\bin;D:\Base\apps\liberica17-jre\current\bin;C:\Users\Administrator\go\bin;D:\Base\shims;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;c:\users\administrator\.local\bin;C:\Users\Administrator\.dotnet\tools;C:\pycharm\PyCharm 2026.1.4\bin
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\ADMINI~1\AppData\Local\Temp
+TMP=C:\Users\ADMINI~1\AppData\Local\Temp

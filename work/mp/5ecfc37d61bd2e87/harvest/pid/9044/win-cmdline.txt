@@ -1,0 +1,1 @@
+C:\Users\Administrator\Desktop\workbuddy\WorkBuddy.exe C:\Users\Administrator\Desktop\workbuddy\resources\app.asar\main\daemon-app-server-entry.js --stdio

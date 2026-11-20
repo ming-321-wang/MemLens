@@ -1,0 +1,1 @@
+C:\Users\Administrator\Desktop\workbuddy\WorkBuddy.exe --require C:\Users\Administrator\Desktop\workbuddy\resources\app.asar.unpacked\resources\builtin-mcp-apps\_workbuddy-runtime\mcp-app-bootstrap.cjs C:\Users\Administrator\Desktop\workbuddy\resources\app.asar.unpacked\resources\builtin-mcp-apps\ardot-mcp-app\cli.cjs

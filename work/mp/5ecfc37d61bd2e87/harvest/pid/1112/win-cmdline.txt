@@ -1,0 +1,1 @@
+"D:\Program Files\VMware\VMware Tools\vmtoolsd.exe" -n vmusr

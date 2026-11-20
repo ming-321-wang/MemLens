@@ -1,0 +1,41 @@
+Windows Information:
+  Computer Name:   DESKTOP-BSCPP5J
+  Current Time:    2025-10-09 05:48:23 UTC
+  Boot Time:       2025-10-09 05:46:08 UTC
+  Time Zone:       Pacific Standard Time : UTC-7:00               
+  Version:         10.0 (build 26100)
+
+Hardware Information:
+  Architecture:    X64
+  Physical Memory: 8 GB
+  Max Address:     0x23fffffff
+  CPU:             AMD Ryzen 5 5600G with Radeon Graphics         
+  MB Vendor:       Intel Corporation
+  MB Product:      440BX Desktop Reference Platform
+  BIOS Vendor:     VMware, Inc.
+  System Vendor:   VMware, Inc.
+
+Users:
+  a  (S-1-5-21-2440166481-1226003426-1487650757-1001)
+
+Process Information:
+  Active:          141
+  Inactive:        2
+
+Network Interfaces:
+  Interface #1:
+    DhcpSubnetMaskOpt:  255.255.255.0
+    DhcpDefaultGateway: 192.168.192.2
+    DhcpNameServer:     192.168.192.2
+    DhcpDomain:         localdomain
+    DhcpServer:         192.168.192.254
+    DhcpSubnetMask:     255.255.255.0
+    DhcpIPAddress:      192.168.192.129
+
+MemProcFS Information:
+  Version:         5.18.1 (build 240)
+  Parse Time:      2026-11-09 19:21:33 UTC
+  Memory Source:   Read-only, Static
+  Unique Tag:      26100_f781c060
+  Forensic Mode:   Enabled
+  VM Parsing:      Enabled

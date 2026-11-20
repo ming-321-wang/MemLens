@@ -1,0 +1,1 @@
+return ['AUTH_CODE' => 'TPSHOP'];

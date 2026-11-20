@@ -1,0 +1,5 @@
+   #    PID Process        Type            Address          Description
+-----------------------------------------------------------------------
+0000   1456 AntSword.exe   HIGH_ENTROPY    000000007f0e0000 Entropy:[7.88]       p-r--- 
+0001   2000 sppsvc.exe     HIGH_ENTROPY    00000000ff5f0000 Entropy:[7.05] Image ---wxc \Windows\System32\sppsvc.exe
+0002   2000 sppsvc.exe     HIGH_ENTROPY    000007fef38a0000 Entropy:[7.08] Image ---wxc \Windows\System32\sppobjs.dll

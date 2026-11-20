@@ -1,0 +1,1 @@
+cmd /k D:\Global\apps\Scaninfo\current\scaninfo_windows_x64.exe -h

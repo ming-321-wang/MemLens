@@ -1,0 +1,11 @@
+0000      4           187000 fffffa8018db2040 System
+0001   1260          edc8000 fffffa801b2bd400 iexplore.exe
+0002   1928         2bb95000 fffffa801a4c6060 iexplore.exe
+0003   1016         2cbec000 fffffa801b0253c0 iexplore.exe
+0004   1952         35954000 fffffa801a6365d0 AntSword.exe
+0005   1312         3fd90000 fffffa801b118060 svchost.exe
+0006   1456         40dcf000 fffffa801a775060 AntSword.exe
+0007   1716         40ffc000 fffffa801ac413c0 AntSword.exe
+0008   2992         414f1000 fffffa801b0241b0 mmc.exe
+0009    260         41be0000 fffffa801b0361b0 AntSword.exe
+000a   2232         52401000 fffffa8019a84060 notepad.exe

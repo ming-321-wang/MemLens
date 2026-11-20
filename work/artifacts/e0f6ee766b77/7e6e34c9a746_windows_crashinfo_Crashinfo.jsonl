@@ -1,0 +1,7 @@
+
+Unsatisfied requirement plugins.Crashinfo.primary: Memory layer for the kernel
+
+A translation layer requirement was not fulfilled.  Please verify that:
+	A file was provided to create this layer (by -f, --single-location or by config)
+	The file exists and is readable
+	The file is a valid memory image and was acquired cleanly

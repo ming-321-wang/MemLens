@@ -1,0 +1,173 @@
+[
+ {
+  "id": 512,
+  "question": "可疑文件",
+  "difficulty": 2,
+  "description": "在排查被勒索加密的机器的过程中，发现了一个可疑的dll，试着来分析看看吧！",
+  "file_list": [
+   {
+    "file_name": "可疑文件.zip",
+    "file_url": "https://sierting-defense.oss-cn-hangzhou.aliyuncs.com/media/images/6847887983f04fbbaa1745ccec34e9dc.zip"
+   }
+  ],
+  "answer_count": 126,
+  "score": 1.0,
+  "hints": [],
+  "ranking": [
+   {
+    "id": 53585,
+    "name": "angge0001",
+    "avatar": ""
+   },
+   {
+    "id": 53070,
+    "name": "Hyja1",
+    "avatar": ""
+   },
+   {
+    "id": 54447,
+    "name": "m12r3dx",
+    "avatar": ""
+   }
+  ],
+  "status": true,
+  "image": null,
+  "is_static_score": false,
+  "tag": [
+   {
+    "id": 18,
+    "name": "Solar应急响应"
+   }
+  ],
+  "favorite_count": 2,
+  "is_favorite": false,
+  "env_type": 1
+ },
+ {
+  "id": 554,
+  "question": "应急响应1-1",
+  "difficulty": 3,
+  "description": "提交攻击者使用的攻击ip地址1  \nflag格式为：palu{xxxx}\n附件下载地址：百度网盘 https://pan.baidu.com/s/1otqDnpKTOEsPZQiWSE8ECg?pwd=6666 提取码: 6666 夸克网盘 https://pan.quark.cn/s/46653bd06cca 123云盘 https://www.123865.com/s/qDVvjv-zVBod 提取码:6666\n解压密码：应急响应环境解压密码网络拓扑环境 Skills@@@Skills@@@Skills 畸行的爱 Parloo&zgsfsys&onefox&solar**juyt",
+  "file_list": [
+   {
+    "file_name": "应急响应之畸形的爱.pdf.zip",
+    "file_url": "https://sierting-defense.oss-cn-hangzhou.aliyuncs.com/media/images/66c99bfcb809451bb7484efe48fd19d0.zip"
+   }
+  ],
+  "answer_count": 184,
+  "score": 1.0,
+  "hints": [],
+  "ranking": [
+   {
+    "id": 23204,
+    "name": "cyl_love",
+    "avatar": "https://sierting-defense.oss-cn-hangzhou.aliyuncs.com/media/images/2bdef1c470174e80b231fa87199ecb1a.jpg"
+   },
+   {
+    "id": 27591,
+    "name": "LibraCastle",
+    "avatar": ""
+   },
+   {
+    "id": 28881,
+    "name": "peekaboo",
+    "avatar": ""
+   }
+  ],
+  "status": false,
+  "image": null,
+  "is_static_score": false,
+  "tag": [
+   {
+    "id": 24,
+    "name": "第二届“Parloo”CTF应急响应挑战赛"
+   }
+  ],
+  "favorite_count": 2,
+  "is_favorite": false,
+  "env_type": null
+ },
+ {
+  "id": 613,
+  "question": "应急响应2-1",
+  "difficulty": 3,
+  "description": "提交堡垒机中留下的flag\n附件下载地址：百度网盘 https://pan.baidu.com/s/1otqDnpKTOEsPZQiWSE8ECg?pwd=6666 提取码: 6666 夸克网盘 https://pan.quark.cn/s/46653bd06cca 123云盘 https://www.123865.com/s/qDVvjv-zVBod 提取码:6666\n解压密码：应急响应环境解压密码网络拓扑环境 Skills@@@Skills@@@Skills 畸行的爱 Parloo&zgsfsys&onefox&solar**juyt",
+  "file_list": [
+   {
+    "file_name": "第二届“Parloo”CTF应急响应挑战赛应急响应场景挑战说明手册.pdf.zip",
+    "file_url": "https://sierting-defense.oss-cn-hangzhou.aliyuncs.com/media/images/6561a7e1fa2d42ea97041affa4f6d75f.zip"
+   }
+  ],
+  "answer_count": 160,
+  "score": 1.0,
+  "hints": [],
+  "ranking": [
+   {
+    "id": 28881,
+    "name": "peekaboo",
+    "avatar": ""
+   },
+   {
+    "id": 23204,
+    "name": "cyl_love",
+    "avatar": "https://sierting-defense.oss-cn-hangzhou.aliyuncs.com/media/images/2bdef1c470174e80b231fa87199ecb1a.jpg"
+   },
+   {
+    "id": 27591,
+    "name": "LibraCastle",
+    "avatar": ""
+   }
+  ],
+  "status": false,
+  "image": null,
+  "is_static_score": false,
+  "tag": [
+   {
+    "id": 24,
+    "name": "第二届“Parloo”CTF应急响应挑战赛"
+   }
+  ],
+  "favorite_count": 1,
+  "is_favorite": false,
+  "env_type": null
+ },
+ {
+  "id": 1028,
+  "question": "Traffic Analysis",
+  "difficulty": 2,
+  "description": "在这个流量中，寻找重要的信息。\n问题1：CVE编号是多少\n例：CVE-xxxx-xxxxx\n问题2：伪造用户名\n例：root \n问题3：恶意文件名是什么\n例：xxxx.xxx\n问题4：运行路径在哪\n例：/xxx\n问题5：flag的值\n例：flag{xxxxx}\n问题6：JWT的key是多少\n例：xxxxx\n\n提交最终flag的格式如下：\nflag{md5(问题1_问题2_问题3_问题4_问题5_问题6)}\n\n备份下载1：https://pan.baidu.com/s/14QtnAOAa3fNEKt7YQZRk2A 提取码: dcm2\n备份下载2：https://wwboa.lanzouq.com/ivXYo3egom5a\n备份下载3：https://pan.quark.cn/s/202c2e1cfe39  提取码：PSgS",
+  "file_list": [
+   {
+    "file_name": "challenge.zip",
+    "file_url": "https://sierting-defense.oss-cn-hangzhou.aliyuncs.com/media/images/6c4c305dc7db4919a87db9d98d43db12.zip"
+   }
+  ],
+  "answer_count": 27,
+  "score": 2.0,
+  "hints": [],
+  "ranking": [
+   {
+    "id": 16849,
+    "name": "Moxin",
+    "avatar": ""
+   },
+   {
+    "id": 22715,
+    "name": "小手冰凉",
+    "avatar": "https://sierting-defense.oss-cn-hangzhou.aliyuncs.com/media/images/8903e6381371417baf3ccc19aa7decbd.jpg"
+   },
+   {
+    "id": 63331,
+    "name": "hualingyiying",
+    "avatar": ""
+   }
+  ],
+  "status": false,
+  "image": null,
+  "is_static_score": false,
+  "tag": [],
+  "favorite_count": 1,
+  "is_favorite": false,
+  "env_type": null
+ }
+]

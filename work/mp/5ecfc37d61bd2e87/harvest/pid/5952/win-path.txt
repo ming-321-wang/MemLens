@@ -1,0 +1,1 @@
+\Device\HarddiskVolume2\Users\Administrator\Desktop\workbuddy\resources\app.asar.unpacked\cli\vendor\sandbox\sandbox-cli.exe

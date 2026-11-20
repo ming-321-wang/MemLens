@@ -1,0 +1,3 @@
+Time,Type,Action,PID,Value32,Value64,Text,Pad
+"2025-10-09 05:46:13",KObj,CRE,0,0x0,0xffff8e858e79e910,\\KnownDlls32\KnownDllPath,"                 "
+"2025-10-09 05:46:13",KObj,CRE,0,0x0,0xffff8e858e79e860,\\KnownDlls\KnownDllPath,"                 "

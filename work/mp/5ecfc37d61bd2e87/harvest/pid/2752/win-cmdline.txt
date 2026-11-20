@@ -1,0 +1,1 @@
+cmd /k D:\Global\apps\masscan\current\masscan.exe -h

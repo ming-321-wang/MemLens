@@ -1,0 +1,92 @@
+=== C: 磁盘 ===
+总计 204.57 GB   已用 179.42 GB   空闲 25.15 GB
+
+=== 顶层占用 ===
+      82.57 GB  C:\Users
+      47.35 GB  C:\Windows
+      13.50 GB  pagefile.sys
+      12.69 GB  C:\Program Files (x86)
+      12.48 GB  C:\Program Files
+       7.95 GB  C:\ProgramData
+       1.98 GB  C:\DrvPath
+       0.15 GB  C:\Python314
+       0.02 GB  C:\Temp
+       0.02 GB  swapfile.sys
+       0.01 GB  C:\astest
+       0.00 GB  C:\inetpub
+       0.00 GB  DumpStack.log.tmp
+       0.00 GB  DumpStack.log
+       0.00 GB  C:\$Recycle.Bin
+       0.00 GB  C:\share
+       0.00 GB  C:\msys64
+       0.00 GB  C:\System Volume Information
+       0.00 GB  C:\OneDriveTemp
+       0.00 GB  C:\KRECYCLE
+       0.00 GB  C:\Documents and Settings
+       0.00 GB  C:\Config.Msi
+
+=== C:\Users\WZH 二级占用 ===
+      48.40 GB  C:\Users\WZH\AppData
+      17.66 GB  C:\Users\WZH\Documents
+       6.12 GB  C:\Users\WZH\Desktop
+       5.48 GB  C:\Users\WZH\.workbuddy
+       3.00 GB  C:\Users\WZH\.lmstudio
+       0.55 GB  C:\Users\WZH\.dsh
+       0.53 GB  C:\Users\WZH\.marscode
+       0.28 GB  C:\Users\WZH\.cache
+       0.17 GB  C:\Users\WZH\Pictures
+       0.17 GB  C:\Users\WZH\.cherrystudio
+       0.08 GB  C:\Users\WZH\.openjfx
+       0.03 GB  C:\Users\WZH\NTUSER.DAT
+       0.02 GB  C:\Users\WZH\.javacpp
+       0.01 GB  C:\Users\WZH\.config
+       0.01 GB  C:\Users\WZH\env
+       0.01 GB  C:\Users\WZH\ntuser.dat.LOG2
+       0.01 GB  C:\Users\WZH\ntuser.dat.LOG1
+       0.01 GB  C:\Users\WZH\Videos
+       0.01 GB  C:\Users\WZH\.rembg
+       0.01 GB  C:\Users\WZH\usb_driver
+
+=== 全盘最大的 40 个文件（>200 MB）===
+      13.50 GB  C:\pagefile.sys
+       3.81 GB  C:\Users\WZH\Documents\Virtual Machines\我喜欢女人\我喜欢女人-s001.vmdk
+       3.59 GB  C:\Users\WZH\Documents\Virtual Machines\我喜欢女人\我喜欢女人-s003.vmdk
+       2.86 GB  C:\Users\WZH\Documents\Virtual Machines\我喜欢女人\我喜欢女人-s004.vmdk
+       2.79 GB  C:\Users\WZH\Documents\Virtual Machines\我喜欢女人\我喜欢女人-s005.vmdk
+       1.37 GB  C:\Users\WZH\Documents\Virtual Machines\我喜欢女人\我喜欢女人-s002.vmdk
+     902.39 MB  C:\Users\WZH\Desktop\网安软件\EV录屏视频保存\韦祖豪渗透测试录屏\20260724_104735.mp4
+     805.89 MB  C:\DrvPath\572.70-desktop-win10-win11-64bit-international-dch-whql.exe
+     676.43 MB  C:\Windows\Installer\39f891.msi
+     676.43 MB  C:\ProgramData\Downloaded Installations\HCL\AppScan\{5849B087-1B03-4D52-AD3C-59EE2267C79B}\HCL AppScan Standard.msi
+     668.46 MB  C:\Users\WZH\AppData\Roaming\baidu\BaiduNetdisk.zip
+     643.41 MB  C:\Users\WZH\.lmstudio\extensions\backends\vendor\win-llama-cuda12-vendor-v2\cublasLt64_12.dll
+     579.17 MB  C:\Program Files (x86)\Common Files\VMware\InstallerCache\{40EB739C-B694-40E3-8F80-631209827A5D}.msi
+     507.48 MB  C:\Users\WZH\AppData\Local\@genieworkbuddy-desktop-updater\installer.exe
+     489.79 MB  C:\DrvPath\Display.Intel.new.20250819.7z
+     475.98 MB  C:\DrvPath\Display.Intel.new.20250204.7z
+     453.40 MB  C:\Users\WZH\.lmstudio\extensions\backends\llama.cpp-win-x86_64-nvidia-cuda-avx2-1.56.0\ggml-cuda.dll
+     422.38 MB  C:\Windows\Installer\8a7f25f.msi
+     412.67 MB  C:\Program Files\Tencent\Weixin\4.1.15.56\RadiumWMPF.bin
+     388.43 MB  C:\Program Files\WSL\system.vhd
+     383.70 MB  C:\Users\WZH\.marscode\ai-chat\binary\1.7.8\modules\ai-agent\ai-agent.exe
+     342.02 MB  C:\Users\WZH\Desktop\网安软件\EV录屏视频保存\韦祖豪渗透测试录屏\20260723_091856.mp4
+     341.18 MB  C:\Program Files (x86)\Microsoft\Edge\Application\157.0.4341.42\msedge.dll
+     341.18 MB  C:\Program Files (x86)\Microsoft\EdgeWebView\Application\157.0.4341.42\msedge.dll
+     341.18 MB  C:\Program Files (x86)\Microsoft\EdgeCore\Optimized\msedge.dll
+     341.18 MB  C:\Program Files (x86)\Microsoft\EdgeCore\157.0.4341.42\msedge.dll
+     341.18 MB  C:\Program Files (x86)\Microsoft\Copilot\Application\157.0.4341.42\msedge.dll
+     340.85 MB  C:\Windows\Installer\30ca8c.msi
+     335.99 MB  C:\Users\WZH\AppData\Local\anythingllm-desktop-updater\installer.exe
+     335.70 MB  C:\Users\WZH\AppData\Local\Microsoft\Edge.jiu\User Data\ProvenanceData\2024.10.16.4\vti-b-p32-visual.quant.ort
+     327.75 MB  C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.9711_none_2e9083253adbaceb\msedge.dll
+     327.75 MB  C:\Windows\System32\Microsoft-Edge-WebView\msedge.dll
+     327.14 MB  C:\Users\WZH\AppData\Local\JianyingPro\Apps\8.9.0.13361\VECreator.dll
+     325.89 MB  C:\Users\WZH\AppData\Local\JianyingPro\Apps\8.6.0.13206\VECreator.dll
+     325.89 MB  C:\Windows\WinSxS\amd64_microsoft-edge-webview_31bf3856ad364e35_10.0.26100.9444_none_2eb3af6f3ac0f200\msedge.dll
+     315.78 MB  C:\Users\WZH\AppData\Local\tdappdesktop-updater\installer.exe
+     300.00 MB  C:\Users\WZH\AppData\Local\javasharedresources\C290M17F1A64P_sharedcc_WZH_G43L00
+     294.27 MB  C:\Users\WZH\.lmstudio\extensions\backends\vendor\win-llama-cuda-vendor-v2\cublasLt64_11.dll
+     293.52 MB  C:\Users\WZH\.workbuddy\binaries\python\envs\default\Lib\site-packages\torch\lib\torch_cpu.dll
+     275.98 MB  C:\Users\WZH\AppData\Local\@deepseek-aidsh-desktop-updater\pending\deepseek-harness-0.2.1-rc.2-win-x64.exe
+
+（扫描耗时 14 s）

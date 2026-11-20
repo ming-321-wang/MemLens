@@ -1,0 +1,150 @@
+[
+ {
+  "名称": "fffffa8018de6f20-Microsoft-Windows-Application-Experience%4Problem-Steps-Recorder.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa8018e2d490-Microsoft-Windows-Resource-Exhaustion-Detector%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa8018e89e50-Microsoft-Windows-Application-Experience%4Program-Telemetry.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa80197f4690-Microsoft-Windows-WinRM%4Operational.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa8019a0b450-Microsoft-Windows-Diagnosis-DPS%4Operational.evtx",
+  "大小": 126464
+ },
+ {
+  "名称": "fffffa8019a179d0-Microsoft-Windows-LanguagePackSetup%4Operational.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa8019a3d950-Microsoft-Windows-Application-Experience%4Program-Compatibility-Assistant.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa8019a4b070-Microsoft-Windows-WindowsUpdateClient%4Operational.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa8019fefa40-Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a0d06e0-System.evtx",
+  "大小": 2097152
+ },
+ {
+  "名称": "fffffa801a0d8070-Security.evtx",
+  "大小": 230400
+ },
+ {
+  "名称": "fffffa801a0da070-Application.evtx",
+  "大小": 2097152
+ },
+ {
+  "名称": "fffffa801a0de850-Internet Explorer.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a0e0bf0-Windows PowerShell.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a0e2070-HardwareEvents.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a0e2820-Key Management Service.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a0e4270-Microsoft-Windows-Kernel-WHEA%4Operational.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a0e9650-Microsoft-Windows-Kernel-WHEA%4Errors.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a0ebd80-Microsoft-Windows-Kernel-Power%4Thermal-Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a149660-Microsoft-Windows-NetworkAccessProtection%4WHC.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a177310-Microsoft-Windows-User Profile Service%4Operational.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a1823e0-Microsoft-Windows-Kernel-StoreMgr%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a191ea0-Microsoft-Windows-Windows Firewall With Advanced Security%4Firewall.evtx",
+  "大小": 114688
+ },
+ {
+  "名称": "fffffa801a19a790-Microsoft-Windows-NCSI%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a1a9800-Setup.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a1c0250-Microsoft-Windows-TerminalServices-LocalSessionManager%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a1d5ca0-Microsoft-Windows-GroupPolicy%4Operational.evtx",
+  "大小": 2097152
+ },
+ {
+  "名称": "fffffa801a1d7b20-Microsoft-Windows-Dhcp-Client%4Admin.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a1de9c0-Microsoft-Windows-Dhcpv6-Client%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a2a3770-Microsoft-Windows-NetworkProfile%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a2c5c00-Microsoft-Windows-Iphlpsvc%4Operational.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a2d6da0-Microsoft-Windows-Windows Firewall With Advanced Security%4ConnectionSecurity.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a2fb070-Microsoft-Windows-Application-Experience%4Program-Compatibility-Troubleshooter.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a322e20-Microsoft-Windows-Winlogon%4Operational.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "fffffa801a352b90-Microsoft-Windows-NetworkAccessProtection%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "fffffa801a36dc00-Microsoft-Windows-Application-Experience%4Program-Inventory.evtx",
+  "大小": 1048576
+ },
+ {
+  "名称": "readme.txt",
+  "大小": 1014
+ }
+]

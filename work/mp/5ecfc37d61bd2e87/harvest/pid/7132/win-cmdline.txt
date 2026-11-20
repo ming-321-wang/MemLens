@@ -1,0 +1,1 @@
+"D:\Maye\Maye.exe" --autoruns

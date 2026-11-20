@@ -1,0 +1,19 @@
+
+{"Certificate ID": "ProtectedRoots", "Certificate name": null, "Certificate path": "Software\\Microsoft\\SystemCertificates", "Certificate section": "Root", "__children": []}
+{"Certificate ID": "4F65566336DB6598581D584A596C87934D5F2AB4", "Certificate name": "VeriSign Class 3 Primary CA", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "AuthRoot", "__children": []}
+{"Certificate ID": "742C3192E607E424EB4549542BE1BBC53E6174E2", "Certificate name": "VeriSign Class 3 Public Primary CA", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "AuthRoot", "__children": []}
+{"Certificate ID": "D1EB23A46D17D68FD92564C2F1F1601764D8E349", "Certificate name": "C\u00b7O\u00b7M\u00b7O\u00b7D\u00b7O", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "AuthRoot", "__children": []}
+{"Certificate ID": "109F1CAED645BB78B3EA2B94C0697C740733031C", "Certificate name": null, "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "CA", "__children": []}
+{"Certificate ID": "D559A586669B08F46A30A133F8A9ED3D038E2EA8", "Certificate name": null, "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "CA", "__children": []}
+{"Certificate ID": "FEE449EE0E3965A5246F000E87FDE2A065FD89D4", "Certificate name": null, "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "CA", "__children": []}
+{"Certificate ID": "A377D1B1C0538833035211F4083D00FECC414DAB", "Certificate name": null, "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "CA", "__children": []}
+{"Certificate ID": "637162CC59A3A1E25956FA5FA8F60D2E1C52EAC6", "Certificate name": "Fraudulent, NOT Microsoft", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "Disallowed", "__children": []}
+{"Certificate ID": "7D7F4414CCEF168ADF6BF40753B5BECD78375931", "Certificate name": "Fraudulent, NOT Microsoft", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "Disallowed", "__children": []}
+{"Certificate ID": "18F7C1FCC3090203FD5BAA2F861A754976C8DD25", "Certificate name": "VeriSign Time Stamping CA", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "ROOT", "__children": []}
+{"Certificate ID": "245C97DF7514E7CF2DF8BE72AE957B9E04741E85", "Certificate name": "Microsoft Timestamp Root", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "ROOT", "__children": []}
+{"Certificate ID": "7F88CD7223F3C813818C994614A89C99FA3B5247", "Certificate name": "Microsoft Authenticode(tm) Root", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "ROOT", "__children": []}
+{"Certificate ID": "A43489159A520F0D93D032CCAF37E7FE20A8B419", "Certificate name": "Microsoft Root Authority", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "ROOT", "__children": []}
+{"Certificate ID": "BE36A4562FB2EE05DBB3D32323ADF445084ED656", "Certificate name": "Thawte Timestamping CA", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "ROOT", "__children": []}
+{"Certificate ID": "CDD4EEAE6000AC7F40C3802C171E30148030C072", "Certificate name": "Microsoft Root Certificate Authority", "Certificate path": "Microsoft\\SystemCertificates", "Certificate section": "ROOT", "__children": []}
+{"Certificate ID": "ProtectedRoots", "Certificate name": null, "Certificate path": "Software\\Microsoft\\SystemCertificates", "Certificate section": "Root", "__children": []}
+{"Certificate ID": "ProtectedRoots", "Certificate name": null, "Certificate path": "Software\\Microsoft\\SystemCertificates", "Certificate section": "Root", "__children": []}

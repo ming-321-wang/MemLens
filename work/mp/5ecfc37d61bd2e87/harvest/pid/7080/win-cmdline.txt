@@ -1,0 +1,1 @@
+"C:\Windows\System32\SearchFilterHost.exe" 876 2456 2380 860 {5E941D80-BF96-11CD-B579-08002B30BFEB}

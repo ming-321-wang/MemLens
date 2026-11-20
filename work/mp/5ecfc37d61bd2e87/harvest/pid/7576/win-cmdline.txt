@@ -1,0 +1,1 @@
+"D:\Global\apps\librewolf-pentest\current\LibreWolf\librewolf.exe" -contentproc -parentBuildID 20250518161911 -prefsHandle 3784:31250 -prefMapHandle 3788:277543 -ipcHandle 3796 -initialChannelId {44c3029d-84d7-4bb3-911f-4eff3d511a95} -parentPid 7192 -appDir "D:\Global\apps\librewolf-pentest\current\LibreWolf\browser" - 4 rdd

@@ -1,0 +1,54 @@
+=========================================================
+  KEY STRINGS RECOVERED FROM MEMORY DUMP
+  Sample: internet_detector.exe (AgentTesla / PyInstaller)
+  Tool: GNU strings -n 8
+=========================================================
+
+--- SMTP & EXFILTRATION STRINGS ---
+tibiaClientsmtp.serwer.plkeyloggervsk3IdSMTP1Connected
+admin@smtp.rambler.ru
+admin@smtp.yandex.ru
+giza157smtp.terra.com.br
+COD_ID_SMTPConnection_1
+tibiaClientsSMTP
+tibiaClientsSMTPConnected
+smtpAddress
+smtpPort
+smtpSender
+smtpPassword
+
+--- C2 / GATE.PHP STRINGS ---
+http://marketingg.jino-net.ru/proxy/gate.php
+/gate.php?username=
+%APPDATA%\googlestorage.gl/xx/gate.php
+185.234.72.230
+185.65.202.62
+
+--- APPDATA / PYINSTALLER STRINGS ---
+C:\Users\kende\AppData\Local\Temp\_MEI28242\python310.dll
+C:\Users\kende\AppData\Local\Temp\_MEI28242\ucrtbase.dll
+AppData\Local\Temp\_MEI
+
+--- PROCESS STRINGS ---
+C:\Tools\internet_detector\internet_detector.exe
+internet_detector.exe
+
+--- KEYLOGGER / CREDENTIAL THEFT STRINGS ---
+MySerialIsPasswordCredentialError
+MySerialIsPasswordError
+MySerialIsPasswordLocalError
+challengePassword
+STEALING_GETTING_PACKAGES
+ThisIsCredentialTime
+MySerialIsChangePasswordError
+MySerialIsPasswordFtpError
+
+--- REGISTRY STRINGS ---
+Software\Microsoft\Windows\CurrentVersion\Run
+ransomware.exe
+
+=========================================================
+NOTE: Strings were extracted using:
+  strings -n 8 ~/Desktop/memory.raw > ~/Desktop/memory_strings.txt
+Then filtered with grep for relevant keywords.
+=========================================================

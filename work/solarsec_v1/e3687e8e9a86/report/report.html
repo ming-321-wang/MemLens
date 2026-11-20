@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>内存取证分析报告 · dumped_4053_[400000-4f4000].bin</title><style>
+:root{--fg:#1c1e21;--mut:#6b7280;--bd:#e5e7eb;--bg:#fff;--crit:#b91c1c;--high:#c2410c;
+--med:#a16207;--low:#2563eb;--info:#4b5563}
+*{box-sizing:border-box}
+body{font:14px/1.7 "Segoe UI","Microsoft YaHei",system-ui,sans-serif;color:var(--fg);
+background:#f6f7f9;margin:0;padding:32px}
+.page{max-width:1080px;margin:0 auto;background:var(--bg);padding:40px 44px;
+border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+h1{font-size:25px;margin:0 0 6px;border-bottom:3px solid var(--fg);padding-bottom:12px}
+h2{font-size:18px;margin:34px 0 12px;padding-left:10px;border-left:4px solid var(--fg)}
+h3{font-size:15px;margin:20px 0 8px}
+table{width:100%;border-collapse:collapse;margin:10px 0 18px;font-size:13px}
+th,td{border:1px solid var(--bd);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:#f3f4f6;font-weight:600}
+tr:nth-child(even) td{background:#fafafa}
+code,.mono{font-family:"Cascadia Mono",Consolas,monospace;font-size:12px;
+background:#f3f4f6;padding:1px 5px;border-radius:3px;word-break:break-all}
+.tag{display:inline-block;padding:1px 8px;border-radius:10px;color:#fff;font-size:12px}
+.critical{background:var(--crit)} .high{background:var(--high)}
+.medium{background:var(--med)} .low{background:var(--low)} .info{background:var(--info)}
+.muted{color:var(--mut)} .note{background:#fffbeb;border-left:4px solid #f59e0b;
+padding:10px 14px;margin:12px 0;border-radius:0 6px 6px 0}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--bd);
+color:var(--mut);font-size:12px}
+@media print{body{background:#fff;padding:0}.page{box-shadow:none;padding:0}}
+</style></head><body><div class='page'><h1>内存取证分析报告 · dumped_4053_[400000-4f4000].bin</h1><p class='muted'>由 MemLens 自动生成于 2026-10-24 12:34:27</p><h2>一、案件基本信息</h2><table><tr><th style='width:180px'>案件 ID</th><td><code>e3687e8e9a86</code></td></tr><tr><th style='width:180px'>名称</th><td><code>dumped_4053_[400000-4f4000].bin</code></td></tr><tr><th style='width:180px'>证据文件</th><td><code>E:\附件原件\solar应急响应\solarsec_202603\dumped_4053_[400000-4f4000].bin</code></td></tr><tr><th style='width:180px'>大小</th><td><code>999,424 字节</code></td></tr><tr><th style='width:180px'>SHA-256</th><td><code>c42219fff63ca41c961c70ccb6d471f6d74a66254945220103814ca8c49780b8</code></td></tr><tr><th style='width:180px'>容器 / 系统</th><td><code>memfrag / unknown</code></td></tr><h2>二、发现项</h2><p class='muted'>本次分析未产生发现项。</p><h2>三、情报指标（IOC）</h2><table><tr><th>类型</th><th>数量</th><th>示例</th></tr><tr><td>unix_path</td><td>45</td><td><code>/dev/null</code>, <code>/usr/bin</code>, <code>/usr/local/bin</code>, <code>/usr/local/sbin</code>, <code>/usr/sbin</code>, <code>/bin/sh</code>, <code>/dev/fd</code>, <code>/dev/fd/H</code>, <code>/dev/fd/I</code>, <code>/dev/std</code>, <code>/dev/tcp</code>, <code>/dev/tty</code>, <code>/dev/udp</code>, <code>/etc/bash.bash_logout</code>, <code>/etc/bash.bashrc</code>, <code>/etc/hosts</c</td></tr><tr><td>domain</td><td>1</td><td><code>gnu.org</code></td></tr><tr><td>url</td><td>1</td><td><code>http://gnu.org/licenses/gpl.html</code></td></tr><tr><td>email</td><td>1</td><td><code>bash-maintainers@gnu.org</code></td></tr><tr><td>windows_path</td><td>1</td><td><code>E:\附件原件</code></td></tr></table><h2>四、词典命中（高危及以上）</h2><table><tr><th>词典</th><th>条目</th><th>命中值</th><th>次数</th><th>建议</th></tr><tr><td>持久化位置</td><td>Linux 持久化</td><td><code>~/.bashrc</code></td><td>1</td><td class='muted'>ld.so.preload 属于高阶 rootkit 手法，出现即重点核查</td></tr><tr><td>持久化位置</td><td>Linux 持久化</td><td><code>~/.profile</code></td><td>1</td><td class='muted'>ld.so.preload 属于高阶 rootkit 手法，出现即重点核查</td></tr></table><h2>五、事件时间线</h2><p class='muted'>未提取到带时间戳的记录。</p><h2>六、相关取证要点</h2><h3>镜像里直接存在 flag</h3><p><b>征象：</b>memstrings.flag 命中，decoded 列给出明文。</p><p><b>结论：</b>题目把答案放在内存里，通常藏在进程环境变量、命令行、剪贴板或文件内容中。</p><ul><li>按 offset 反查落在哪个进程/区域</li><li>用 hit 的偏移去 windows.memmap 定位来源</li><li>若为 UTF-16LE 命中，说明是宽字符 API（注册表/路径）写入的</li></ul><h2>七、执行情况与局限</h2><p>共执行 17 项，成功 14 项，异常 3 项。</p><div class='note'>下列失败项意味着相应结论<strong>缺乏证据支撑</strong>，不能理解为『已排除』。</div><table><tr><th>引擎</th><th>插件</th><th>状态</th><th>说明</th></tr><tr><td>vol3</td><td class='mono'>banners.Banners</td><td>partial</td><td class='muted'>引擎执行成功但未解析出任何记录（可能镜像不含该数据结构）</td></tr><tr><td>memstrings</td><td class='mono'>memstrings.flag</td><td>partial</td><td class='muted'>未解析出任何记录（该产物为空，或镜像里没有对应数据）</td></tr><tr><td>static</td><td class='mono'>static.deps</td><td>partial</td><td class='muted'>未解析出任何记录（该产物为空，或镜像里没有对应数据）</td></tr></table><footer>每个产物的原始命令行留存于数据库 <code>artifacts.argv_json</code>，原始输出落盘并记录 SHA-256，可逐条复现与校验。</footer></div></body></html>

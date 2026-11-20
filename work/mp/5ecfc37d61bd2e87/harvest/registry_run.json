@@ -1,0 +1,42 @@
+[
+ {
+  "注册表键": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "名称": "VMware User Process",
+  "数据": "\"\u0000D\u0000:\u0000\\\u0000P\u0000r\u0000o\u0000g\u0000r\u0000a\u0000m\u0000 \u0000F\u0000i\u0000l\u0000e\u0000s\u0000\\\u0000V\u0000M\u0000w\u0000a\u0000r\u0000e\u0000\\\u0000V\u0000M\u0000w\u0000a\u0000r\u0000e\u0000 \u0000T\u0000o\u0000o\u0000l\u0000s\u0000\\\u0000v\u0000m\u0000t\u0000o\u0000o\u0000l\u0000s\u0000d\u0000.\u0000e\u0000x\u0000e\u0000\"\u0000 \u0000-\u0000n\u0000 \u0000v\u0000m\u0000u\u0000s\u0000r\u0000\u0000\u0000"
+ },
+ {
+  "注册表键": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "名称": "VMware User Process.txt",
+  "数据": "ffff810545a13000:00f1ae88\nREG_SZ\n\"D:\\Program Files\\VMware\\VMware Tools\\vmtoolsd.exe\" -n vmusr"
+ },
+ {
+  "注册表键": "HKLM\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "名称": "GEUU20240.exe",
+  "数据": "C\u0000:\u0000\\\u0000W\u0000i\u0000n\u0000d\u0000o\u0000w\u0000s\u0000\\\u0000S\u0000y\u0000s\u0000W\u0000O\u0000W\u00006\u00004\u0000\\\u0000G\u0000E\u0000U\u0000U\u00002\u00000\u00002\u00004\u00000\u0000.\u0000e\u0000x\u0000e\u0000\u0000\u0000"
+ },
+ {
+  "注册表键": "HKLM\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "名称": "GEUU20240.exe.txt",
+  "数据": "ffff810545a13000:01054a58\nREG_SZ\nC:\\Windows\\SysWOW64\\GEUU20240.exe"
+ },
+ {
+  "注册表键": "HKU\\Administrator\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "名称": "SHECA UniClient",
+  "数据": "C\u0000:\u0000\\\u0000U\u0000s\u0000e\u0000r\u0000s\u0000\\\u0000A\u0000d\u0000m\u0000i\u0000n\u0000i\u0000s\u0000t\u0000r\u0000a\u0000t\u0000o\u0000r\u0000\\\u0000D\u0000e\u0000s\u0000k\u0000t\u0000o\u0000p\u0000\\\u0000OSaS\\\u0000U\u0000n\u0000i\u0000C\u0000l\u0000i\u0000e\u0000n\u0000t\u0000\\\u0000U\u0000n\u0000i\u0000C\u0000l\u0000i\u0000e\u0000n\u0000t\u0000.\u0000e\u0000x\u0000e\u0000\u0000\u0000"
+ },
+ {
+  "注册表键": "HKU\\Administrator\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "名称": "SHECA UniClient.txt",
+  "数据": "ffff81054c764000:000c7490\nREG_SZ\nC:\\Users\\Administrator\\Desktop\\  \\UniClient\\UniClient.exe"
+ },
+ {
+  "注册表键": "HKU\\Administrator\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "名称": "MicrosoftEdgeAutoLaunch_98769996E24836F99EC8617644423B4C",
+  "数据": "\"\u0000C\u0000:\u0000\\\u0000P\u0000r\u0000o\u0000g\u0000r\u0000a\u0000m\u0000 \u0000F\u0000i\u0000l\u0000e\u0000s\u0000 \u0000(\u0000x\u00008\u00006\u0000)\u0000\\\u0000M\u0000i\u0000c\u0000r\u0000o\u0000s\u0000o\u0000f\u0000t\u0000\\\u0000E\u0000d\u0000g\u0000e\u0000\\\u0000A\u0000p\u0000p\u0000l\u0000i\u0000c\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\\\u0000m\u0000s\u0000e\u0000d\u0000g\u0000e\u0000.\u0000e\u0000x\u0000e\u0000\"\u0000 \u0000-\u0000-\u0000n\u0000o\u0000-\u0000s\u0000t\u0000a\u0000r\u0000t\u0000u\u0000p\u0000-\u0000w\u0000i\u0000n\u0000d\u0000o\u0000w\u0000 \u0000-\u0000-\u0000w\u0000i\u0000n\u0000-\u0000s\u0000e\u0000s\u0000s\u0000i\u0000o\u0000n\u0000-\u0000s\u0000t\u0000a\u0000r\u0000t\u0000\u0000\u0000"
+ },
+ {
+  "注册表键": "HKU\\Administrator\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+  "名称": "MicrosoftEdgeAutoLaunch_98769996E24836F99EC8617644423B4C.txt",
+  "数据": "ffff81054c764000:000b2100\nREG_SZ\n\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --no-startup-window --win-session-start"
+ }
+]

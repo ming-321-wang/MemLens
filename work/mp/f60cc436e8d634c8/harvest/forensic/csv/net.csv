@@ -1,0 +1,32 @@
+Proto,State,SrcAddr,SrcPort,DstAddr,DstPort,Time,Object,PID,Process,ProcessPath
+TCP4,LISTENING,0.0.0.0,49665,***,0,"2025-10-09 05:46:16 UTC",0xffffc58d51c0f500,1012,wininit.exe,\Device\HarddiskVolume3\Windows\System32\wininit.exe
+TCP6,LISTENING,::,49665,***,0,"2025-10-09 05:46:16 UTC",0xffffc58d51c0ecc0,1012,wininit.exe,\Device\HarddiskVolume3\Windows\System32\wininit.exe
+TCP4,LISTENING,0.0.0.0,49669,***,0,"2025-10-09 05:46:20 UTC",0xffffc58d533a7480,1084,services.exe,\Device\HarddiskVolume3\Windows\System32\services.exe
+TCP6,LISTENING,::,49669,***,0,"2025-10-09 05:46:20 UTC",0xffffc58d533a8be0,1084,services.exe,\Device\HarddiskVolume3\Windows\System32\services.exe
+TCP4,LISTENING,0.0.0.0,49664,***,0,"2025-10-09 05:46:16 UTC",0xffffc58d51c0eb60,1104,lsass.exe,\Device\HarddiskVolume3\Windows\System32\lsass.exe
+TCP6,LISTENING,::,49664,***,0,"2025-10-09 05:46:16 UTC",0xffffc58d51c0f660,1104,lsass.exe,\Device\HarddiskVolume3\Windows\System32\lsass.exe
+TCP4,LISTENING,0.0.0.0,135,***,0,"2025-10-09 05:46:16 UTC",0xffffcd80b9ee6e20,1372,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+TCP6,LISTENING,::,135,***,0,"2025-10-09 05:46:16 UTC",0xffffcd80b9ee7500,1372,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+TCP4,LISTENING,0.0.0.0,49666,***,0,"2025-10-09 05:46:17 UTC",0xffffcd80b9ee6480,1884,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+TCP6,LISTENING,::,49666,***,0,"2025-10-09 05:46:17 UTC",0xffffcd80b9ee70e0,1884,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+TCP4,LISTENING,0.0.0.0,49667,***,0,"2025-10-09 05:46:17 UTC",0xffffcd80b9ee77c0,2128,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+TCP6,LISTENING,::,49667,***,0,"2025-10-09 05:46:17 UTC",0xffffcd80bb56f660,2128,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+TCP4,LISTENING,0.0.0.0,49668,***,0,"2025-10-09 05:46:18 UTC",0xffffc58d52c788a0,3224,spoolsv.exe,\Device\HarddiskVolume3\Windows\System32\spoolsv.exe
+TCP6,LISTENING,::,49668,***,0,"2025-10-09 05:46:18 UTC",0xffffc58d52c785e0,3224,spoolsv.exe,\Device\HarddiskVolume3\Windows\System32\spoolsv.exe
+TCP4,LISTENING,0.0.0.0,5040,***,0,"2025-10-09 05:46:21 UTC",0xffffc58d534fe060,5052,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP6,"",::,0,***,0,"2025-10-09 05:46:17 UTC",0xffffcd80bb5a10a0,2420,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP4,"",127.0.0.1,49664,***,49664,"2025-10-09 05:46:18 UTC",0xffffc58d531d96e0,3584,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP6,"",::,0,***,0,"2025-10-09 05:47:31 UTC",0xffffcd80bbf6e8d0,3644,MpDefenderCoreService.exe,"\Device\HarddiskVolume3\ProgramData\Microsoft\Windows Defender\Platform\4.18.25070.5-0\MpDefenderCoreService.exe"
+UDP4,"",0.0.0.0,5050,***,0,"2025-10-09 05:46:21 UTC",0xffffc58d53a7d120,5052,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP6,"",::1,1900,***,0,"2025-10-09 05:46:34 UTC",0xffffc58d54e886e0,6480,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP6,"",::1,51815,***,0,"2025-10-09 05:46:34 UTC",0xffffc58d54e80820,6480,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP4,"",127.0.0.1,1900,***,0,"2025-10-09 05:46:34 UTC",0xffffc58d54e87360,6480,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP4,"",127.0.0.1,51816,***,0,"2025-10-09 05:46:34 UTC",0xffffc58d54e804e0,6480,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP4,"",0.0.0.0,0,***,0,"2025-10-09 05:47:30 UTC",0xffffcd80bbf68c30,7056,WindowsPackageManagerServer.exe,"\Device\HarddiskVolume3\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.26.430.0_x64__8wekyb3d8bbwe\WindowsPackageManagerServer.exe"
+UDP6,"",::,0,***,0,"2025-10-09 05:47:30 UTC",0xffffcd80bbf67090,7056,WindowsPackageManagerServer.exe,"\Device\HarddiskVolume3\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.26.430.0_x64__8wekyb3d8bbwe\WindowsPackageManagerServer.exe"
+UDP4,"",0.0.0.0,0,***,0,"2025-10-09 05:48:22 UTC",0xffffc58d54e87b80,8884,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP6,"",::,0,***,0,"2025-10-09 05:48:22 UTC",0xffffc58d54e57600,8884,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP4,"",0.0.0.0,123,***,0,"2025-10-09 05:48:23 UTC",0xffffc58d5429e800,8884,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP4,"",0.0.0.0,123,***,0,"2025-10-09 05:48:22 UTC",0xffffc58d54e584a0,8884,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP6,"",::,123,***,0,"2025-10-09 05:48:23 UTC",0xffffc58d542a0540,8884,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe
+UDP6,"",::,123,***,0,"2025-10-09 05:48:22 UTC",0xffffc58d54e5cc20,8884,svchost.exe,\Device\HarddiskVolume3\Windows\System32\svchost.exe

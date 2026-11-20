@@ -1,0 +1,3 @@
+DEVICE OPEN: file
+DEVICE: ERROR: Failed opening file: 'E:\vol_easy.vmem'.
+MemProcFS: Failed to connect to memory acquisition device.

@@ -1,0 +1,41 @@
+Windows Information:
+  Computer Name:   DESKTOP-04MPTT8
+  Current Time:    2026-07-23 07:43:37 UTC
+  Boot Time:       2026-07-23 06:26:35 UTC
+  Time Zone:       China Standard Time : UTC+8:00                 
+  Version:         10.0 (build 26100)
+
+Hardware Information:
+  Architecture:    X64
+  Physical Memory: 8 GB
+  Max Address:     0x23fffffff
+  CPU:             12th Gen Intel(R) Core(TM) i5-12450H
+  MB Vendor:       Intel Corporation
+  MB Product:      440BX Desktop Reference Platform
+  BIOS Vendor:     Phoenix Technologies LTD
+  System Vendor:   VMware, Inc.
+
+Users:
+  Administrator  (S-1-5-21-1165966107-1205187135-3664136881-500)
+
+Process Information:
+  Active:          114
+  Inactive:        12
+
+Network Interfaces:
+  Interface #3:
+    DhcpSubnetMaskOpt:  255.255.255.0
+    DhcpDefaultGateway: 192.168.52.2
+    DhcpNameServer:     192.168.52.2
+    DhcpDomain:         localdomain
+    DhcpServer:         192.168.52.254
+    DhcpSubnetMask:     255.255.255.0
+    DhcpIPAddress:      192.168.52.144
+
+MemProcFS Information:
+  Version:         5.18.1 (build 240)
+  Parse Time:      2026-11-10 07:40:14 UTC
+  Memory Source:   Read-only, Static
+  Unique Tag:      26100_7fcf6aa
+  Forensic Mode:   Enabled
+  VM Parsing:      Enabled

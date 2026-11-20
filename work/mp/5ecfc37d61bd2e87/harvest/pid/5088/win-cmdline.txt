@@ -1,0 +1,1 @@
+"D:\Global\apps\librewolf-pentest\current\LibreWolf\librewolf.exe" -contentproc -parentBuildID 20250518161911 -sandboxingKind 0 -prefsHandle 4836:37821 -prefMapHandle 4860:277543 -ipcHandle 4856 -initialChannelId {bda83515-0060-4444-a3d7-16260198bfef} -parentPid 7192 -win32kLockedDown -appDir "D:\Global\apps\librewolf-pentest\current\LibreWolf\browser" - 6 utility

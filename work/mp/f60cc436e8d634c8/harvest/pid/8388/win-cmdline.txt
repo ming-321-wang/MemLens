@@ -1,0 +1,1 @@
+"C:\WINDOWS\system32\backgroundTaskHost.exe" -ServerName:Global.wsw.AppXcx5gg4ftq7samr2je0nxerebxpgp1v9j.mca

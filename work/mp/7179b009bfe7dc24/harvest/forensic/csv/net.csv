@@ -1,0 +1,34 @@
+Proto,State,SrcAddr,SrcPort,DstAddr,DstPort,Time,Object,PID,Process,ProcessPath
+TCP6,LISTENING,::,445,***,0,"                    ***",0xfffffa801a25bc30,4,System,System
+TCP6,LISTENING,::,47001,***,0,"                    ***",0xfffffa8019a34ef0,4,System,System
+TCP4,LISTENING,192.168.186.139,139,***,0,"                    ***",0xfffffa801a2b2010,4,System,System
+TCP4,LISTENING,0.0.0.0,49152,***,0,"                    ***",0xfffffa801a05fef0,348,wininit.exe,\Device\HarddiskVolume2\Windows\System32\wininit.exe
+TCP6,LISTENING,::,49152,***,0,"                    ***",0xfffffa801a0599f0,348,wininit.exe,\Device\HarddiskVolume2\Windows\System32\wininit.exe
+TCP4,LISTENING,0.0.0.0,49155,***,0,"                    ***",0xfffffa801a27d010,444,services.exe,\Device\HarddiskVolume2\Windows\System32\services.exe
+TCP6,LISTENING,::,49155,***,0,"                    ***",0xfffffa801a284250,444,services.exe,\Device\HarddiskVolume2\Windows\System32\services.exe
+TCP4,LISTENING,0.0.0.0,49156,***,0,"                    ***",0xfffffa801a140010,452,lsass.exe,\Device\HarddiskVolume2\Windows\System32\lsass.exe
+TCP6,LISTENING,::,49156,***,0,"                    ***",0xfffffa801a2b7010,452,lsass.exe,\Device\HarddiskVolume2\Windows\System32\lsass.exe
+TCP4,LISTENING,0.0.0.0,135,***,0,"                    ***",0xfffffa801a052ce0,632,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+TCP6,LISTENING,::,135,***,0,"                    ***",0xfffffa801a058ef0,632,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+TCP4,LISTENING,0.0.0.0,49153,***,0,"                    ***",0xfffffa801a0b57d0,684,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+TCP6,LISTENING,::,49153,***,0,"                    ***",0xfffffa801a0c1820,684,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+TCP4,LISTENING,0.0.0.0,49154,***,0,"                    ***",0xfffffa801a097630,780,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+TCP6,LISTENING,::,49154,***,0,"                    ***",0xfffffa8019ff27d0,780,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+TCP4,LISTENING,0.0.0.0,49164,***,0,"                    ***",0xfffffa801a371cc0,1312,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+TCP6,LISTENING,::,49164,***,0,"                    ***",0xfffffa801afc47f0,1312,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP4,"",192.168.186.139,137,***,0,"2025-07-23 03:56:34 UTC",0xfffffa801a237200,4,System,System
+UDP4,"",192.168.186.139,138,***,0,"2025-07-23 03:56:34 UTC",0xfffffa801a237690,4,System,System
+UDP4,"",0.0.0.0,0,***,0,"2025-07-23 07:35:14 UTC",0xfffffa801ac6c320,780,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP6,"",::,0,***,0,"2025-07-23 07:35:14 UTC",0xfffffa801a78b3f0,780,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP4,"",0.0.0.0,500,***,0,"2025-07-23 07:35:14 UTC",0xfffffa801a4a5010,780,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP6,"",::,500,***,0,"2025-07-23 07:35:14 UTC",0xfffffa801acb5dc0,780,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP4,"",0.0.0.0,4500,***,0,"2025-07-23 07:35:14 UTC",0xfffffa801abd58a0,780,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP6,"",::,4500,***,0,"2025-07-23 07:35:14 UTC",0xfffffa801ad1f270,780,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP6,"",::,0,***,0,"2025-07-23 03:56:34 UTC",0xfffffa801a2b0a40,944,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP4,"",0.0.0.0,5355,***,0,"2025-07-23 11:56:36 UTC",0xfffffa801a2cecb0,944,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP6,"",::,5355,***,0,"2025-07-23 11:56:36 UTC",0xfffffa8019fec540,944,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP4,"",127.0.0.1,63641,***,0,"2025-07-23 07:36:06 UTC",0xfffffa801aefa5a0,1016,iexplore.exe,"\Device\HarddiskVolume2\Program Files (x86)\Internet Explorer\iexplore.exe"
+UDP4,"",127.0.0.1,57933,***,0,"2025-07-23 08:57:11 UTC",0xfffffa801af855a0,1260,iexplore.exe,"\Device\HarddiskVolume2\Program Files (x86)\Internet Explorer\iexplore.exe"
+UDP4,"",0.0.0.0,0,***,0,"2025-07-23 07:35:16 UTC",0xfffffa801a2f3a30,1312,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP6,"",::,0,***,0,"2025-07-23 07:35:16 UTC",0xfffffa801a2d91d0,1312,svchost.exe,\Device\HarddiskVolume2\Windows\System32\svchost.exe
+UDP4,"",127.0.0.1,55823,***,0,"2025-07-23 08:55:52 UTC",0xfffffa8018df81c0,1928,iexplore.exe,"\Device\HarddiskVolume2\Program Files (x86)\Internet Explorer\iexplore.exe"

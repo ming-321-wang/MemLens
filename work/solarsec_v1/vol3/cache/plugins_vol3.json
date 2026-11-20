@@ -1,0 +1,1262 @@
+[
+ {
+  "name": "banners.Banners",
+  "display": "系统类型探测（banners）",
+  "category": "系统",
+  "kind": "scalar",
+  "description": "Attempts to identify potential linux banners in an"
+ },
+ {
+  "name": "frameworkinfo.FrameworkInfo",
+  "display": "frameworkinfo.FrameworkInfo",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "isfinfo.IsfInfo",
+  "display": "isfinfo.IsfInfo",
+  "category": "系统",
+  "kind": "table",
+  "description": "Determines information about the currently available"
+ },
+ {
+  "name": "windows.callbacks.Callbacks",
+  "display": "系统回调函数",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.devicetree.DeviceTree",
+  "display": "设备对象树",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.driverirp.DriverIrp",
+  "display": "驱动 IRP 钩子",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.drivermodule.DriverModule",
+  "display": "windows.drivermodule.DriverModule",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.driverscan.DriverScan",
+  "display": "驱动扫描",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.info.Info",
+  "display": "Windows 版本信息",
+  "category": "系统",
+  "kind": "scalar",
+  "description": "Show OS & kernel details of the memory sample being"
+ },
+ {
+  "name": "windows.malware.drivermodule.DriverModule",
+  "display": "windows.malware.drivermodule.DriverModule",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.ldrmodules.LdrModules",
+  "display": "windows.malware.ldrmodules.LdrModules",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.modscan.ModScan",
+  "display": "内核模块扫描",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.modules.Modules",
+  "display": "内核模块列表",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.ssdt.SSDT",
+  "display": "SSDT 表",
+  "category": "系统",
+  "kind": "table",
+  "description": "Lists the system call table."
+ },
+ {
+  "name": "windows.statistics.Statistics",
+  "display": "内存统计信息",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.unloadedmodules.UnloadedModules",
+  "display": "已卸载模块",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.verinfo.VerInfo",
+  "display": "PE 版本信息",
+  "category": "系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.cmdline.CmdLine",
+  "display": "进程命令行",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.dlllist.DllList",
+  "display": "进程加载的 DLL",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.dumpfiles.DumpFiles",
+  "display": "内存中的文件对象（可导出）",
+  "category": "进程",
+  "kind": "file_set",
+  "description": ""
+ },
+ {
+  "name": "windows.envars.Envars",
+  "display": "进程环境变量",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.getsids.GetSIDs",
+  "display": "进程/线程 SID",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.handles.Handles",
+  "display": "进程句柄",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.ldrmodules.LdrModules",
+  "display": "进程模块加载链",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.hollowprocesses.HollowProcesses",
+  "display": "windows.malware.hollowprocesses.HollowProcesses",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.processghosting.ProcessGhosting",
+  "display": "windows.malware.processghosting.ProcessGhosting",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.suspicious_threads.SuspiciousThreads",
+  "display": "windows.malware.suspicious_threads.SuspiciousThreads",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.memmap.Memmap",
+  "display": "进程内存映射（可导出）",
+  "category": "进程",
+  "kind": "file_set",
+  "description": ""
+ },
+ {
+  "name": "windows.orphan_kernel_threads.Threads",
+  "display": "windows.orphan_kernel_threads.Threads",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.privileges.Privs",
+  "display": "进程权限",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.pslist.PsList",
+  "display": "进程列表（活动链）",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.psscan.PsScan",
+  "display": "进程扫描（池扫描）",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.pstree.PsTree",
+  "display": "进程树",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.threads.Threads",
+  "display": "线程信息",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.vadinfo.VadInfo",
+  "display": "进程 VAD 信息",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.vadwalk.VadWalk",
+  "display": "进程 VAD 树遍历",
+  "category": "进程",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.netscan.NetScan",
+  "display": "网络连接扫描",
+  "category": "网络",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.netstat.NetStat",
+  "display": "网络连接状态",
+  "category": "网络",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.hollowprocesses.HollowProcesses",
+  "display": "空心进程检测",
+  "category": "恶意代码",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malfind.Malfind",
+  "display": "内存注入检测（Malfind）",
+  "category": "恶意代码",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.malfind.Malfind",
+  "display": "windows.malware.malfind.Malfind",
+  "category": "恶意代码",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.processghosting.ProcessGhosting",
+  "display": "进程幽灵化检测",
+  "category": "恶意代码",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.psxview.PsXView",
+  "display": "隐藏进程多源比对（psxview）",
+  "category": "恶意代码",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.suspended_threads.SuspendedThreads",
+  "display": "挂起线程检测",
+  "category": "恶意代码",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.suspicious_threads.SuspiciousThreads",
+  "display": "可疑线程检测",
+  "category": "恶意代码",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.vadregexscan.VadRegExScan",
+  "display": "VAD 正则扫描",
+  "category": "恶意代码",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.amcache.Amcache",
+  "display": "windows.amcache.Amcache",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.registry.amcache.Amcache",
+  "display": "windows.registry.amcache.Amcache",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.registry.certificates.Certificates",
+  "display": "注册表证书",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.registry.getcellroutine.GetCellRoutine",
+  "display": "注册表单元格获取",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.registry.hivelist.HiveList",
+  "display": "注册表 Hive 列表",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.registry.hivescan.HiveScan",
+  "display": "注册表 Hive 扫描",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.registry.printkey.PrintKey",
+  "display": "注册表键值查看",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.registry.scheduled_tasks.ScheduledTasks",
+  "display": "windows.registry.scheduled_tasks.ScheduledTasks",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.registry.userassist.UserAssist",
+  "display": "用户行为记录（UserAssist）",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.shimcachemem.ShimcacheMem",
+  "display": "windows.shimcachemem.ShimcacheMem",
+  "category": "注册表",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.filescan.FileScan",
+  "display": "文件对象扫描",
+  "category": "文件",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.mutantscan.MutantScan",
+  "display": "互斥体扫描",
+  "category": "文件",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.pedump.PEDump",
+  "display": "windows.pedump.PEDump",
+  "category": "文件",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.getservicesids.GetServiceSIDs",
+  "display": "windows.getservicesids.GetServiceSIDs",
+  "category": "服务",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.svcdiff.SvcDiff",
+  "display": "windows.malware.svcdiff.SvcDiff",
+  "category": "服务",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.svcdiff.SvcDiff",
+  "display": "服务差异分析",
+  "category": "服务",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.svclist.SvcList",
+  "display": "服务列表",
+  "category": "服务",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.svcscan.SvcScan",
+  "display": "服务扫描",
+  "category": "服务",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.bash.Bash",
+  "display": "linux.bash.Bash",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": "Recovers bash command history from memory."
+ },
+ {
+  "name": "linux.capabilities.Capabilities",
+  "display": "linux.capabilities.Capabilities",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.elfs.Elfs",
+  "display": "linux.elfs.Elfs",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": "Lists all memory mapped ELF files for all processes."
+ },
+ {
+  "name": "linux.envars.Envars",
+  "display": "linux.envars.Envars",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.kthreads.Kthreads",
+  "display": "linux.kthreads.Kthreads",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.process_spoofing.ProcessSpoofing",
+  "display": "linux.malware.process_spoofing.ProcessSpoofing",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.pidhashtable.PIDHashTable",
+  "display": "linux.pidhashtable.PIDHashTable",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.proc.Maps",
+  "display": "linux.proc.Maps",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": "Lists all memory maps for all processes."
+ },
+ {
+  "name": "linux.psaux.PsAux",
+  "display": "linux.psaux.PsAux",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": "Lists processes with their command line arguments"
+ },
+ {
+  "name": "linux.pslist.PsList",
+  "display": "linux.pslist.PsList",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.psscan.PsScan",
+  "display": "linux.psscan.PsScan",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.pstree.PsTree",
+  "display": "linux.pstree.PsTree",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.ptrace.Ptrace",
+  "display": "linux.ptrace.Ptrace",
+  "category": "Linux-进程与用户",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.netfilter.Netfilter",
+  "display": "linux.malware.netfilter.Netfilter",
+  "category": "Linux-网络",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.netfilter.Netfilter",
+  "display": "linux.netfilter.Netfilter",
+  "category": "Linux-网络",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.sockscan.Sockscan",
+  "display": "linux.sockscan.Sockscan",
+  "category": "Linux-网络",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.sockstat.Sockstat",
+  "display": "linux.sockstat.Sockstat",
+  "category": "Linux-网络",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.check_afinfo.Check_afinfo",
+  "display": "linux.check_afinfo.Check_afinfo",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.check_creds.Check_creds",
+  "display": "linux.check_creds.Check_creds",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.check_idt.Check_idt",
+  "display": "linux.check_idt.Check_idt",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.check_modules.Check_modules",
+  "display": "linux.check_modules.Check_modules",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.check_syscall.Check_syscall",
+  "display": "linux.check_syscall.Check_syscall",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.ebpf.EBPF",
+  "display": "linux.ebpf.EBPF",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": "Enumerate eBPF programs"
+ },
+ {
+  "name": "linux.hidden_modules.Hidden_modules",
+  "display": "linux.hidden_modules.Hidden_modules",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.iomem.IOMem",
+  "display": "linux.iomem.IOMem",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": "Generates an output similar to /proc/iomem on a"
+ },
+ {
+  "name": "linux.lsmod.Lsmod",
+  "display": "linux.lsmod.Lsmod",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": "Lists loaded kernel modules."
+ },
+ {
+  "name": "linux.malware.check_afinfo.Check_afinfo",
+  "display": "linux.malware.check_afinfo.Check_afinfo",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.check_creds.Check_creds",
+  "display": "linux.malware.check_creds.Check_creds",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.check_idt.Check_idt",
+  "display": "linux.malware.check_idt.Check_idt",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.check_modules.Check_modules",
+  "display": "linux.malware.check_modules.Check_modules",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.check_syscall.Check_syscall",
+  "display": "linux.malware.check_syscall.Check_syscall",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.hidden_modules.Hidden_modules",
+  "display": "linux.malware.hidden_modules.Hidden_modules",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.keyboard_notifiers.Keyboard_notifiers",
+  "display": "linux.malware.keyboard_notifiers.Keyboard_notifiers",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.malfind.Malfind",
+  "display": "linux.malware.malfind.Malfind",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.modxview.Modxview",
+  "display": "linux.malware.modxview.Modxview",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.malware.tty_check.Tty_Check",
+  "display": "linux.malware.tty_check.Tty_Check",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.module_extract.ModuleExtract",
+  "display": "linux.module_extract.ModuleExtract",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.tracing.ftrace.CheckFtrace",
+  "display": "linux.tracing.ftrace.CheckFtrace",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.tracing.perf_events.PerfEvents",
+  "display": "linux.tracing.perf_events.PerfEvents",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.tracing.tracepoints.CheckTracepoints",
+  "display": "linux.tracing.tracepoints.CheckTracepoints",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.tty_check.tty_check",
+  "display": "linux.tty_check.tty_check",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.vmcoreinfo.VMCoreInfo",
+  "display": "linux.vmcoreinfo.VMCoreInfo",
+  "category": "Linux-内核与安全",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.library_list.LibraryList",
+  "display": "linux.library_list.LibraryList",
+  "category": "Linux-文件系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.lsof.Lsof",
+  "display": "linux.lsof.Lsof",
+  "category": "Linux-文件系统",
+  "kind": "table",
+  "description": "Lists open files for each processes."
+ },
+ {
+  "name": "linux.mountinfo.MountInfo",
+  "display": "linux.mountinfo.MountInfo",
+  "category": "Linux-文件系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.pagecache.Files",
+  "display": "linux.pagecache.Files",
+  "category": "Linux-文件系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.pagecache.InodePages",
+  "display": "linux.pagecache.InodePages",
+  "category": "Linux-文件系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.pagecache.RecoverFs",
+  "display": "linux.pagecache.RecoverFs",
+  "category": "Linux-文件系统",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.boottime.Boottime",
+  "display": "linux.boottime.Boottime",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.graphics.fbdev.Fbdev",
+  "display": "linux.graphics.fbdev.Fbdev",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.ip.Addr",
+  "display": "linux.ip.Addr",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": "Lists network interface information for all devices"
+ },
+ {
+  "name": "linux.ip.Link",
+  "display": "linux.ip.Link",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": "Lists information about network interfaces similar to"
+ },
+ {
+  "name": "linux.kallsyms.Kallsyms",
+  "display": "linux.kallsyms.Kallsyms",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.keyboard_notifiers.Keyboard_notifiers",
+  "display": "linux.keyboard_notifiers.Keyboard_notifiers",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.kmsg.Kmsg",
+  "display": "linux.kmsg.Kmsg",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": "Kernel log buffer reader"
+ },
+ {
+  "name": "linux.malfind.Malfind",
+  "display": "linux.malfind.Malfind",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.modxview.Modxview",
+  "display": "linux.modxview.Modxview",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.pscallstack.PsCallStack",
+  "display": "linux.pscallstack.PsCallStack",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "linux.vmaregexscan.VmaRegExScan",
+  "display": "linux.vmaregexscan.VmaRegExScan",
+  "category": "Linux-其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.bash.Bash",
+  "display": "mac.bash.Bash",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Recovers bash command history from memory."
+ },
+ {
+  "name": "mac.check_syscall.Check_syscall",
+  "display": "mac.check_syscall.Check_syscall",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.check_sysctl.Check_sysctl",
+  "display": "mac.check_sysctl.Check_sysctl",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.check_trap_table.Check_trap_table",
+  "display": "mac.check_trap_table.Check_trap_table",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.dmesg.Dmesg",
+  "display": "mac.dmesg.Dmesg",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Prints the kernel log buffer."
+ },
+ {
+  "name": "mac.ifconfig.Ifconfig",
+  "display": "mac.ifconfig.Ifconfig",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.kauth_listeners.Kauth_listeners",
+  "display": "mac.kauth_listeners.Kauth_listeners",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.kauth_scopes.Kauth_scopes",
+  "display": "mac.kauth_scopes.Kauth_scopes",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.kevents.Kevents",
+  "display": "mac.kevents.Kevents",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.list_files.List_Files",
+  "display": "mac.list_files.List_Files",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.lsmod.Lsmod",
+  "display": "mac.lsmod.Lsmod",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Lists loaded kernel modules."
+ },
+ {
+  "name": "mac.lsof.Lsof",
+  "display": "mac.lsof.Lsof",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Lists all open file descriptors for all processes."
+ },
+ {
+  "name": "mac.malfind.Malfind",
+  "display": "mac.malfind.Malfind",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.mount.Mount",
+  "display": "mac.mount.Mount",
+  "category": "macOS",
+  "kind": "table",
+  "description": "A module containing a collection of plugins that"
+ },
+ {
+  "name": "mac.netstat.Netstat",
+  "display": "mac.netstat.Netstat",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.proc_maps.Maps",
+  "display": "mac.proc_maps.Maps",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Lists process memory ranges that potentially contain"
+ },
+ {
+  "name": "mac.psaux.Psaux",
+  "display": "mac.psaux.Psaux",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Recovers program command line arguments."
+ },
+ {
+  "name": "mac.pslist.PsList",
+  "display": "mac.pslist.PsList",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Lists the processes present in a particular mac memory"
+ },
+ {
+  "name": "mac.pstree.PsTree",
+  "display": "mac.pstree.PsTree",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Plugin for listing processes in a tree based on their"
+ },
+ {
+  "name": "mac.socket_filters.Socket_filters",
+  "display": "mac.socket_filters.Socket_filters",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.timers.Timers",
+  "display": "mac.timers.Timers",
+  "category": "macOS",
+  "kind": "table",
+  "description": "Check for malicious kernel timers."
+ },
+ {
+  "name": "mac.trustedbsd.Trustedbsd",
+  "display": "mac.trustedbsd.Trustedbsd",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "mac.vfsevents.VFSevents",
+  "display": "mac.vfsevents.VFSevents",
+  "category": "macOS",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "configwriter.ConfigWriter",
+  "display": "configwriter.ConfigWriter",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "layerwriter.LayerWriter",
+  "display": "layerwriter.LayerWriter",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "timeliner.Timeliner",
+  "display": "timeliner.Timeliner",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows",
+  "display": "windows",
+  "category": "其他",
+  "kind": "table",
+  "description": "memory image."
+ },
+ {
+  "name": "windows.bigpools.BigPools",
+  "display": "windows.bigpools.BigPools",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.cmdscan.CmdScan",
+  "display": "windows.cmdscan.CmdScan",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.consoles.Consoles",
+  "display": "控制台历史",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.crashinfo.Crashinfo",
+  "display": "崩溃信息",
+  "category": "其他",
+  "kind": "text",
+  "description": ""
+ },
+ {
+  "name": "windows.debugregisters.DebugRegisters",
+  "display": "windows.debugregisters.DebugRegisters",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.deskscan.DeskScan",
+  "display": "windows.deskscan.DeskScan",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.desktops.Desktops",
+  "display": "windows.desktops.Desktops",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.etwpatch.EtwPatch",
+  "display": "windows.etwpatch.EtwPatch",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.iat.IAT",
+  "display": "windows.iat.IAT",
+  "category": "其他",
+  "kind": "table",
+  "description": "Extract Import Address Table to list API (functions)"
+ },
+ {
+  "name": "windows.joblinks.JobLinks",
+  "display": "windows.joblinks.JobLinks",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.kpcrs.KPCRs",
+  "display": "windows.kpcrs.KPCRs",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.pebmasquerade.PebMasquerade",
+  "display": "windows.malware.pebmasquerade.PebMasquerade",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.psxview.PsXView",
+  "display": "windows.malware.psxview.PsXView",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.skeleton_key_check.Skeleton_Key_Check",
+  "display": "windows.malware.skeleton_key_check.Skeleton_Key_Check",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.malware.unhooked_system_calls.UnhookedSystemCalls",
+  "display": "windows.malware.unhooked_system_calls.UnhookedSystemCalls",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.mbrscan.MBRScan",
+  "display": "windows.mbrscan.MBRScan",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.pe_symbols.PESymbols",
+  "display": "windows.pe_symbols.PESymbols",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.poolscanner.PoolScanner",
+  "display": "windows.poolscanner.PoolScanner",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.scheduled_tasks.ScheduledTasks",
+  "display": "windows.scheduled_tasks.ScheduledTasks",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.sessions.Sessions",
+  "display": "windows.sessions.Sessions",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.skeleton_key_check.Skeleton_Key_Check",
+  "display": "windows.skeleton_key_check.Skeleton_Key_Check",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.strings.Strings",
+  "display": "内存字符串提取",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.symlinkscan.SymlinkScan",
+  "display": "windows.symlinkscan.SymlinkScan",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.thrdscan.ThrdScan",
+  "display": "windows.thrdscan.ThrdScan",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.timers.Timers",
+  "display": "windows.timers.Timers",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.truecrypt.Passphrase",
+  "display": "windows.truecrypt.Passphrase",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.unhooked_system_calls.unhooked_system_calls",
+  "display": "windows.unhooked_system_calls.unhooked_system_calls",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.virtmap.VirtMap",
+  "display": "windows.virtmap.VirtMap",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.windows.Windows",
+  "display": "windows.windows.Windows",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ },
+ {
+  "name": "windows.windowstations.WindowStations",
+  "display": "windows.windowstations.WindowStations",
+  "category": "其他",
+  "kind": "table",
+  "description": ""
+ }
+]

@@ -1,0 +1,68 @@
+=::=::\
+=clink.bin=D:\Base\apps\clink\current
+=clink.id=924
+=clink.profile=C:\Users\Administrator\AppData\Local\clink
+=clink.scripts=
+=D:=D:\Global\apps\scaninfo\current
+=ExitCode=00000000
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\Administrator\AppData\Roaming
+COLUMNS=66
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=DESKTOP-04MPTT8
+ComSpec=C:\Windows\system32\cmd.exe
+DOTNET_ROOT=D:\Base\apps\dotnet-runtime\current
+DriverData=C:\Windows\System32\Drivers\DriverData
+EFC_4080=1
+GEM_HOME=D:\Base\apps\ruby\current\gems
+GEM_PATH=D:\Base\apps\ruby\current\gems
+GIT_INSTALL_ROOT=D:\Base\apps\git\current
+HOMEDRIVE=C:
+HOMEPATH=\Users\Administrator
+JAVA_HOME=D:\Base\apps\oraclejre8\current
+LINES=27
+LOCALAPPDATA=C:\Users\Administrator\AppData\Local
+LOGONSERVER=\\DESKTOP-04MPTT8
+MSBuildSDKsPath=D:\Base\apps\dotnet3-sdk\current\sdk\3.1.426\Sdks
+NUMBER_OF_PROCESSORS=4
+OS=Windows_NT
+Path=D:\Global\apps\metasploit-framework\current\bin;D:\Global\apps\oraclejdk\current\bin;D:\Global\shims;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Base\apps\ruby\current\bin;D:\Base\apps\ruby\current\gems\bin;D:\Base\apps\tdm-gcc\current\bin;D:\Base\apps\python310\current\Scripts;D:\Base\apps\python310\current;D:\Base\apps\python27\current\Scripts;D:\Base\apps\python27\current;D:\Base\apps\dotnet3-sdk\current;D:\Base\apps\oraclejre8\current\bin;D:\Base\apps\liberica17-jre\current\bin;C:\Users\Administrator\go\bin;D:\Base\shims;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;c:\users\administrator\.local\bin;C:\Users\Administrator\.dotnet\tools;C:\pycharm\PyCharm 2026.1.4\bin
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+POSH_CURSOR_LINE=27
+POSH_SESSION_ID=f117beb6-ec08-45d8-87ee-8a00fc832eb4
+POSH_SHELL=cmd
+POSH_SHELL_VERSION=clink v1.7.19.d8a218
+POSH_THEME=D:\Base\apps\oh-my-posh\current\themes\amro.omp.json
+POSH_THEMES_PATH=D:\Base\apps\oh-my-posh\current\themes
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=9a03
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PROMPT=CLINK $P$G
+PROXYCHAINS_CONF_FILE=D:\Global\persist\proxychains\proxychains.conf
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+PyCharm=C:\pycharm\PyCharm 2026.1.4\bin
+PYENV_VIRTUALENV_DISABLE_PROMPT=1
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\Administrator\AppData\Local\Temp
+TMP=C:\Users\Administrator\AppData\Local\Temp
+USERDOMAIN=DESKTOP-04MPTT8
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-04MPTT8
+USERNAME=Administrator
+USERPROFILE=C:\Users\Administrator
+VIRTUAL_ENV_DISABLE_PROMPT=1
+windir=C:\Windows
+WIRESHARK_CONFIG_DIR=D:\Global\apps\wireshark\current\Data
+WIRESHARK_DATA_DIR=D:\Global\apps\wireshark\current\Data
+WSLENV=WT_SESSION:WT_PROFILE_ID:
+WT_PROFILE_ID={3ad42e7b-e073-5f3e-ac57-1c259ffa86a8}
+WT_SESSION=bde3b8af-8df9-4421-bb41-37beb927058e

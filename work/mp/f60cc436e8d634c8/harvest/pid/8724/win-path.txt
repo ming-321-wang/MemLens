@@ -1,0 +1,1 @@
+\Device\HarddiskVolume3\ProgramData\Microsoft\Windows Defender\Platform\4.18.25070.5-0\NisSrv.exe

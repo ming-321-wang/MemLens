@@ -1,0 +1,14 @@
+
+{"File output": "Disabled", "FileFullPath": "", "Offset": 273366078509072, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\REGISTRY\\MACHINE\\SYSTEM", "Offset": 273366078599888, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\REGISTRY\\MACHINE\\HARDWARE", "Offset": 273366078788080, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\SystemRoot\\System32\\Config\\SAM", "Offset": 273366079143952, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\SystemRoot\\System32\\Config\\DEFAULT", "Offset": 273366079246352, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\Device\\HarddiskVolume1\\Boot\\BCD", "Offset": 273366090585104, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\SystemRoot\\System32\\Config\\SOFTWARE", "Offset": 273366101463056, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\??\\C:\\Windows\\ServiceProfiles\\NetworkService\\NTUSER.DAT", "Offset": 273366104518672, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\??\\C:\\Windows\\ServiceProfiles\\LocalService\\NTUSER.DAT", "Offset": 273366104977424, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\??\\C:\\System Volume Information\\Syscache.hve", "Offset": 273366106664976, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\??\\C:\\Users\\Administrator\\ntuser.dat", "Offset": 273366108001296, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\??\\C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\Windows\\UsrClass.dat", "Offset": 273366108132368, "__children": []}
+{"File output": "Disabled", "FileFullPath": "\\SystemRoot\\System32\\Config\\SECURITY", "Offset": 273366168588304, "__children": []}

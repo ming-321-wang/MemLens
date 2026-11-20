@@ -1,0 +1,1 @@
+"D:\Global\apps\librewolf-pentest\current\LibreWolf\librewolf.exe" -contentproc -parentBuildID 20250518161911 -prefsHandle 2060:30083 -prefMapHandle 2064:277543 -ipcHandle 2080 -initialChannelId {10701ff3-1057-4951-8aa2-57a3eca03649} -parentPid 7192 -appDir "D:\Global\apps\librewolf-pentest\current\LibreWolf\browser" - 2 gpu

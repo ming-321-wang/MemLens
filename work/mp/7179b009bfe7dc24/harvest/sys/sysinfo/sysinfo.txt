@@ -1,0 +1,32 @@
+Windows Information:
+  Computer Name:   
+  Current Time:    2025-07-23 11:58:29 UTC
+  Boot Time:       2025-07-23 03:56:26 UTC
+  Time Zone:                                                      
+  Version:         6.1 (build 7601)
+
+Hardware Information:
+  Architecture:    X64
+  Physical Memory: 2 GB
+  Max Address:     0x7fffffff
+  CPU:             12th Gen Intel(R) Core(TM) i7-12700
+  MB Vendor:       Intel Corporation
+  MB Product:      440BX Desktop Reference Platform
+  BIOS Vendor:     Phoenix Technologies LTD
+  System Vendor:   VMware, Inc.
+
+Users:
+  Administrator  (S-1-5-21-3845547894-970975367-1760185533-500)
+  C:\Users\Administrator  (S-1-5-21-3845547894-970975367-1760185533-500-1)
+
+Process Information:
+  Active:          34
+  Inactive:        1
+
+MemProcFS Information:
+  Version:         5.18.1 (build 240)
+  Parse Time:      2026-10-16 05:07:10 UTC
+  Memory Source:   Read-only, Static
+  Unique Tag:      7601_10e5b477
+  Forensic Mode:   Enabled
+  VM Parsing:      Enabled

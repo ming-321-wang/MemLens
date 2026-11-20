@@ -1,0 +1,132 @@
+=========================================================
+  VOLATILITY 3 COMMANDS — AgentTesla Memory Forensics
+=========================================================
+Framework : Volatility 3 (v2.28.0)
+Host OS   : Ubuntu 24
+Image     : ~/Desktop/memory.raw
+=========================================================
+
+--- MEMORY ACQUISITION (WinPmem — run inside infected Windows VM) ---
+
+# Capture raw memory image
+winpme.exe acquire C:\Users\Public\memory.raw
+
+# Serve memory image over HTTP for transfer to Ubuntu host
+python -m http.server 8080
+
+# Download memory image from Ubuntu host
+wget http://192.168.34.128:8080/memory.raw -O ~/Desktop/memory.raw
+
+
+--- IMAGE VERIFICATION ---
+
+# Verify memory image and confirm OS version
+python3 vol.py -f ~/Desktop/memory.raw windows.info
+
+
+--- PROCESS ANALYSIS ---
+
+# List all running processes from kernel process list
+python3 vol.py -f ~/Desktop/memory.raw windows.pslist 2>/dev/null \
+    | tee ~/Desktop/pslist.txt
+
+# View process tree with parent-child relationships and full binary paths
+python3 vol.py -f ~/Desktop/memory.raw windows.pstree 2>/dev/null \
+    | tee ~/Desktop/pstree.txt
+
+# Scan physical memory for EPROCESS structures (detects hidden processes)
+python3 vol.py -f ~/Desktop/memory.raw windows.psscan 2>/dev/null \
+    | tee ~/Desktop/psscan.txt
+
+# Check command line arguments for all processes
+python3 vol.py -f ~/Desktop/memory.raw windows.cmdline 2>/dev/null \
+    | tee ~/Desktop/cmdline.txt
+
+# Grep for suspicious processes across outputs
+grep -i "internet\|2824\|4740" ~/Desktop/pslist.txt
+grep -i "internet\|2824\|4740" ~/Desktop/pstree.txt
+grep -i "internet\|2824\|4740" ~/Desktop/psscan.txt
+grep -i "internet\|2824\|4740" ~/Desktop/cmdline.txt
+
+
+--- INJECTION DETECTION ---
+
+# Check for injected memory regions in suspicious processes
+python3 vol.py -f ~/Desktop/memory.raw windows.malfind --pid 2824 \
+    2>/dev/null | tee ~/Desktop/malfind_2824.txt
+
+python3 vol.py -f ~/Desktop/memory.raw windows.malfind --pid 4740 \
+    2>/dev/null | tee ~/Desktop/malfind_4740.txt
+
+# Full system malfind scan
+python3 vol.py -f ~/Desktop/memory.raw windows.malfind 2>/dev/null \
+    | tee ~/Desktop/malfind_all.txt
+
+# Summarize flagged processes
+grep "^[0-9]" ~/Desktop/malfind_all.txt | \
+    awk '{print $1, $2, $3}' | sort | uniq -c | sort -rn
+
+
+--- DLL INSPECTION ---
+
+# List all DLLs loaded by suspicious processes
+python3 vol.py -f ~/Desktop/memory.raw windows.dlllist --pid 2824 \
+    2>/dev/null | tee ~/Desktop/dlllist_2824.txt
+
+python3 vol.py -f ~/Desktop/memory.raw windows.dlllist --pid 4740 \
+    2>/dev/null | tee ~/Desktop/dlllist_4740.txt
+
+
+--- NETWORK ANALYSIS ---
+
+# Scan for network connections in memory
+python3 vol.py -f ~/Desktop/memory.raw windows.netscan 2>/dev/null \
+    | tee ~/Desktop/netscan.txt
+
+# Filter for suspicious connections
+grep -i "2824\|4740\|ESTABLISHED\|185.234" ~/Desktop/netscan.txt
+
+
+--- REGISTRY ANALYSIS ---
+
+# List all registry hives loaded in memory
+python3 vol.py -f ~/Desktop/memory.raw windows.registry.hivelist \
+    2>/dev/null | tee ~/Desktop/hivelist.txt
+
+# Read HKLM Run key (offset from hivelist output)
+python3 vol.py -f ~/Desktop/memory.raw windows.registry.printkey \
+    --offset 0xca020f7ee000 \
+    --key "Microsoft\Windows\CurrentVersion\Run" 2>/dev/null
+
+# Read HKCU Run key (offset from hivelist output)
+python3 vol.py -f ~/Desktop/memory.raw windows.registry.printkey \
+    --offset 0xca021352c000 \
+    --key "Software\Microsoft\Windows\CurrentVersion\Run" 2>/dev/null
+
+
+--- STRING EXTRACTION ---
+
+# Extract all printable strings (8+ chars) from raw memory dump
+strings -n 8 ~/Desktop/memory.raw > ~/Desktop/memory_strings.txt
+
+# Search for SMTP exfiltration artefacts
+grep -i "smtp" ~/Desktop/memory_strings.txt | head -20
+
+# Search for C2 gate.php and IP artefacts
+grep -i "gate.php\|185.234\|http" ~/Desktop/memory_strings.txt | head -20
+
+# Search for process and AppData artefacts
+grep -i "internet_detector\|AppData\|password" \
+    ~/Desktop/memory_strings.txt | head -20
+
+
+--- FILE DUMPING ---
+
+# Attempt to dump executable files from suspicious processes
+mkdir ~/Desktop/dumped_files
+
+python3 vol.py -f ~/Desktop/memory.raw windows.dumpfiles --pid 2824 \
+    2>/dev/null -o ~/Desktop/dumped_files/
+
+python3 vol.py -f ~/Desktop/memory.raw windows.dumpfiles --pid 4740 \
+    2>/dev/null -o ~/Desktop/dumped_files/

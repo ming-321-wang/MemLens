@@ -1,0 +1,40 @@
+# data = [9833522706548805574, 4884939446308308567, 7984089458500257237, 1495184578005931925, 5829076712922018137]
+# n = 10882258963048193183
+
+from Crypto.Util.number import *
+from pathlib import Path
+
+# 读取 flag
+flag = Path("secret.txt").read_text().strip().encode()
+assert flag[:5] == b'flag{'
+assert flag[-1:] == b'}'
+flag = flag[5:-1]
+assert len(flag) == 24  # 8 + 8 + 8
+
+class my_LCG:
+    def __init__(self, seed1 , seed2):
+        self.state = [seed1, seed2]
+        self.n = getPrime(64)
+        while True:
+            self.a = bytes_to_long(flag[:8])
+            self.b = bytes_to_long(flag[8:16])
+            self.c = bytes_to_long(flag[16:])
+            if self.a < self.n and self.b < self.n and self.c < self.n:
+                break
+    
+    def next(self):
+        new = (self.a * self.state[-1] + self.b * self.state[-2] + self.c) % self.n
+        self.state.append(new)
+        return new
+
+def main():
+    seed1 = getRandomInteger(64)
+    seed2 = getRandomInteger(64)
+    lcg = my_LCG(seed1, seed2)
+
+    data = [lcg.next() for _ in range(5)]
+    print("data =", data)
+    print("n =", lcg.n)
+
+if __name__ == "__main__":
+    main()

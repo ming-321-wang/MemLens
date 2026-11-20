@@ -1,0 +1,3 @@
+Path=C:\WINDOWS\System32
+SystemDrive=C:
+SystemRoot=C:\WINDOWS

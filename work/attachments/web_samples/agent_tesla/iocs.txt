@@ -1,0 +1,63 @@
+=========================================================
+  INDICATORS OF COMPROMISE — AgentTesla Memory Forensics
+=========================================================
+
+--- PROCESS INDICATORS ---
+Process Name   : internet_detector.exe
+Process Path   : C:\Tools\internet_detector\internet_detector.exe
+PID            : 2824 (parent)
+PID            : 4740 (self-spawned child)
+PPID of 2824   : 1268 (svchost.exe — unusual parent)
+Behavior       : Self-replication — PID 2824 spawned child PID 4740
+
+--- DLL INDICATORS (Non-Standard Locations) ---
+DLL            : python310.dll
+Load Path      : C:\Users\kende\AppData\Local\Temp\_MEI28242\
+Verdict        : Suspicious — confirms PyInstaller packaging
+
+DLL            : ucrtbase.dll
+Load Path      : C:\Users\kende\AppData\Local\Temp\_MEI28242\
+Verdict        : Suspicious — loaded from temp directory
+
+Temp Directory : C:\Users\kende\AppData\Local\Temp\_MEI28242\
+Note           : _MEI naming pattern is how PyInstaller names its extraction folder
+
+--- REGISTRY INDICATORS ---
+Hive           : HKCU
+Key            : Software\Microsoft\Windows\CurrentVersion\Run
+Entry Name     : ransomware.exe
+Value          : Null bytes
+Verdict        : Suspicious — leftover persistence entry from prior malware session
+
+--- NETWORK / C2 INDICATORS ---
+C2 IP          : 185.234.72.230
+C2 IP          : 185.65.202.62
+C2 URL         : http://marketingg.jino-net.ru/proxy/gate.php
+C2 URL Pattern : /gate.php?username=
+C2 Disguise    : %APPDATA%\googlestorage.gl/xx/gate.php
+
+--- SMTP EXFILTRATION INDICATORS ---
+Exfil Email    : admin@smtp.rambler.ru
+Exfil Email    : admin@smtp.yandex.ru
+SMTP Server    : giza157smtp.terra.com.br
+Keylogger ID   : tibiaClientsmtp.serwer.plkeyloggervsk3IdSMTP1Connected
+Port           : 587 (TLS SMTP)
+
+--- SAMPLE HASH ---
+SHA256         : 59acf4ae2a676101f77b8fe254a6c9f488f126bcc879d1b86fec7860a0e539d2
+File Type      : PE32 Executable (PyInstaller-packed)
+Malware Family : AgentTesla (Infostealer / Keylogger)
+Source         : MalwareBazaar (abuse.ch)
+VirusTotal     : 59/72 vendors detected as malicious
+Threat Label   : trojan.msil/agenttesla
+
+--- DEFENDER TAMPERING ---
+Process        : MsMpEng.exe (PID 2756)
+Flagged Regions: 14 x PAGE_EXECUTE_READWRITE
+Verdict        : Possible AV tampering by AgentTesla
+
+--- MEMORY IMAGE ---
+VM IP Address  : 192.168.34.128 (Host-Only subnet)
+Dump File Size : 7,583,301,632 bytes (7.06 GB)
+System Time    : 2026-03-22 14:26:56 UTC
+OS             : Windows 10 x64 (NtMajorVersion 10)

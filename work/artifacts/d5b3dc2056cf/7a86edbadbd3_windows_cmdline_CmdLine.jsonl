@@ -1,0 +1,36 @@
+
+{"Args": null, "PID": 4, "Process": "System", "__children": []}
+{"Args": "\\SystemRoot\\System32\\smss.exe", "PID": 220, "Process": "smss.exe", "__children": []}
+{"Args": "%SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16", "PID": 296, "Process": "csrss.exe", "__children": []}
+{"Args": "wininit.exe", "PID": 348, "Process": "wininit.exe", "__children": []}
+{"Args": "%SystemRoot%\\system32\\csrss.exe ObjectDirectory=\\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=winsrv:ConServerDllInitialization,2 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16", "PID": 356, "Process": "csrss.exe", "__children": []}
+{"Args": "winlogon.exe", "PID": 384, "Process": "winlogon.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\services.exe", "PID": 444, "Process": "services.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\lsass.exe", "PID": 452, "Process": "lsass.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\lsm.exe", "PID": 460, "Process": "lsm.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch", "PID": 568, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k RPCSS", "PID": 632, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\System32\\svchost.exe -k LocalServiceNetworkRestricted", "PID": 684, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k netsvcs", "PID": 780, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k LocalService", "PID": 864, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\System32\\svchost.exe -k LocalSystemNetworkRestricted", "PID": 904, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k NetworkService", "PID": 944, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k LocalServiceNoNetwork", "PID": 232, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\System32\\spoolsv.exe", "PID": 840, "Process": "spoolsv.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k regsvc", "PID": 844, "Process": "svchost.exe", "__children": []}
+{"Args": "\"taskhost.exe\"", "PID": 1568, "Process": "taskhost.exe", "__children": []}
+{"Args": "\"C:\\Windows\\system32\\Dwm.exe\"", "PID": 1632, "Process": "dwm.exe", "__children": []}
+{"Args": "C:\\Windows\\Explorer.EXE", "PID": 1656, "Process": "explorer.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\sppsvc.exe", "PID": 2000, "Process": "sppsvc.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k LocalServiceAndNoImpersonation", "PID": 1404, "Process": "svchost.exe", "__children": []}
+{"Args": "C:\\Windows\\System32\\msdtc.exe", "PID": 496, "Process": "msdtc.exe", "__children": []}
+{"Args": "C:\\Windows\\system32\\svchost.exe -k NetworkServiceNetworkRestricted", "PID": 1312, "Process": "svchost.exe", "__children": []}
+{"Args": "\"C:\\Tools\\AntSword-Loader-v4.0.3-win32-x64\\AntSword.exe\" ", "PID": 1716, "Process": "AntSword.exe", "__children": []}
+{"Args": "\"C:\\Tools\\AntSword-Loader-v4.0.3-win32-x64\\AntSword.exe\" --type=gpu-process --enable-features=SharedArrayBuffer --no-sandbox --gpu-preferences=KAAAAAAAAACAAwBAAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAACgAAAAEAAAAIAAAAAAAAAAoAAAAAAAAADAAAAAAAAAAOAAAAAAAAAAQAAAAAAAAAAAAAAAKAAAAEAAAAAAAAAAAAAAACwAAABAAAAAAAAAAAQAAAAoAAAAQAAAAAAAAAAEAAAALAAAA --service-request-channel-token=14248260004034258463 --mojo-platform-channel-handle=876 /prefetch:2", "PID": 1456, "Process": "AntSword.exe", "__children": []}
+{"Args": "\"C:\\Tools\\AntSword-Loader-v4.0.3-win32-x64\\AntSword.exe\" --type=renderer --no-sandbox --enable-features=SharedArrayBuffer --service-pipe-token=9540881960490066001 --lang=zh-CN --standard-schemes=ant-views,ant-static,ant-src --app-path=\"C:\\Tools\\AntSword-Loader-v4.0.3-win32-x64\\antSword-master\" --node-integration=true --webview-tag=true --no-sandbox --background-color=#fff --device-scale-factor=1 --num-raster-threads=1 --service-request-channel-token=9540881960490066001 --renderer-client-id=4 --mojo-platform-channel-handle=1092 /prefetch:1", "PID": 260, "Process": "AntSword.exe", "__children": []}
+{"Args": null, "PID": 1952, "Process": "AntSword.exe", "__children": []}
+{"Args": "\"C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe\" ", "PID": 1016, "Process": "iexplore.exe", "__children": []}
+{"Args": "\"C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe\" SCODEF:1016 CREDAT:14337", "PID": 1928, "Process": "iexplore.exe", "__children": []}
+{"Args": "\"C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe\" SCODEF:1016 CREDAT:14343", "PID": 1260, "Process": "iexplore.exe", "__children": []}
+{"Args": "\"C:\\Windows\\system32\\NOTEPAD.EXE\" C:\\Users\\Administrator\\Desktop\\flag.txt", "PID": 2232, "Process": "notepad.exe", "__children": []}
+{"Args": "\"C:\\Windows\\system32\\mmc.exe\" \"C:\\Windows\\system32\\tsmmc.msc\" /s", "PID": 2992, "Process": "mmc.exe", "__children": []}

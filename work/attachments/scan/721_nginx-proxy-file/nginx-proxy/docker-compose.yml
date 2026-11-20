@@ -1,0 +1,17 @@
+services:
+  nginx-proxy:
+    image: nginx-proxy:alpine
+    container_name: nginx-proxy
+    ports:
+      - "80:80"   
+      - "9999:9999" 
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+    # if you want to proxy based on host ports, you'll want to use the host network
+    # network_mode: "host"
+
+  whoami:
+    image: jwilder/whoami
+    environment:
+      - VIRTUAL_HOST=whoami.example

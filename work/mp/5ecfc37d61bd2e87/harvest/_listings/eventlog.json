@@ -1,0 +1,502 @@
+[
+ {
+  "名称": "ffffa50ace33ac00-Microsoft-Windows-Kernel-PnP%4Driver Watchdog.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acea13870-Microsoft-Windows-CodeIntegrity%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acea21c90-Windows PowerShell.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50aceac32c0-System.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50aceac6970-HardwareEvents.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50aceac8270-Key Management Service.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acead4d90-Application.evtx",
+  "大小": 724992
+ },
+ {
+  "名称": "ffffa50acead69b0-Internet Explorer.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50aceadfc90-Security.evtx",
+  "大小": 2359296
+ },
+ {
+  "名称": "ffffa50acedb5130-Microsoft-Windows-Storage-Storport%4Health.evtx",
+  "大小": 278528
+ },
+ {
+  "名称": "ffffa50acedb55e0-Microsoft-Windows-WinINet-Config%4ProxyConfigChanged.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acedb79d0-Microsoft-Windows-Storage-Storport%4Operational.evtx",
+  "大小": 131072
+ },
+ {
+  "名称": "ffffa50acedba720-Microsoft-Windows-User Device Registration%4Admin.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedbce30-Microsoft-Windows-AppModel-Runtime%4Admin.evtx",
+  "大小": 221184
+ },
+ {
+  "名称": "ffffa50acedbf3b0-Microsoft-Windows-StorageSpaces-Driver%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedbfb80-Microsoft-Windows-PCI%4Operational.evtx",
+  "大小": 815104
+ },
+ {
+  "名称": "ffffa50acedc12f0-Microsoft-Windows-StorageVolume%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acedc2d80-Microsoft-Windows-HotspotAuth%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedc6750-Microsoft-Windows-StorageVolume%4Diagnostic.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acedc6d90-Microsoft-Windows-Kernel-ShimEngine%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedc81e0-Microsoft-Windows-Ntfs%4Operational.evtx",
+  "大小": 176128
+ },
+ {
+  "名称": "ffffa50acedc9630-Microsoft-Windows-VolumeSnapshot-Driver%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acedc97c0-Microsoft-Windows-StorageSpaces-Driver%4Diagnostic.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acedcaa80-Microsoft-Windows-User Profile Service%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedcada0-Microsoft-Windows-Kernel-Cache%4Operational.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50acedce130-Microsoft-Windows-Windows Firewall With Advanced Security%4Firewall.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedce450-Microsoft-Windows-Winlogon%4Operational.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50acedcf260-Microsoft-Windows-Kernel-WHEA%4Errors.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedcfd50-Microsoft-Windows-TerminalServices-LocalSessionManager%4Operational.evtx",
+  "大小": 1052672
+ },
+ {
+  "名称": "ffffa50acedd0200-Setup.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acedd09d0-Microsoft-Windows-Ntfs%4WHC.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acedd0e80-Microsoft-Windows-Kernel-WHEA%4Operational.evtx",
+  "大小": 126976
+ },
+ {
+  "名称": "ffffa50acedd2aa0-Microsoft-Windows-TerminalServices-LocalSessionManager%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50acedd3270-Microsoft-Windows-Partition%4Diagnostic.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedd4210-Microsoft-Windows-Bits-Client%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50acedd4530-Microsoft-Windows-Kernel-Boot%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0002330-Microsoft-Windows-Kernel-Power%4Thermal-Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0002e20-Microsoft-Windows-SMBServer%4Security.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad0003140-Microsoft-Windows-Kernel-Dump%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad00032d0-Microsoft-Windows-SMBServer%4Operational.evtx",
+  "大小": 94208
+ },
+ {
+  "名称": "ffffa50ad0005080-Microsoft-Windows-Audio%4Operational.evtx",
+  "大小": 73728
+ },
+ {
+  "名称": "ffffa50ad00064d0-Microsoft-Windows-NetworkProfile%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad000f620-Microsoft-Windows-Kernel-StoreMgr%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad00116f0-Microsoft-Windows-SMBServer%4Audit.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0014440-Microsoft-Windows-Audio%4PlaybackManager.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad0014c10-Microsoft-Windows-SMBServer%4Connectivity.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad00292a0-Microsoft-Windows-SMBClient%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad00298e0-Microsoft-Windows-SmbClient%4Connectivity.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad002a6f0-Microsoft-Windows-CloudFiles-Filter%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad002c4a0-Microsoft-Windows-Containers-Wcifs%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0030320-Microsoft-Windows-Containers-BindFlt%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad00304b0-Microsoft-Windows-Dhcp-Client%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0031a90-Microsoft-Windows-GroupPolicy%4Operational.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad0032bc0-Microsoft-Windows-SmbClient%4Audit.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0033200-Microsoft-Windows-SmbClient%4Security.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad00355f0-Microsoft-Windows-Audio%4CaptureMonitor.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad003a0f0-Microsoft-Windows-Dhcpv6-Client%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad05035f0-Microsoft-Windows-WindowsUpdateClient%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0505b70-Microsoft-Windows-Crypto-DPAPI%4BackUpKeySvc.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0516ce0-Microsoft-Windows-Windows Firewall With Advanced Security%4ConnectionSecurity.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad051c5f0-Microsoft-Windows-Crypto-DPAPI%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad0523350-Microsoft-Windows-StateRepository%4Restricted.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad05255b0-Microsoft-Windows-StateRepository%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad05274f0-Microsoft-Windows-Wcmsvc%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad052a0b0-Microsoft-Windows-Windows Firewall With Advanced Security%4FirewallDiagnostics.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad052eed0-Microsoft-Windows-HelloForBusiness%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0538340-Microsoft-Windows-WebAuthN%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0916210-Microsoft-Windows-Store%4Operational.evtx",
+  "大小": 2359296
+ },
+ {
+  "名称": "ffffa50ad0919280-Microsoft-Windows-AppReadiness%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad091bcb0-Microsoft-Windows-AppReadiness%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0922a10-Microsoft-Windows-AppXDeployment%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0924ae0-Microsoft-Windows-NCSI%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad092b9d0-Microsoft-Windows-WMI-Activity%4Operational.evtx",
+  "大小": 86016
+ },
+ {
+  "名称": "ffffa50ad092ed60-Microsoft-Client-Licensing-Platform%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0938360-Microsoft-Windows-Resource-Exhaustion-Detector%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad093f0c0-Microsoft-Windows-SmartCard-DeviceEnum%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad093f700-Microsoft-Windows-Shell-Core%4ActionCenter.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad093fa20-Microsoft-Windows-Shell-Core%4Operational.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad0943580-Microsoft-Windows-Shell-Core%4AppDefaults.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad09449d0-Microsoft-Windows-Shell-Core%4LogonTasksChannel.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad09454c0-Microsoft-Windows-AppXDeploymentServer%4Restricted.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad094b0f0-Microsoft-Windows-AppXDeploymentServer%4Operational.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad094d990-Microsoft-Windows-PushNotification-Platform%4Operational.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad094ec50-Microsoft-Windows-PushNotification-Platform%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad0caa330-Microsoft-Windows-Diagnosis-DPS%4Operational.evtx",
+  "大小": 1052672
+ },
+ {
+  "名称": "ffffa50ad0cb77b0-Microsoft-Windows-Kernel-PnP%4Device Management.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad0ce25a0-Microsoft-Windows-Kernel-PnP%4Configuration.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad2297650-Microsoft-Windows-CloudRestoreLauncher%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad2297b00-Microsoft-Windows-Crypto-NCrypt%4KeyMgmt.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad22998b0-Microsoft-Windows-Crypto-NCrypt%4Operational.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad229a3a0-Microsoft-Windows-Crypto-NCrypt%4CertInUse.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad229c470-Microsoft-Windows-Security-SPP-UX-Notifications%4ActionCenter.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad229e220-Microsoft-Windows-LiveId%4Operational.evtx",
+  "大小": 1015808
+ },
+ {
+  "名称": "ffffa50ad22c5190-Microsoft-Windows-Privacy-Auditing%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad27cfa50-Microsoft-Windows-AppxPackaging%4Operational.evtx",
+  "大小": 73728
+ },
+ {
+  "名称": "ffffa50ad2d599a0-Microsoft-Windows-Application-Experience%4Program-Telemetry.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad2d5b5c0-Microsoft-Windows-Application-Experience%4Program-Compatibility-Troubleshooter.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad2d5c240-Microsoft-Windows-Application-Experience%4Steps-Recorder.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad2d5c3d0-Microsoft-Windows-Application-Experience%4Program-Inventory.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad2d5c560-Microsoft-Windows-Application-Experience%4Program-Compatibility-Assistant.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad2f56250-Microsoft-Windows-Program-Compatibility-Assistant%4CompatAfterUpgrade.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad3104270-Microsoft-Windows-Shell-ConnectedAccountState%4ActionCenter.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad310e810-Microsoft-Windows-UserPnp%4ActionCenter.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad31142b0-Microsoft-Windows-StorageSpaces-ManagementAgent%4WHC.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad31210f0-Microsoft-Windows-Diagnosis-PCW%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad3122ea0-Microsoft-Windows-Diagnostics-Performance%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad3130af0-Microsoft-Windows-Diagnosis-Scheduled%4Operational.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad31344c0-Microsoft-Windows-Security-Mitigations%4KernelMode.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad31355f0-Microsoft-Windows-TaskScheduler%4Maintenance.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad3139790-Microsoft-Windows-FileHistory-Core%4WHC.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad355ad50-Microsoft-Windows-Kernel-EventTracing%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad3d113d0-Microsoft-Windows-PowerShell%4Admin.evtx",
+  "大小": 69632
+ },
+ {
+  "名称": "ffffa50ad3d11880-Microsoft-Windows-PowerShell%4Operational.evtx",
+  "大小": 4059136
+ },
+ {
+  "名称": "ffffa50ad3d1e3a0-Microsoft-Windows-Known Folders API Service.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad3d210f0-Microsoft-Windows-Perflib%4Operational.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad4a2ebb0-Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%4Autopilot.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad811a390-Microsoft-Windows-Storsvc%4Diagnostic.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad811b970-Microsoft-Windows-Provisioning-Diagnostics-Provider%4Admin.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad811c140-Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%4Sync.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad811cc30-Microsoft-Windows-Provisioning-Diagnostics-Provider%4AutoPilot.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad811e210-Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%4Enrollment.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "ffffa50ad811f660-Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%4Operational.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad8120790-Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%4Admin.evtx",
+  "大小": 1310720
+ },
+ {
+  "名称": "ffffa50ad8120920-Microsoft-Windows-Provisioning-Diagnostics-Provider%4ManagementService.evtx",
+  "大小": 262144
+ },
+ {
+  "名称": "readme.txt",
+  "大小": 1014
+ }
+]

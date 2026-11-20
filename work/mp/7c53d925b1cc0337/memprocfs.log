@@ -1,0 +1,240 @@
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (0000020CBD221040).
+[CORE]       TIME: 2026-11-10 07:33:35 UTC.
+[CORE]       RUNTIME: 78s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (0000027F3BE6A040).
+[CORE]       TIME: 2026-11-10 07:33:35 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (0000029BEC155040).
+[CORE]       TIME: 2026-11-10 07:33:36 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (000001B4C40A2040).
+[CORE]       TIME: 2026-11-10 07:33:36 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (000001C11320D040).
+[CORE]       TIME: 2026-11-10 07:33:37 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (00000133B7F36040).
+[CORE]       TIME: 2026-11-10 07:33:37 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (00000170BACBA040).
+[CORE]       TIME: 2026-11-10 07:33:38 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (000001F4A343F040).
+[CORE]       TIME: 2026-11-10 07:33:38 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (0000028875FF2040).
+[CORE]       TIME: 2026-11-10 07:33:39 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (0000013B2AFBA040).
+[CORE]       TIME: 2026-11-10 07:33:39 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (00000268FA5F2040).
+[CORE]       TIME: 2026-11-10 07:33:40 UTC.
+[CORE]       RUNTIME: 0s.
+
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\CTF平台文件\NSSCTF\内存取证\file.raw' as RAW Memory Dump.
+[INFODB]   INIT: SUCCESS: va=0x816ad000
+[SYMBOL]   Functionality may be limited. Extended debug information disabled.
+[SYMBOL]   Partial offline fallback symbols in use.
+[SYMBOL]   For additional information use startup option: -loglevel symbol:4
+[SYMBOL]   Reason: Unable to download kernel symbols to cache from Symbol Server.
+
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+[CORE]     Initialization Failed. Unable to locate EPROCESS. #4
+[CORE]     Unable to auto-identify operating system.    
+           Specify PageDirectoryBase (DTB/CR3) in -dtb option if value if known.
+           If arm64 dump, specify architecture: -arch arm64                     
+
+[CORE]     Failed to initialize.
+
+[CORE]     SHUTDOWN COMPLETED (00000270AD18A040).
+[CORE]       TIME: 2026-11-10 07:36:30 UTC.
+[CORE]       RUNTIME: 0s.
+

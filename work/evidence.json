@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "1",
+      "path": "D:\\Cavescope\\样本\\交付-测试样本\\deleted-files-01\\deleted-files-01.img",
+      "kind": "raw",
+      "size": 2097152,
+      "volumes": [
+        {
+          "index": 1,
+          "fs": "FAT",
+          "kind": "fat",
+          "offset": 0,
+          "size": 2097152,
+          "label": "",
+          "fat_type": "FAT12",
+          "bytes_per_sector": 512,
+          "sectors_per_cluster": 4,
+          "cluster_size": 2048,
+          "cluster_count": 1013,
+          "num_fats": 2
+        }
+      ],
+      "hashes": {
+        "md5": "b58ec16a597cd3f107775d4fab11c1c8",
+        "sha1": "3cc94010d8a7612cd416f585eeda57f8d971560a",
+        "sha256": "dab40bc2e51cc5b31202fcbc97924924e2474be7f2d47fa7948afaa2d6661339",
+        "sm3": "c8cd098abed36d04b3318520e6b207f083ab27bf5ba3da68792872e66dba4a9b"
+      },
+      "note": "test-register",
+      "prev_hash": "",
+      "registered_at": "2026-11-17 11:11:15",
+      "rec_hash": "490f2fc6a90f3e10882908de70771f1ad6711ca82c6a05d2ee42bbc9f844e5cc"
+    },
+    {
+      "id": "2",
+      "path": "D:\\Cavescope\\样本\\交付-测试样本\\deleted-files-01\\deleted-files-01.img",
+      "kind": "raw",
+      "size": 2097152,
+      "volumes": [
+        {
+          "index": 1,
+          "fs": "FAT",
+          "kind": "fat",
+          "offset": 0,
+          "size": 2097152,
+          "label": "",
+          "fat_type": "FAT12",
+          "bytes_per_sector": 512,
+          "sectors_per_cluster": 4,
+          "cluster_size": 2048,
+          "cluster_count": 1013,
+          "num_fats": 2
+        }
+      ],
+      "hashes": {
+        "md5": "b58ec16a597cd3f107775d4fab11c1c8",
+        "sha1": "3cc94010d8a7612cd416f585eeda57f8d971560a",
+        "sha256": "dab40bc2e51cc5b31202fcbc97924924e2474be7f2d47fa7948afaa2d6661339",
+        "sm3": "c8cd098abed36d04b3318520e6b207f083ab27bf5ba3da68792872e66dba4a9b"
+      },
+      "note": "api-test",
+      "prev_hash": "490f2fc6a90f3e10882908de70771f1ad6711ca82c6a05d2ee42bbc9f844e5cc",
+      "registered_at": "2026-11-17 11:12:01",
+      "rec_hash": "c979a032ad8ef970c480bd22dfb6eb16fd19a766feaea4620c0eb08ed6af24c4"
+    }
+  ],
+  "head_hash": "c979a032ad8ef970c480bd22dfb6eb16fd19a766feaea4620c0eb08ed6af24c4"
+}

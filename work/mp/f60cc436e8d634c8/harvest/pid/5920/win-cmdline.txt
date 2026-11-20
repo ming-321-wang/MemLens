@@ -1,0 +1,1 @@
+"C:\Program Files\WindowsApps\Microsoft.WidgetsPlatformRuntime_1.6.9.0_x64__8wekyb3d8bbwe\WidgetService\WidgetService.exe" -RegisterProcessAsComServer -Embedding

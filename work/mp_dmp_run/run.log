@@ -1,0 +1,98 @@
+DEVICE OPEN: file
+DEVICE: Successfully opened file: 'E:\附件原件\强网杯\Personal Vault\MEMORY.DMP' as Microsoft Crash Dump.
+[INFODB]   INIT: SUCCESS: va=0xfffff8047a400000
+[SYMBOL]   Initialized symbol subsystem (Microsoft).
+Initialized 64-bit Windows 10.0.26100
+[PLUGIN]   LOAD: built-in module: '\'
+[PLUGIN]   LOAD: built-in module: '\'
+[PLUGIN]   LOAD: built-in module: '\forensic'
+[PLUGIN]   LOAD: built-in module: '\console'
+[PLUGIN]   LOAD: built-in module: '\files\handles'
+[PLUGIN]   LOAD: built-in module: '\files\vads'
+[PLUGIN]   LOAD: built-in module: '\files\modules'
+[PLUGIN]   LOAD: built-in module: '\phys2virt'
+[PLUGIN]   LOAD: built-in module: '\misc\phys2virt'
+[PLUGIN]   LOAD: built-in module: '\handles'
+[PLUGIN]   LOAD: built-in module: '\heaps'
+[PLUGIN]   LOAD: built-in module: '\modules'
+[PLUGIN]   LOAD: built-in module: '\memmap'
+[PLUGIN]   LOAD: built-in module: '\minidump'
+[PLUGIN]   LOAD: built-in module: '\threads'
+[PLUGIN]   LOAD: built-in module: '\token'
+[PLUGIN]   LOAD: built-in module: '\winterm'
+[PLUGIN]   LOAD: built-in module: '\search\bin'
+[PLUGIN]   LOAD: built-in module: '\misc\search\bin'
+[PLUGIN]   LOAD: built-in module: '\search\yara'
+[PLUGIN]   LOAD: built-in module: '\misc\search\yara'
+[PLUGIN]   LOAD: built-in module: '\virt2phys'
+[PLUGIN]   LOAD: built-in module: '\misc\bitlocker'
+[PLUGIN]   LOAD: built-in module: '\conf'
+[PLUGIN]   LOAD: built-in module: '\misc\eventlog'
+[PLUGIN]   LOAD: built-in module: '\misc\procinfo'
+[PLUGIN]   LOAD: built-in module: '\misc\view'
+[PLUGIN]   LOAD: built-in module: '\sys'
+[PLUGIN]   LOAD: built-in module: '\sys\drivers'
+[PLUGIN]   LOAD: built-in module: '\sys\memory'
+[PLUGIN]   LOAD: built-in module: '\sys\net'
+[PLUGIN]   LOAD: built-in module: '\sys\net\dns'
+[PLUGIN]   LOAD: built-in module: '\sys\objects'
+[PLUGIN]   LOAD: built-in module: '\sys\pool'
+[PLUGIN]   LOAD: built-in module: '\sys\proc'
+[PLUGIN]   LOAD: built-in module: '\sys\services'
+[PLUGIN]   LOAD: built-in module: '\sys\syscall'
+[PLUGIN]   LOAD: built-in module: '\sys\sysinfo'
+[PLUGIN]   LOAD: built-in module: '\sys\tasks'
+[PLUGIN]   LOAD: built-in module: '\sys\users'
+[PLUGIN]   LOAD: built-in module: '\registry'
+[PLUGIN]   LOAD: built-in module: '\vm'
+[PLUGIN]   LOAD: built-in module: '\forensic\amcache'
+[PLUGIN]   LOAD: built-in module: '\forensic\csv'
+[PLUGIN]   LOAD: built-in module: '\forensic\files'
+[PLUGIN]   LOAD: built-in module: '\forensic\findevil'
+[PLUGIN]   LOAD: built-in module: '\forensic\hidden\handles'
+[PLUGIN]   LOAD: built-in module: '\forensic\json'
+[PLUGIN]   LOAD: built-in module: '\forensic\timeline'
+[PLUGIN]   LOAD: built-in module: '\forensic\hidden\module'
+[PLUGIN]   LOAD: built-in module: '\forensic\ntfs'
+[PLUGIN]   LOAD: built-in module: '\forensic\prefetch'
+[PLUGIN]   LOAD: built-in module: '\forensic\hidden\proc'
+[PLUGIN]   LOAD: built-in module: '\forensic\hidden\registry'
+[PLUGIN]   LOAD: built-in module: '\forensic\hidden\sys'
+[PLUGIN]   LOAD: built-in module: '\forensic\hidden\thread'
+[PLUGIN]   LOAD: built-in module: '\forensic\web'
+[PLUGIN]   LOAD: built-in module: '\forensic\yara_builtin'
+[PLUGIN]   LOAD: built-in module: '\forensic\entropy'
+[PLUGIN]   LOAD: built-in module: '\findevil\EvKRNL1'
+[PLUGIN]   LOAD: built-in module: '\findevil\EvKERNPROC1'
+[PLUGIN]   LOAD: built-in module: '\findevil\EvPROC1'
+[PLUGIN]   LOAD: built-in module: '\findevil\EvPROC2'
+[PLUGIN]   LOAD: built-in module: '\findevil\EvPROC3'
+[PLUGIN]   LOAD: built-in module: '\findevil\EvTHRD1'
+[PLUGIN]   LOAD: built-in module: '\findevil\EvAV1'
+[PLUGIN]   LOAD: built-in module: '\findevil\EvAPC1'
+[PLUGIN]   LOAD: built-in module: '\sys\certificates'
+[PLUGIN]   LOAD:  native  module: '\vmemd'
+[PLUGIN]   LOAD:  native  module: 'py'
+[PLUGIN]   PluginManager: Python plugin loaded.
+[FORENSIC] INIT START
+[FORENSIC]   YARA BUILTIN RULES: ACTIVE
+[FORENSIC]   YARA CUSTOM RULES:  INACTIVE
+[FORENSIC]   PROCESS SKIPLIST:   INACTIVE
+
+==============================  MemProcFS  ==============================
+ - Author:           Ulf Frisk - pcileech@frizk.net                      
+ - Info:             https://github.com/ufrisk/MemProcFS                 
+ - Discord:          https://pcileech.com/discord                        
+ - License:          GNU Affero General Public License v3.0              
+ - Licensed To:      GNU Affero General Public License v3.0 - OPEN SOURCE USER.
+   --------------------------------------------------------------------- 
+ - Version:          5.18.1 (Windows)
+ - Mount Point:      X:\           
+ - Tag:              26100_f781c060        
+ - Operating System: Windows 10.0.26100 (X64)
+==========================================================================
+
+[FORENSIC] FC_VIRTMEM_SCAN: INIT TOTAL:  ranges=20578, bytes=719b37000
+[FORENSIC] FC_VIRTMEM_SCAN: FINISH
+[INFODB]   INIT: SUCCESS: va=0xfffff8040e130000
+[FORENSIC] Forensic mode completed in 57s.

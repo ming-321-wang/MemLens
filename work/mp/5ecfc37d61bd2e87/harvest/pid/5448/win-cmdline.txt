@@ -1,0 +1,1 @@
+"C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.22.11141.0_x64__8wekyb3d8bbwe\OpenConsole.exe" --headless --textMeasurement graphemes --width 120 --height 30 --signal 0x968 --server 0x95c

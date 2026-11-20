@@ -1,0 +1,11 @@
+COMPONENT_INSTALLER_DIR=C:\Users\a\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView
+EDGE_BROWSER_PID=7260
+EDGE_CRASHPAD_PIPE_NAME=\\.\pipe\LOCAL\crashpad_7260_DHWIDJRQTERZFSYO
+EDGE_WEBVIEW_PREFETCH_HOSTED_APP=/pfhostedapp:799ddbd463d6ed0c792929319fd2a0f152830ee0
+IS_EDGE_WEBVIEW=1
+LOCALAPPDATA=C:\Users\a\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\AC
+Path=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\a\AppData\Local\Microsoft\WindowsApps
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\a\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\AC\Temp
+TMP=C:\Users\a\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\AC\Temp

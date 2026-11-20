@@ -1,0 +1,4 @@
+PID,ProcessName,Type,Address,Description
+1456,AntSword.exe,HIGH_ENTROPY,0x7f0e0000,"Entropy:[7.88]       p-r--- "
+2000,sppsvc.exe,HIGH_ENTROPY,0xff5f0000,"Entropy:[7.05] Image ---wxc \Windows\System32\sppsvc.exe"
+2000,sppsvc.exe,HIGH_ENTROPY,0x7fef38a0000,"Entropy:[7.08] Image ---wxc \Windows\System32\sppobjs.dll"

@@ -1,0 +1,16 @@
+============================================================
+  Phantom Hacker Encrypted Communications Log
+============================================================
+
+[Known Plaintext]
+Cryptography is the practice and study of secure communication.
+
+[Ciphertext of Known Plaintext (hex)]
+3c2ca4e08c1ea6426dacf6a9ba07f8464c82f4d00190f0fca713a179626c8b8801f7874bec6be9c3263a85159984e0bf061d35f99ac2034dcf85f6a79ac886
+
+[Ciphertext of Flag (hex)]
+1932bcf7832382045397f0e0ed00d43654dea09e05d1e9eb8c4bb143063ed1884dfdac0afb4dbdc47345a4449893a3ae5b
+
+------------------------------------------------------------
+Note: Both messages were encrypted with the SAME RC4 key.
+Recover the flag.

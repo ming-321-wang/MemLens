@@ -1,0 +1,54 @@
+[
+ {
+  "名称": "0xfffff8a00000d010-unknown-unknown.reghive",
+  "大小": 8192
+ },
+ {
+  "名称": "0xfffff8a0000232d0-SYSTEM-MACHINE_SYSTEM.reghive",
+  "大小": 10579968
+ },
+ {
+  "名称": "0xfffff8a0000511f0-unknown-MACHINE_HARDWARE.reghive",
+  "大小": 278528
+ },
+ {
+  "名称": "0xfffff8a0000a8010-SAM-MACHINE_SAM.reghive",
+  "大小": 28672
+ },
+ {
+  "名称": "0xfffff8a0000c1010-DEFAULT-USER_.DEFAULT.reghive",
+  "大小": 159744
+ },
+ {
+  "名称": "0xfffff8a000b91410-BCD-MACHINE_BCD00000000.reghive",
+  "大小": 24576
+ },
+ {
+  "名称": "0xfffff8a0015f1010-SOFTWARE-MACHINE_SOFTWARE.reghive",
+  "大小": 31985664
+ },
+ {
+  "名称": "0xfffff8a0018db010-NTUSERDAT-USER_S-1-5-20.reghive",
+  "大小": 135168
+ },
+ {
+  "名称": "0xfffff8a00194b010-NTUSERDAT-USER_S-1-5-19.reghive",
+  "大小": 131072
+ },
+ {
+  "名称": "0xfffff8a001ae7010-Syscachehve-A_{03cb9a8d-6779-11f0-a88c-000c29d1a852}.reghive",
+  "大小": 90112
+ },
+ {
+  "名称": "0xfffff8a001c2d410-ntuserdat-User_S-1-5-21-3845547894-970975367-1760185533-500.reghive",
+  "大小": 425984
+ },
+ {
+  "名称": "0xfffff8a001c4d410-UsrClassdat-User_S-1-5-21-3845547894-970975367-1760185533-500_Classes.reghive",
+  "大小": 163840
+ },
+ {
+  "名称": "0xfffff8a0055f5010-SECURITY-MACHINE_SECURITY.reghive",
+  "大小": 24576
+ }
+]
