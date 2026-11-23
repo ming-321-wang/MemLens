@@ -1400,3 +1400,26 @@ GUI offscreen 存活 18s ✓
 4. **失败要向上报**：`returncode != 0`、解析失败、0 行都要有明确状态，不许静默返回空；
 5. 二进制内容进 CSV 必须转义（见 `storage/db.py::export_records_csv`）；
 6. 所有耗时操作放工作线程，UI 只做信号回填。
+
+---
+
+## 9. 发布说明（GitHub 公开仓库）
+
+本仓库发布自 `D:\MemLens`，包含 **37,823 个文件、约 13.16 GB**（源码、文档、打包脚本、示例、
+`tools/` 内置 MemProcFS 及其符号表、`work/` 运行时数据、`build/`/`dist/` 构建产物）。
+
+**未包含以下 7 个文件**（均超过 GitHub 单文件 100 MB 硬上限，标准 git 无法推送；
+Git LFS 免费额度 1 GB 不足以承载合计约 3.36 GB，故不上传）：
+
+| 文件 | 大小 |
+|---|---|
+| `work/deep_test/memlens.db` | 1.04 GB |
+| `work/bench_ux/work/memlens.db` | 0.81 GB |
+| `work/deep_test3/memlens.db` | 0.52 GB |
+| `work/attachments/web_samples/dfrws2009/nssal-thumb-fs.dd` | 0.48 GB |
+| `work/attachments/scan/47_raw.7z` | 0.21 GB |
+| `work/deep_test2/memlens.db` | 0.17 GB |
+| `tools/MemProcFS/python/Lib/site-packages/PySide6/Qt6WebEngineCore.dll` | 142 MB |
+
+另外 **`.venv/`（Python 虚拟环境，0.78 GB）与所有 `__pycache__/` 未纳入**（机器相关、非项目内容，
+其中 `.venv/.../Qt6WebEngineCore.dll` 194 MB 也超限）。如需这些文件，请自行在源目录补取。
